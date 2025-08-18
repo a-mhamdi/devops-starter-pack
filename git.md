@@ -4,7 +4,7 @@ These commands cover the basics of version control with `Git` and interacting wi
 
 > [!IMPORTANT]
 >
-> It is **important** to set your identity at first. To do so, you need to use the following commands:
+> You need to set your identity at first:
 > ```bash
 > git config --global user.name "Your Name"
 > git config --global user.email "your.email@example.com"
@@ -68,6 +68,9 @@ These commands cover the basics of version control with `Git` and interacting wi
     ```
     Shows changes between the working directory and the last commit.
 
+> [!TIP]
+> Use `git help <command>` for more details on any command.
+
 ## GitHub Basics
 
 `GitHub` is a platform for hosting and collaborating on `Git` repositories.
@@ -96,18 +99,16 @@ These commands cover the basics of version control with `Git` and interacting wi
     ```
     Downloads and merges changes from the specified branch on `GitHub`.
 
-- **Create a pull request**  
-    On `GitHub`'s website:
-        1. Navigate to the repository.
-        2. Click the "Fork" button.
-        2. Click the "Pull requests" tab.
-        3. Click "New pull request" and select the branches to compare.
-        4. Add a title and description, then submit.
-
-> [!INFO] 
+> [!CAUTION] 
 > If `git merge` or `git pull` results in conflicts, edit the conflicting files, stage them with `git add`, and complete the commit.
 
 > [!NOTE]
-> Use `git help <command>` for more details on any command.
+> To create a pull request on `GitHub`'s website:
+> 
+>     1. Navigate to the repository.
+>     2. Click the "Fork" button.
+>     2. Click the "Pull requests" tab.
+>     3. Click "New pull request" and select the branches to compare.
+>     4. Add a title and description, then submit.
 
 [Go to README](README.md)
