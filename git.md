@@ -1,6 +1,6 @@
 # Basic Git and GitHub Commands
 
-These commands cover the basics of version control with `Git` and interacting with `GitHub` repositories.
+These commands cover the basics of version control with `Git` and interacting with [`GitHub`](https://github.com/) repositories.
 
 > [!IMPORTANT]
 >
@@ -73,38 +73,38 @@ These commands cover the basics of version control with `Git` and interacting wi
 
 ## GitHub Basics
 
-`GitHub` is a platform for hosting and collaborating on `Git` repositories.
+[`GitHub`](https://github.com/) is a platform for hosting and collaborating on `Git` repositories.
 
 - **Clone a repository**  
     ```bash
     git clone <repository_url>
     ```
-    Downloads a repository from `GitHub` to your local machine.
+    Downloads a repository from [`GitHub`](https://github.com/) to your local machine.
 
 - **Link local repository to GitHub**  
     ```bash
     git remote add origin <repository_url>
     ```
-    Connects your local repository to a remote `GitHub` repository.
+    Connects your local repository to a remote [`GitHub`](https://github.com/) repository.
 
 - **Push changes to GitHub**  
     ```bash
     git push origin <branch_name>
     ```
-    Uploads local commits to the specified branch on `GitHub`.
+    Uploads local commits to the specified branch on [`GitHub`](https://github.com/).
 
 - **Pull changes from GitHub**  
     ```bash
     git pull origin <branch_name>
     ```
-    Downloads and merges changes from the specified branch on `GitHub`.
+    Downloads and merges changes from the specified branch on [`GitHub`](https://github.com/).
 
 > [!CAUTION] 
 > If `git merge` or `git pull` results in conflicts, edit the conflicting files, stage them with `git add`, and complete the commit.
 
 > [!NOTE]
-> To create a pull request on `GitHub`'s website:
-> 
+> To create a pull request on [`GitHub`](https://github.com/) 's website:
+>
 >     1. Navigate to the repository.
 >     2. Click the "Fork" button.
 >     2. Click the "Pull requests" tab.

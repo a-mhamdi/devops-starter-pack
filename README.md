@@ -2,14 +2,10 @@
 
 This is about getting started with DevOps tools and practices.
 
-## Git and Github
-[Basic Git Commands](git.md)
+## [Git and Github](git.md)
 
-## Docker
-[Basic Docker Commands](docker.md)
+## [Docker](docker.md)
 
-## Ansible
-[Basic Ansible Commands](ansible.md)
+## [Ansible](ansible.md)
 
-## Kubernetes
-[Basic Kubernetes Commands](k8s.md)
+## [Kubernetes](k8s.md)
