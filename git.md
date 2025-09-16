@@ -1,7 +1,5 @@
 # Basic Git and GitHub Commands
 
-![Git Logo](https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png)
-
 These commands cover the basics of version control with `Git` and interacting with [`GitHub`](https://github.com/) repositories.
 
 ## Git Workflow Overview

@@ -1,7 +1,5 @@
 # Basic Docker Commands
 
-![Docker Logo](https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png)
-
 `Docker` is a platform for developing, shipping, and running applications inside containers.
 
 ## Docker Architecture Overview
