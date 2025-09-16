@@ -1,8 +1,17 @@
 # Basic Docker Commands
 
+![Docker Logo](https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png)
+
 `Docker` is a platform for developing, shipping, and running applications inside containers.
 
+## Docker Architecture Overview
+
+<!-- ![Docker Architecture](https://docs.docker.com/images/architecture.svg)
+
+The diagram above shows Docker's architecture with the Docker daemon, containers, images, and the host system. -->
+
 > [!TIP]
+> 
 > Use `docker <command> --help` for more details on any command.
 
 - **Check Docker version**  
@@ -78,13 +87,35 @@
     Creates a custom network for containers to communicate.
 
 ## Dockerfile
+
+<!-- ![Docker Layers](https://docs.docker.com/images/layers.png)
+
+The diagram above shows how Docker images are built in layers, with each instruction creating a new layer. -->
+
 The `Dockerfile` is a text document that contains all the commands to assemble a customized image. This file contains a series of commands and arguments that are executed automatically in order to assemble an image. 
 
+### Dockerfile Instructions
+
 The main components of a `Dockerfile` include:
-    - **FROM**: Specifies the base image to use.
-    - **COPY**: Copies files from the host to the image.
-    - **RUN**: Executes commands in the image during the build process.
-    - **CMD**: Specifies the default command to run when a container is started from the image.
+
+<dl>
+    <dt>FROM</dt> 
+        <dd> Specifies the base image to use. </dd>
+    <dt>COPY</dt> 
+        <dd> Copies files from the host to the image. </dd>
+    <dt>RUN</dt> 
+        <dd> Executes commands in the image during the build process. </dd>
+    <dt>EXPOSE</dt> 
+        <dd> Documents which ports the container listens on. </dd>
+    <dt>ENV</dt> 
+        <dd> Sets environment variables. </dd>
+    <dt>WORKDIR</dt> 
+        <dd> Sets the working directory for subsequent instructions.
+    <dt>ENTRYPOINT</dt> 
+        <dd> Sets the main executable that will always run in the container, regardless of additional command-line arguments. </dd>
+    <dt>CMD</dt> 
+        <dd> Provides default arguments to the `ENTRYPOINT` or specifies a default command if `ENTRYPOINT` is not set; can be overridden when running the container. </dd>
+</dl>
 
 - **Build an image from a Dockerfile**  
     ```bash
@@ -92,16 +123,29 @@ The main components of a `Dockerfile` include:
     ```
     Builds a `Docker` image from a `Dockerfile` in the current directory.
 
+- **Build with no cache**  
+    ```bash
+    docker build --no-cache -t <image_name>:<tag> .
+    ```
+    Builds an image without using cached layers.
+
+- **Build with build context**  
+    ```bash
+    docker build -f <dockerfile_path> -t <image_name>:<tag> <build_context>
+    ```
+    Builds using a specific Dockerfile and build context.
+
 - **Push an image to Dockerhub**
     ```bash
     docker push <image_name>:<tag>
     ```
 
 > [!WARNING]
+> 
 > Use `docker login` to authenticate with [`Dockerhub`](https://hub.docker.com/) for pushing images.
 
 ## Docker Compose
-`Docker` Compose is a tool for defining and running multi-container `Docker` applications.
+`Docker Compose` is a tool for defining and running multi-container `Docker` applications.
 
 - **Start services defined in a `docker-compose.yml` file**  
     ```bash
@@ -116,6 +160,7 @@ The main components of a `Dockerfile` include:
     Stops and removes containers, networks, and volumes defined in `docker-compose.yml`.
 
 > [!TIP]
+> 
 > Use `docker system prune` to remove unused containers, images, and networks.
 
 [Go to README](README.md)
