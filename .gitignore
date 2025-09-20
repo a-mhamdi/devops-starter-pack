@@ -1,1 +1,2 @@
 docker/web-app/node_modules
+docker/web-app/.env

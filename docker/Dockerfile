@@ -23,4 +23,4 @@ EXPOSE 3000
 # Start the application
 CMD ["node", "server.js"]
 
-# docker run -p 3000:3000  -it -v ./web-app:/usr/src/app web-app:0.1 /bin/sh
+# docker run -p 3000:3000  -it -v ./web-app:/usr/src/app web-app:demo /bin/sh
