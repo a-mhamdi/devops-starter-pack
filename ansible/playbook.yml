@@ -1,0 +1,65 @@
+---
+# Minimal Ansible Playbook Example
+- name: Basic server setup and configuration
+  hosts: all
+  become: yes
+  gather_facts: yes
+  
+  tasks:
+
+    - name: Update package cache (Alpine)
+      become: true
+      apk:
+        update_cache: yes
+      when: inventory_hostname == "alpine"
+
+    - name: Update package cache (Void)
+      become: true
+      xbps:
+        update_cache: yes
+      when: inventory_hostname == "void"
+
+    - name: Update package cache (Manjaro)
+      become: true
+      pacman:
+        update_cache: yes
+      when: inventory_hostname == "manjaro"
+    
+    - name: Install essential packages
+      package:
+        name:
+          - curl
+          - wget
+          - vim
+          - htop
+        state: present
+    
+    - name: Create a sample user
+      user:
+        name: sample-user
+        shell: /bin/bash
+        create_home: yes
+    
+    - name: Create a sample directory
+      file:
+        path: /tmp/sample-dir
+        state: directory
+        owner: sample-user
+        group: sample-user
+        mode: '0755'
+    
+    - name: Write a sample configuration file
+      copy:
+        content: |
+          # Sample configuration
+          app_name=my-app
+          app_version=1.0.0
+          debug=false
+        dest: /tmp/sample-dir/config.conf
+        owner: sample-user
+        group: sample-user
+        mode: '0644'
+    
+    - name: Display system information
+      debug:
+        msg: "Server {{ inventory_hostname }} is running {{ ansible_distribution }} {{ ansible_distribution_version }}"
