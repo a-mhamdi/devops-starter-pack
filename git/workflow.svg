@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220">
+  <!-- Background -->
+  <rect x="0" y="0" width="900" height="220" fill="#121212"/>
+
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="20"
+        font-weight="bold"
+        fill="#f5f5f5">
+    Basic Git Workflow
+  </text>
+  <text x="450" y="52" text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="12"
+        fill="#bbbbbb">
+    Working Directory → Staging Area → Local Repository → Remote Repository
+  </text>
+
+  <!-- Common box style -->
+  <!-- Working Directory -->
+  <rect x="30" y="80" width="180" height="90" rx="12" ry="12"
+        fill="#1f2933" stroke="#4f9cf5" stroke-width="2.5"/>
+  <text x="120" y="115" text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="16"
+        font-weight="bold"
+        fill="#e5e5e5">
+    Working Directory
+  </text>
+  <text x="120" y="135" text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="12"
+        fill="#9ca3af">
+    Your files on disk
+  </text>
+
+  <!-- Staging Area -->
+  <rect x="250" y="80" width="180" height="90" rx="12" ry="12"
+        fill="#182a1f" stroke="#34d399" stroke-width="2.5"/>
+  <text x="340" y="115" text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="16"
+        font-weight="bold"
+        fill="#e5e5e5">
+    Staging Area
+  </text>
+  <text x="340" y="135" text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="12"
+        fill="#9ca3af">
+    Files to be committed
+  </text>
+
+  <!-- Local Repository -->
+  <rect x="470" y="80" width="180" height="90" rx="12" ry="12"
+        fill="#2a1f18" stroke="#fb923c" stroke-width="2.5"/>
+  <text x="560" y="115" text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="16"
+        font-weight="bold"
+        fill="#e5e5e5">
+    Local Repository
+  </text>
+  <text x="560" y="135" text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="12"
+        fill="#9ca3af">
+    Commits on your machine
+  </text>
+
+  <!-- Remote Repository -->
+  <rect x="690" y="80" width="180" height="90" rx="12" ry="12"
+        fill="#1f1b2b" stroke="#a855f7" stroke-width="2.5"/>
+  <text x="780" y="115" text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="16"
+        font-weight="bold"
+        fill="#e5e5e5">
+    Remote Repository
+  </text>
+  <text x="780" y="135" text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="12"
+        fill="#9ca3af">
+    Shared on server (e.g. GitHub)
+  </text>
+
+  <!-- Arrows: Working -> Staging -->
+  <line x1="210" y1="125" x2="250" y2="125" stroke="#e5e5e5" stroke-width="2.5"/>
+  <polygon points="250,125 242,120 242,130" fill="#e5e5e5"/>
+  <text x="230" y="110" text-anchor="middle"
+        font-family="Consolas, monospace"
+        font-size="12"
+        fill="#d1d5db">
+    git add
+  </text>
+
+  <!-- Arrows: Staging -> Local -->
+  <line x1="430" y1="125" x2="470" y2="125" stroke="#e5e5e5" stroke-width="2.5"/>
+  <polygon points="470,125 462,120 462,130" fill="#e5e5e5"/>
+  <text x="450" y="110" text-anchor="middle"
+        font-family="Consolas, monospace"
+        font-size="12"
+        fill="#d1d5db">
+    git commit
+  </text>
+
+  <!-- Arrows: Local -> Remote -->
+  <line x1="650" y1="125" x2="690" y2="125" stroke="#e5e5e5" stroke-width="2.5"/>
+  <polygon points="690,125 682,120 682,130" fill="#e5e5e5"/>
+  <text x="670" y="110" text-anchor="middle"
+        font-family="Consolas, monospace"
+        font-size="12"
+        fill="#d1d5db">
+    git push
+  </text>
+</svg>
