@@ -1,6 +1,6 @@
 # Basic Ansible Commands
 
-Ansible is an open-source tool for automating configuration management, application deployment, and task orchestration.
+**Ansible** is an open-source tool for automating configuration management, application deployment, and task orchestration.
 
 ## Ansible Architecture Overview
 
@@ -9,9 +9,9 @@ Ansible is an open-source tool for automating configuration management, applicat
 The diagram above shows Ansible's architecture with the control node managing multiple target hosts through SSH connections.
 
 > [!IMPORTANT]
-> Ansible uses SSH to connect to managed hosts and doesn't require any agents to be installed on target systems.
+> **Ansible** uses `SSH` to connect to managed hosts and doesn't require any agents to be installed on target systems.
 > 
-> Ensure SSH keys or credentials are configured for target hosts.
+> Ensure `SSH` keys or credentials are configured for target hosts.
 
 - **Check Ansible version**  
     ```bash
@@ -35,19 +35,19 @@ The diagram above shows Ansible's architecture with the control node managing mu
 
 <!-- ![Inventory Structure](https://docs.ansible.com/ansible/latest/_images/inventory_structure.png) -->
 
-The inventory file defines the hosts and groups that Ansible manages. It can be static (INI/YAML format) or dynamic (generated from external sources).
+The inventory file defines the hosts and groups that **Ansible** manages. It can be static *(INI/YAML format)* or dynamic *(generated from external sources)*.
 
 - **List inventory groups**  
   ```bash
   ansible-inventory --list
   ```
-  Displays the inventory configuration in JSON format.
+  Displays the inventory configuration in `JSON` format.
 
 - **List inventory hosts**  
   ```bash
   ansible-inventory --list --yaml
   ```
-  Displays the inventory in YAML format.
+  Displays the inventory in `YAML` format.
 
 - **Test connectivity to hosts**  
   ```bash
@@ -69,8 +69,8 @@ The inventory file defines the hosts and groups that Ansible manages. It can be 
 
 - **Install a package**  
   ```bash
-  ansible <host-pattern> -m apt -a "name=<package> state=present"  # For Debian/Ubuntu
-  ansible <host-pattern> -m yum -a "name=<package> state=present"  # For RHEL/CentOS
+  ansible <host-pattern> -m apt -a "name=<package> state=present"  # For `Debian`/`Ubuntu`
+  ansible <host-pattern> -m yum -a "name=<package> state=present"  # For `RHEL`/`CentOS`
   ```
   Installs a package on target hosts using the appropriate package manager.
 
@@ -84,7 +84,7 @@ The inventory file defines the hosts and groups that Ansible manages. It can be 
 
 <!-- ![Playbook Structure](https://docs.ansible.com/ansible/latest/_images/playbook_structure.png) -->
 
-Playbooks are YAML files that define automation tasks and can be used to configure systems, deploy software, or orchestrate complex workflows.
+Playbooks are `YAML` files that define automation tasks and can be used to configure systems, deploy software, or orchestrate complex workflows.
 
 - **Check playbook syntax**  
   ```bash
@@ -102,7 +102,7 @@ Playbooks are YAML files that define automation tasks and can be used to configu
   ```bash
   ansible-playbook -i inventory.ini <playbook.yml>
   ```
-  Executes a playbook (YAML file) to automate tasks on target hosts.
+  Executes a playbook *(`YAML` file)* to automate tasks on target hosts.
 
 - **Run playbook with specific tags**  
   ```bash
@@ -121,7 +121,7 @@ Playbooks are YAML files that define automation tasks and can be used to configu
 > [!NOTE]
 > 
 > - **Inventory file**: Define hosts in `/etc/ansible/hosts` or a custom file (e.g., `ansible -i inventory.yml ...`).
-> - **Playbook structure**: A playbook is a YAML file with tasks, roles, and variables (e.g., `tasks: - name: Install nginx ...`).
+> - **Playbook structure**: A playbook is a `YAML` file with tasks, roles, and variables (e.g., `tasks: - name: Install nginx ...`).
 > - **Modules**: Use modules like `apt`, `yum`, `file`, `service`, or `copy` for common tasks.
 > - **Variables**: Define variables in playbooks or separate files for reusable configurations.
 
