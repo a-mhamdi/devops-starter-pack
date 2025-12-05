@@ -4,9 +4,9 @@ These commands cover the basics of version control with `Git` and interacting wi
 
 ## Git Workflow Overview
 
-<!-- ![Git Workflow](https://www.atlassian.com/dam/jcr:34c86360-8b3a-4c7e-b7ef-f7f3526df20a/01.svg)
+![Git Workflow](workflow.svg)
 
-The diagram above shows the basic Git workflow: **Working Directory** → **Staging Area** → **Local Repository** → **Remote Repository**. -->
+The diagram above shows the basic Git workflow: **Working Directory** → **Staging Area** → **Local Repository** → **Remote Repository**.
 
 > [!IMPORTANT]
 >
