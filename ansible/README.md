@@ -4,7 +4,7 @@ Ansible is an open-source tool for automating configuration management, applicat
 
 ## Ansible Architecture Overview
 
-<!-- ![Ansible Architecture](https://docs.ansible.com/ansible/latest/_images/ansible_architecture.png) -->
+![Ansible Architecture](arch.svg) 
 
 The diagram above shows Ansible's architecture with the control node managing multiple target hosts through SSH connections.
 
