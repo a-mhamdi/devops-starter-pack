@@ -32,13 +32,7 @@
   </defs>
   
   <!-- Background removed for transparency -->
-  
-  <!-- Title with icon -->
-  <g filter="url(#glow)">
-    <circle cx="420" cy="20" r="8" fill="#2563eb" opacity="0.8"/>
-    <circle cx="420" cy="20" r="4" fill="#3b82f6"/>
-  </g>
-  
+ 
   <text x="450" y="26" text-anchor="middle"
         font-family="'Segoe UI', Arial, sans-serif"
         font-size="24"
