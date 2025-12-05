@@ -4,9 +4,9 @@
 
 ## Docker Architecture Overview
 
-<!-- ![Docker Architecture](https://docs.docker.com/images/architecture.svg)
+![Docker Architecture](arch.svg)
 
-The diagram above shows Docker's architecture with the Docker daemon, containers, images, and the host system. -->
+The diagram above shows Docker's architecture with the Docker daemon, containers, images, and the host system.
 
 > [!TIP]
 > 
