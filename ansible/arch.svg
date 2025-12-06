@@ -1,139 +1,193 @@
 <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
-  <!-- Dark theme background -->
-  <rect width="800" height="600" fill="#0d1117"/>
-  
   <!-- Define gradients and styles -->
   <defs>
     <linearGradient id="controlGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#EE0000;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#CC0000;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#fecaca;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#fca5a5;stop-opacity:0.95" />
     </linearGradient>
     <linearGradient id="hostGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#238636;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#1a6e2a;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#d1fae5;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#a7f3d0;stop-opacity:0.95" />
     </linearGradient>
+    <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:1" />
+    </linearGradient>
+    
     <filter id="shadow">
-      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.5"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.2"/>
+    </filter>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
     
     <!-- Arrow marker -->
-    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill="#58a6ff" />
+    <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <polygon points="0 0, 12 6, 0 12" fill="#3b82f6" />
     </marker>
   </defs>
   
   <!-- Title -->
-  <text x="400" y="30" font-family="'Segoe UI', 'Ubuntu', 'Roboto', sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#c9d1d9">
+  <g filter="url(#glow)">
+    <circle cx="370" cy="22" r="8" fill="#dc2626" opacity="0.8"/>
+    <circle cx="370" cy="22" r="4" fill="#ef4444"/>
+  </g>
+  
+  <text x="400" y="28" font-family="'Segoe UI', Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#1e293b" letter-spacing="0.5">
     Ansible Architecture
+  </text>
+  
+  <text x="400" y="48" font-family="'Segoe UI', Arial, sans-serif" font-size="13" text-anchor="middle" fill="#475569">
+    Agentless automation platform using SSH
   </text>
   
   <!-- Control Node -->
   <g filter="url(#shadow)">
-    <rect x="300" y="80" width="200" height="180" rx="10" fill="url(#controlGrad)" stroke="#990000" stroke-width="2"/>
+    <rect x="280" y="85" width="240" height="190" rx="14" fill="url(#controlGrad)" stroke="#dc2626" stroke-width="2.5"/>
+    
+    <circle cx="300" cy="105" r="5" fill="#ef4444" opacity="0.8"/>
     
     <!-- Server icon -->
-    <rect x="360" y="100" width="80" height="50" rx="3" fill="#0d1117" opacity="0.9"/>
-    <rect x="365" y="105" width="70" height="8" rx="2" fill="#EE0000"/>
-    <rect x="365" y="118" width="70" height="8" rx="2" fill="#EE0000"/>
-    <rect x="365" y="131" width="70" height="8" rx="2" fill="#EE0000"/>
+    <rect x="350" y="110" width="100" height="60" rx="6" fill="#ffffff" opacity="0.95" stroke="#dc2626" stroke-width="1.5"/>
+    <rect x="360" y="120" width="80" height="10" rx="3" fill="#fca5a5"/>
+    <rect x="360" y="135" width="80" height="10" rx="3" fill="#fca5a5"/>
+    <rect x="360" y="150" width="80" height="10" rx="3" fill="#fca5a5"/>
     
-    <text x="400" y="175" font-family="'Segoe UI', 'Ubuntu', 'Roboto', sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#FFF">
+    <text x="400" y="195" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#991b1b">
       Control Node
     </text>
-    <text x="400" y="195" font-family="'Segoe UI', 'Ubuntu', 'Roboto', sans-serif" font-size="12" text-anchor="middle" fill="#FFF">
+    <text x="400" y="213" font-family="'Segoe UI', Arial, sans-serif" font-size="12" text-anchor="middle" fill="#b91c1c">
       (Ansible Master)
     </text>
     
-    <!-- Components -->
-    <text x="400" y="220" font-family="'Segoe UI', 'Ubuntu', 'Roboto', sans-serif" font-size="11" text-anchor="middle" fill="#FFF">
-      • Playbooks
+    <!-- Components box -->
+    <rect x="295" y="225" width="210" height="40" rx="6" fill="#ffffff" opacity="0.8" stroke="#dc2626" stroke-width="1"/>
+    <text x="310" y="241" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#7f1d1d">
+      📋 Playbooks
     </text>
-    <text x="400" y="235" font-family="'Segoe UI', 'Ubuntu', 'Roboto', sans-serif" font-size="11" text-anchor="middle" fill="#FFF">
-      • Inventory
+    <text x="310" y="255" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#7f1d1d">
+      📦 Inventory
     </text>
-    <text x="400" y="250" font-family="'Segoe UI', 'Ubuntu', 'Roboto', sans-serif" font-size="11" text-anchor="middle" fill="#FFF">
-      • Modules
+    <text x="400" y="241" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#7f1d1d">
+      🔧 Modules
+    </text>
+    <text x="400" y="255" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#7f1d1d">
+      🔐 SSH Keys
     </text>
   </g>
   
   <!-- Curved SSH Connection Lines -->
-  <g stroke="#58a6ff" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)">
-    <path d="M 350 260 C 300 300, 200 380, 150 420"/>
-    <path d="M 400 260 C 400 320, 400 380, 400 420"/>
-    <path d="M 450 260 C 500 300, 600 380, 650 420"/>
+  <g stroke="#3b82f6" stroke-width="3" fill="none" marker-end="url(#arrowhead)" opacity="0.8">
+    <path d="M 350 275 Q 250 350, 150 425"/>
+    <path d="M 400 275 Q 400 350, 400 425"/>
+    <path d="M 450 275 Q 550 350, 650 425"/>
   </g>
   
-  <!-- SSH Labels with glow -->
-  <text x="220" y="330" font-family="'Segoe UI', 'Ubuntu', 'Roboto', 'Courier New', monospace" font-size="13" fill="#58a6ff" font-weight="600">SSH</text>
-  <text x="405" y="340" font-family="'Segoe UI', 'Ubuntu', 'Roboto', 'Courier New', monospace" font-size="13" fill="#58a6ff" font-weight="600">SSH</text>
-  <text x="570" y="330" font-family="'Segoe UI', 'Ubuntu', 'Roboto', 'Courier New', monospace" font-size="13" fill="#58a6ff" font-weight="600">SSH</text>
+  <!-- SSH Labels with background boxes -->
+  <rect x="200" y="325" width="60" height="22" rx="11" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="230" y="340" font-family="'Consolas', monospace" font-size="12" font-weight="600" fill="#1e40af" text-anchor="middle">SSH</text>
+  
+  <rect x="370" y="340" width="60" height="22" rx="11" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="400" y="355" font-family="'Consolas', monospace" font-size="12" font-weight="600" fill="#1e40af" text-anchor="middle">SSH</text>
+  
+  <rect x="540" y="325" width="60" height="22" rx="11" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="570" y="340" font-family="'Consolas', monospace" font-size="12" font-weight="600" fill="#1e40af" text-anchor="middle">SSH</text>
   
   <!-- Target Host 1 -->
   <g filter="url(#shadow)">
-    <rect x="50" y="430" width="200" height="140" rx="10" fill="url(#hostGrad)" stroke="#1a6e2a" stroke-width="2"/>
+    <rect x="50" y="435" width="200" height="145" rx="14" fill="url(#hostGrad)" stroke="#059669" stroke-width="2.5"/>
     
-    <rect x="110" y="450" width="80" height="50" rx="3" fill="#0d1117" opacity="0.9"/>
-    <rect x="115" y="455" width="70" height="8" rx="2" fill="#238636"/>
-    <rect x="115" y="468" width="70" height="8" rx="2" fill="#238636"/>
-    <rect x="115" y="481" width="70" height="8" rx="2" fill="#238636"/>
+    <circle cx="70" cy="455" r="5" fill="#10b981" opacity="0.8"/>
     
-    <text x="150" y="525" font-family="'Segoe UI', 'Ubuntu', 'Roboto', sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#FFF">
+    <rect x="100" y="460" width="100" height="60" rx="6" fill="#ffffff" opacity="0.95" stroke="#059669" stroke-width="1.5"/>
+    <rect x="110" y="470" width="80" height="10" rx="3" fill="#a7f3d0"/>
+    <rect x="110" y="485" width="80" height="10" rx="3" fill="#a7f3d0"/>
+    <rect x="110" y="500" width="80" height="10" rx="3" fill="#a7f3d0"/>
+    
+    <text x="150" y="543" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#065f46">
       Target Host 1
     </text>
-    <text x="150" y="545" font-family="'Segoe UI', 'Ubuntu', 'Roboto', sans-serif" font-size="11" text-anchor="middle" fill="#c9d1d9">
-      Web Server
+    <text x="150" y="560" font-family="'Segoe UI', Arial, sans-serif" font-size="11" text-anchor="middle" fill="#047857">
+      🌐 Web Server
     </text>
-    <text x="150" y="560" font-family="'Segoe UI', 'Ubuntu', 'Roboto', 'Courier New', monospace" font-size="10" text-anchor="middle" fill="#8b949e">
+    <text x="150" y="573" font-family="'Consolas', monospace" font-size="10" text-anchor="middle" fill="#059669" font-weight="600">
       192.168.1.10
     </text>
   </g>
   
   <!-- Target Host 2 -->
   <g filter="url(#shadow)">
-    <rect x="300" y="430" width="200" height="140" rx="10" fill="url(#hostGrad)" stroke="#1a6e2a" stroke-width="2"/>
+    <rect x="300" y="435" width="200" height="145" rx="14" fill="url(#hostGrad)" stroke="#059669" stroke-width="2.5"/>
     
-    <rect x="360" y="450" width="80" height="50" rx="3" fill="#0d1117" opacity="0.9"/>
-    <rect x="365" y="455" width="70" height="8" rx="2" fill="#238636"/>
-    <rect x="365" y="468" width="70" height="8" rx="2" fill="#238636"/>
-    <rect x="365" y="481" width="70" height="8" rx="2" fill="#238636"/>
+    <circle cx="320" cy="455" r="5" fill="#10b981" opacity="0.8"/>
     
-    <text x="400" y="525" font-family="'Segoe UI', 'Ubuntu', 'Roboto', sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#FFF">
+    <rect x="350" y="460" width="100" height="60" rx="6" fill="#ffffff" opacity="0.95" stroke="#059669" stroke-width="1.5"/>
+    <rect x="360" y="470" width="80" height="10" rx="3" fill="#a7f3d0"/>
+    <rect x="360" y="485" width="80" height="10" rx="3" fill="#a7f3d0"/>
+    <rect x="360" y="500" width="80" height="10" rx="3" fill="#a7f3d0"/>
+    
+    <text x="400" y="543" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#065f46">
       Target Host 2
     </text>
-    <text x="400" y="545" font-family="'Segoe UI', 'Ubuntu', 'Roboto', sans-serif" font-size="11" text-anchor="middle" fill="#c9d1d9">
-      Database Server
+    <text x="400" y="560" font-family="'Segoe UI', Arial, sans-serif" font-size="11" text-anchor="middle" fill="#047857">
+      🗄️ Database Server
     </text>
-    <text x="400" y="560" font-family="'Segoe UI', 'Ubuntu', 'Roboto', 'Courier New', monospace" font-size="10" text-anchor="middle" fill="#8b949e">
+    <text x="400" y="573" font-family="'Consolas', monospace" font-size="10" text-anchor="middle" fill="#059669" font-weight="600">
       192.168.1.11
     </text>
   </g>
   
   <!-- Target Host 3 -->
   <g filter="url(#shadow)">
-    <rect x="550" y="430" width="200" height="140" rx="10" fill="url(#hostGrad)" stroke="#1a6e2a" stroke-width="2"/>
+    <rect x="550" y="435" width="200" height="145" rx="14" fill="url(#hostGrad)" stroke="#059669" stroke-width="2.5"/>
     
-    <rect x="610" y="450" width="80" height="50" rx="3" fill="#0d1117" opacity="0.9"/>
-    <rect x="615" y="455" width="70" height="8" rx="2" fill="#238636"/>
-    <rect x="615" y="468" width="70" height="8" rx="2" fill="#238636"/>
-    <rect x="615" y="481" width="70" height="8" rx="2" fill="#238636"/>
+    <circle cx="570" cy="455" r="5" fill="#10b981" opacity="0.8"/>
     
-    <text x="650" y="525" font-family="'Segoe UI', 'Ubuntu', 'Roboto', sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#FFF">
+    <rect x="600" y="460" width="100" height="60" rx="6" fill="#ffffff" opacity="0.95" stroke="#059669" stroke-width="1.5"/>
+    <rect x="610" y="470" width="80" height="10" rx="3" fill="#a7f3d0"/>
+    <rect x="610" y="485" width="80" height="10" rx="3" fill="#a7f3d0"/>
+    <rect x="610" y="500" width="80" height="10" rx="3" fill="#a7f3d0"/>
+    
+    <text x="650" y="543" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#065f46">
       Target Host 3
     </text>
-    <text x="650" y="545" font-family="'Segoe UI', 'Ubuntu', 'Roboto', sans-serif" font-size="11" text-anchor="middle" fill="#c9d1d9">
-      App Server
+    <text x="650" y="560" font-family="'Segoe UI', Arial, sans-serif" font-size="11" text-anchor="middle" fill="#047857">
+      ⚙️ App Server
     </text>
-    <text x="650" y="560" font-family="'Segoe UI', 'Ubuntu', 'Roboto', 'Courier New', monospace" font-size="10" text-anchor="middle" fill="#8b949e">
+    <text x="650" y="573" font-family="'Consolas', monospace" font-size="10" text-anchor="middle" fill="#059669" font-weight="600">
       192.168.1.12
     </text>
   </g>
   
-  <!-- Legend -->
-  <rect x="20" y="20" width="180" height="45" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-  <text x="30" y="38" font-family="'Segoe UI', 'Ubuntu', 'Roboto', sans-serif" font-size="12" font-weight="600" fill="#c9d1d9">
+  <!-- Legend/Key Features Box -->
+  <rect x="20" y="20" width="220" height="85" rx="10" fill="#f8fafc" opacity="0.95" stroke="#94a3b8" stroke-width="2" filter="url(#shadow)"/>
+  <text x="35" y="40" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#1e293b">
     Key Features:
   </text>
-  <text x="30" y="53" font-family="'Segoe UI', 'Ubuntu', 'Roboto', sans-serif" font-size="10" fill="#8b949e">
-    • Agentless (SSH-based)
+  <text x="35" y="58" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#475569">
+    ✓ Agentless (SSH-based)
+  </text>
+  <text x="35" y="73" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#475569">
+    ✓ YAML playbooks
+  </text>
+  <text x="35" y="88" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#475569">
+    ✓ Idempotent operations
+  </text>
+  
+  <!-- Push-based notification -->
+  <rect x="560" y="20" width="220" height="55" rx="10" fill="#fef3c7" opacity="0.95" stroke="#ca8a04" stroke-width="2" filter="url(#shadow)"/>
+  <text x="670" y="40" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#854d0e" text-anchor="middle">
+    💡 Push-based Model
+  </text>
+  <text x="670" y="57" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#92400e" text-anchor="middle">
+    Control node pushes configurations
+  </text>
+  <text x="670" y="69" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#92400e" text-anchor="middle">
+    to target hosts via SSH
   </text>
 </svg>
