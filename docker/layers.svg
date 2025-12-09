@@ -1,22 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360">
-  <!-- Background with gradient -->
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-46.76 -32.555 810 260" width="810px" height="260px">
   <defs>
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#475569;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#64748b;stop-opacity:1" />
-    </linearGradient>
-    
     <linearGradient id="cardGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:0.95" />
-      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:0.95" />
+      <stop offset="0" style="stop-color:#f8fafc;stop-opacity:0.95"/>
+      <stop offset="1" style="stop-color:#e2e8f0;stop-opacity:0.95"/>
     </linearGradient>
-    
-    <linearGradient id="cardGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#f1f5f9;stop-opacity:0.95" />
-      <stop offset="100%" style="stop-color:#cbd5e1;stop-opacity:0.95" />
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.2"/>
+    </filter>
+    <linearGradient id="arrowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" style="stop-color:#2563eb;stop-opacity:0.8"/>
+      <stop offset="1" style="stop-color:#3b82f6;stop-opacity:1"/>
     </linearGradient>
-    
-    <!-- Glow effect -->
     <filter id="glow">
       <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
       <feMerge>
@@ -24,213 +19,81 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    
-    <!-- Shadow effect -->
-    <filter id="shadow">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.2"/>
-    </filter>
-  </defs>
-  
-  <!-- Background removed for transparency -->
- 
-  <text x="450" y="26" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="24"
-        font-weight="700"
-        fill="#1e293b"
-        letter-spacing="0.5">
-    Docker Image Layers
-  </text>
-  
-  <text x="450" y="46" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="13"
-        fill="#475569">
-    Each Dockerfile instruction creates a new, immutable layer
-  </text>
-  
-  <!-- Left: Dockerfile panel -->
-  <rect x="60" y="80" width="310" height="240" rx="16" ry="16"
-        fill="url(#cardGradient1)" 
-        stroke="#94a3b8" 
-        stroke-width="2"
-        filter="url(#shadow)"/>
-  
-  <!-- Dockerfile header bar -->
-  <rect x="60" y="80" width="310" height="36" rx="16" ry="16"
-        fill="#1e3a8a" opacity="0.1"/>
-  <rect x="60" y="98" width="310" height="18" fill="#cbd5e1" opacity="0.6"/>
-  
-  <circle cx="80" cy="95" r="4" fill="#ef4444"/>
-  <circle cx="94" cy="95" r="4" fill="#f59e0b"/>
-  <circle cx="108" cy="95" r="4" fill="#10b981"/>
-  
-  <text x="130" y="100"
-        font-family="'Consolas', 'Monaco', monospace"
-        font-size="13"
-        font-weight="600"
-        fill="#334155">
-    Dockerfile
-  </text>
-  
-  <!-- Dockerfile lines with better spacing -->
-  <g font-family="'Consolas', 'Monaco', monospace" font-size="13">
-    <text x="80" y="136" fill="#2563eb" font-weight="600">FROM</text>
-    <text x="140" y="136" fill="#1e293b">node:20-alpine</text>
-    
-    <text x="80" y="160" fill="#7c3aed" font-weight="600">WORKDIR</text>
-    <text x="165" y="160" fill="#1e293b">/app</text>
-    
-    <text x="80" y="184" fill="#ea580c" font-weight="600">COPY</text>
-    <text x="140" y="184" fill="#1e293b">package*.json ./</text>
-    
-    <text x="80" y="208" fill="#059669" font-weight="600">RUN</text>
-    <text x="125" y="208" fill="#1e293b">npm install</text>
-    
-    <text x="80" y="232" fill="#0284c7" font-weight="600">COPY</text>
-    <text x="140" y="232" fill="#1e293b">. .</text>
-    
-    <text x="80" y="256" fill="#ca8a04" font-weight="600">EXPOSE</text>
-    <text x="155" y="256" fill="#1e293b">3000</text>
-    
-    <text x="80" y="280" fill="#db2777" font-weight="600">CMD</text>
-    <text x="125" y="280" fill="#1e293b">["npm", "start"]</text>
-  </g>
-  
-  <!-- Arrow with animation effect -->
-  <defs>
-    <linearGradient id="arrowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:0.8" />
-      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    <linearGradient id="cardGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0" style="stop-color:#f1f5f9;stop-opacity:0.95"/>
+      <stop offset="1" style="stop-color:#cbd5e1;stop-opacity:0.95"/>
     </linearGradient>
   </defs>
-  
-  <line x1="380" y1="200" x2="448" y2="200" 
-        stroke="url(#arrowGradient)" 
-        stroke-width="3" 
-        stroke-linecap="round"/>
-  <polygon points="450,200 438,194 438,206" fill="#3b82f6" filter="url(#glow)"/>
-  
-  <rect x="388" y="175" width="85" height="22" rx="11" fill="#f1f5f9" stroke="#2563eb" stroke-width="2"/>
-  <text x="430" y="190" text-anchor="middle"
-        font-family="'Consolas', monospace"
-        font-size="11"
-        font-weight="600"
-        fill="#2563eb">
+  <rect x="-46.76" y="-32.555" width="310" height="240" rx="16" ry="16" fill="url(#cardGradient1)" stroke="#94a3b8" stroke-width="2" filter="url(#shadow)" style="stroke-width: 2;"/>
+  <rect x="-46.76" y="-32.555" width="310" height="36" rx="16" ry="16" fill="#1e3a8a" opacity="0.1" style="stroke-width: 1;"/>
+  <rect x="-46.76" y="-14.555" width="310" height="18" fill="#cbd5e1" opacity="0.6" style="stroke-width: 1;"/>
+  <circle cx="-26.76" cy="-17.555" r="4" fill="#ef4444" style="stroke-width: 1;"/>
+  <circle cx="-12.76" cy="-17.555" r="4" fill="#f59e0b" style="stroke-width: 1;"/>
+  <circle cx="1.24" cy="-17.555" r="4" fill="#10b981" style="stroke-width: 1;"/>
+  <text x="23.24" y="-12.555" font-family="'Consolas', 'Monaco', monospace" font-size="13" font-weight="600" fill="#334155" style="white-space: pre; stroke-width: 1; font-size: 13px;">
+    Dockerfile
+  </text>
+  <g font-family="'Consolas', 'Monaco', monospace" font-size="13" transform="matrix(1, 0, 0, 1, -106.76045989990234, -112.55455017089841)">
+    <text x="80" y="136" fill="#2563eb" font-weight="600" style="white-space: pre;">FROM</text>
+    <text x="140" y="136" fill="#1e293b" style="white-space: pre;">node:20-alpine</text>
+    <text x="80" y="160" fill="#7c3aed" font-weight="600" style="white-space: pre;">WORKDIR</text>
+    <text x="165" y="160" fill="#1e293b" style="white-space: pre;">/app</text>
+    <text x="80" y="184" fill="#ea580c" font-weight="600" style="white-space: pre;">COPY</text>
+    <text x="140" y="184" fill="#1e293b" style="white-space: pre;">package*.json ./</text>
+    <text x="80" y="208" fill="#059669" font-weight="600" style="white-space: pre;">RUN</text>
+    <text x="125" y="208" fill="#1e293b" style="white-space: pre;">npm install</text>
+    <text x="80" y="232" fill="#0284c7" font-weight="600" style="white-space: pre;">COPY</text>
+    <text x="140" y="232" fill="#1e293b" style="white-space: pre;">. .</text>
+    <text x="80" y="256" fill="#ca8a04" font-weight="600" style="white-space: pre;">EXPOSE</text>
+    <text x="155" y="256" fill="#1e293b" style="white-space: pre;">3000</text>
+    <text x="80" y="280" fill="#db2777" font-weight="600" style="white-space: pre;">CMD</text>
+    <text x="125" y="280" fill="#1e293b" style="white-space: pre;">["npm", "start"]</text>
+  </g>
+  <line x1="273.24" y1="87.445" x2="341.24" y2="87.445" stroke="url(#arrowGradient)" stroke-width="3" stroke-linecap="round" style="stroke-width: 3;"/>
+  <polygon points="343.24 99.445 331.24 93.445 331.24 105.445" fill="#3b82f6" filter="url(#glow)" style="stroke-width: 1;"/>
+  <rect x="281.24" y="62.445" width="100.076" height="22" rx="11" fill="#f1f5f9" stroke="#2563eb" stroke-width="2" style="stroke-width: 2;"/>
+  <text x="323.24" y="77.445" text-anchor="middle" font-family="'Consolas', monospace" font-size="11" font-weight="600" fill="#2563eb" style="white-space: pre; stroke-width: 1; font-size: 11px;">
     docker build
   </text>
-  
-  <!-- Right: Image layers stack -->
-  <rect x="500" y="80" width="370" height="240" rx="16" ry="16"
-        fill="url(#cardGradient2)" 
-        stroke="#94a3b8" 
-        stroke-width="2"
-        filter="url(#shadow)"/>
-  
-  <!-- Header -->
-  <text x="685" y="104"
-        text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="15"
-        font-weight="700"
-        fill="#1e293b">
+  <rect x="393.24" y="-32.555" width="370" height="240" rx="16" ry="16" fill="url(#cardGradient2)" stroke="#94a3b8" stroke-width="2" filter="url(#shadow)" style="stroke-width: 2;"/>
+  <text x="578.24" y="-14.555" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#1e293b" style="white-space: pre; stroke-width: 1; font-size: 15px;">
     Resulting Docker Image
   </text>
-  
-  <text x="685" y="121"
-        text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="11"
-        fill="#475569">
+  <text x="578.24" y="6.445" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#475569" style="white-space: pre; stroke-width: 1; font-size: 11px;">
     Built as a stack of immutable layers
   </text>
-  
-  <!-- Layers (stacked with 3D effect) -->
-  <!-- Layer 1: Base -->
-  <rect x="525" y="270" width="320" height="34" rx="8" ry="8"
-        fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
-  <rect x="525" y="268" width="320" height="34" rx="8" ry="8"
-        fill="none" stroke="#3b82f6" stroke-width="1" opacity="0.5"/>
-  <text x="685" y="289" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="12"
-        font-weight="600"
-        fill="#1e40af">
+  <rect x="418.24" y="157.445" width="320" height="34" rx="8" ry="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5" style="stroke-width: 2.5;"/>
+  <rect x="418.24" y="155.445" width="320" height="34" rx="8" ry="8" fill="none" stroke="#3b82f6" stroke-width="1" opacity="0.5" style="stroke-width: 1;"/>
+  <text x="578.24" y="176.445" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e40af" style="white-space: pre; stroke-width: 1; font-size: 12px;">
     Layer 1: Base image (FROM node:20-alpine)
   </text>
-  
-  <!-- Layer 2: WORKDIR -->
-  <rect x="535" y="238" width="300" height="30" rx="7" ry="7"
-        fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
-  <rect x="535" y="236" width="300" height="30" rx="7" ry="7"
-        fill="none" stroke="#8b5cf6" stroke-width="1" opacity="0.5"/>
-  <text x="685" y="256" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="11.5"
-        font-weight="600"
-        fill="#6b21a8">
+  <rect x="428.24" y="125.445" width="300" height="30" rx="7" ry="7" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5" style="stroke-width: 2.5;"/>
+  <rect x="428.24" y="123.445" width="300" height="30" rx="7" ry="7" fill="none" stroke="#8b5cf6" stroke-width="1" opacity="0.5" style="stroke-width: 1;"/>
+  <text x="578.24" y="143.445" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="600" fill="#6b21a8" style="white-space: pre; stroke-width: 1; font-size: 11.5px;">
     Layer 2: WORKDIR /app
   </text>
-  
-  <!-- Layer 3: COPY package -->
-  <rect x="545" y="208" width="280" height="28" rx="7" ry="7"
-        fill="#fed7aa" stroke="#ea580c" stroke-width="2.5"/>
-  <rect x="545" y="206" width="280" height="28" rx="7" ry="7"
-        fill="none" stroke="#f97316" stroke-width="1" opacity="0.5"/>
-  <text x="685" y="225" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="11.5"
-        font-weight="600"
-        fill="#9a3412">
+  <rect x="438.24" y="95.445" width="280" height="28" rx="7" ry="7" fill="#fed7aa" stroke="#ea580c" stroke-width="2.5" style="stroke-width: 2.5;"/>
+  <rect x="438.24" y="93.445" width="280" height="28" rx="7" ry="7" fill="none" stroke="#f97316" stroke-width="1" opacity="0.5" style="stroke-width: 1;"/>
+  <text x="578.24" y="112.445" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="600" fill="#9a3412" style="white-space: pre; stroke-width: 1; font-size: 11.5px;">
     Layer 3: COPY package*.json ./
   </text>
-  
-  <!-- Layer 4: RUN npm -->
-  <rect x="555" y="180" width="260" height="26" rx="6" ry="6"
-        fill="#d1fae5" stroke="#059669" stroke-width="2.5"/>
-  <rect x="555" y="178" width="260" height="26" rx="6" ry="6"
-        fill="none" stroke="#10b981" stroke-width="1" opacity="0.5"/>
-  <text x="685" y="197" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="11.5"
-        font-weight="600"
-        fill="#065f46">
+  <rect x="448.24" y="67.445" width="260" height="26" rx="6" ry="6" fill="#d1fae5" stroke="#059669" stroke-width="2.5" style="stroke-width: 2.5;"/>
+  <rect x="448.24" y="65.445" width="260" height="26" rx="6" ry="6" fill="none" stroke="#10b981" stroke-width="1" opacity="0.5" style="stroke-width: 1;"/>
+  <text x="578.24" y="84.445" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="600" fill="#065f46" style="white-space: pre; stroke-width: 1; font-size: 11.5px;">
     Layer 4: RUN npm install
   </text>
-  
-  <!-- Layer 5: COPY . . -->
-  <rect x="565" y="154" width="240" height="24" rx="6" ry="6"
-        fill="#bae6fd" stroke="#0284c7" stroke-width="2.5"/>
-  <rect x="565" y="152" width="240" height="24" rx="6" ry="6"
-        fill="none" stroke="#0ea5e9" stroke-width="1" opacity="0.5"/>
-  <text x="685" y="170" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="11"
-        font-weight="600"
-        fill="#075985">
+  <rect x="458.24" y="41.445" width="240" height="24" rx="6" ry="6" fill="#bae6fd" stroke="#0284c7" stroke-width="2.5" style="stroke-width: 2.5;"/>
+  <rect x="458.24" y="39.445" width="240" height="24" rx="6" ry="6" fill="none" stroke="#0ea5e9" stroke-width="1" opacity="0.5" style="stroke-width: 1;"/>
+  <text x="578.24" y="57.445" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#075985" style="white-space: pre; stroke-width: 1; font-size: 11px;">
     Layer 5: COPY . .
   </text>
-  
-  <!-- Layer 6: EXPOSE + CMD -->
-  <rect x="575" y="129" width="220" height="22" rx="6" ry="6"
-        fill="#fef3c7" stroke="#ca8a04" stroke-width="2.5"/>
-  <rect x="575" y="127" width="220" height="22" rx="6" ry="6"
-        fill="none" stroke="#eab308" stroke-width="1" opacity="0.5"/>
-  <text x="685" y="144" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="10.5"
-        font-weight="600"
-        fill="#854d0e">
+  <rect x="468.24" y="16.445" width="220" height="22" rx="6" ry="6" fill="#fef3c7" stroke="#ca8a04" stroke-width="2.5" style="stroke-width: 2.5;"/>
+  <rect x="468.24" y="14.445" width="220" height="22" rx="6" ry="6" fill="none" stroke="#eab308" stroke-width="1" opacity="0.5" style="stroke-width: 1;"/>
+  <text x="578.24" y="31.445" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="600" fill="#854d0e" style="white-space: pre; stroke-width: 1; font-size: 10.5px;">
     Layer 6: EXPOSE 3000, CMD
   </text>
-  
-  <!-- Bottom info box -->
-  <rect x="515" y="310" width="340" height="30" rx="8" fill="#f8fafc" opacity="0.8" stroke="#94a3b8" stroke-width="1.5"/>
-  <text x="685" y="328" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="11"
-        fill="#475569"
-        font-style="italic">
+  <rect x="408.24" y="197.445" width="340" height="30" rx="8" fill="#f8fafc" opacity="0.8" stroke="#94a3b8" stroke-width="1.5" style="stroke-width: 1.5;"/>
+  <text x="578.24" y="215.445" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#475569" font-style="italic" style="white-space: pre; stroke-width: 1; font-size: 11px;">
     💡 Unchanged layers are cached and reused between builds
   </text>
 </svg>
