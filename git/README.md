@@ -159,10 +159,10 @@ The diagram above shows how Git merges work, creating a new merge commit that co
 > To create a pull request on [`GitHub`](https://github.com/) 's website:
 >
 >     1. Navigate to the repository.
->     1. Click the "Fork" button.
->     1. Add your code.
->     1. Click the "Pull requests" tab.
->     1. Click "New pull request" and select the branches to compare.
->     1. Add a title and description, then submit.
+>     2. Click the "Fork" button.
+>     3. Add your code.
+>     4. Click the "Pull requests" tab.
+>     5. Click "New pull request" and select the branches to compare.
+>     6. Add a title and description, then submit.
 
 [Go Back](../README.md)
