@@ -1,32 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="280" viewBox="0 0 900 280">
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-147.55 66.338 865.827 201" width="865.827px" height="201px">
   <defs>
-    <!-- Card gradients -->
-    <linearGradient id="daemonGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:0.95" />
-      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:0.95" />
-    </linearGradient>
-    
     <linearGradient id="imagesGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#f0fdf4;stop-opacity:0.95" />
-      <stop offset="100%" style="stop-color:#dcfce7;stop-opacity:0.95" />
+      <stop offset="0" style="stop-color:#f0fdf4;stop-opacity:0.95"/>
+      <stop offset="1" style="stop-color:#dcfce7;stop-opacity:0.95"/>
     </linearGradient>
-    
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.2"/>
+    </filter>
+    <linearGradient id="daemonGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0" style="stop-color:#f8fafc;stop-opacity:0.95"/>
+      <stop offset="1" style="stop-color:#e2e8f0;stop-opacity:0.95"/>
+    </linearGradient>
     <linearGradient id="containersGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#faf5ff;stop-opacity:0.95" />
-      <stop offset="100%" style="stop-color:#f3e8ff;stop-opacity:0.95" />
+      <stop offset="0" style="stop-color:#faf5ff;stop-opacity:0.95"/>
+      <stop offset="1" style="stop-color:#f3e8ff;stop-opacity:0.95"/>
     </linearGradient>
-    
     <linearGradient id="arrowGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#059669;stop-opacity:0.8" />
-      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="0" style="stop-color:#059669;stop-opacity:0.8"/>
+      <stop offset="1" style="stop-color:#10b981;stop-opacity:1"/>
     </linearGradient>
-    
-    <linearGradient id="arrowGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.8" />
-      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
-    </linearGradient>
-    
-    <!-- Glow effect -->
     <filter id="glow">
       <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
       <feMerge>
@@ -34,229 +27,84 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    
-    <!-- Shadow effect -->
-    <filter id="shadow">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.2"/>
-    </filter>
+    <linearGradient id="arrowGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" style="stop-color:#7c3aed;stop-opacity:0.8"/>
+      <stop offset="1" style="stop-color:#a855f7;stop-opacity:1"/>
+    </linearGradient>
   </defs>
-
-  <!-- Title -->
-  
-  <text x="450" y="28" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="24"
-        font-weight="700"
-        fill="#1e293b"
-        letter-spacing="0.5">
-    Docker Architecture Overview
-  </text>
-  
-  <text x="450" y="48" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="13"
-        fill="#475569">
-    Host System · Docker Daemon · Images · Containers
-  </text>
-
-  <!-- Host System (outer box) -->
-  <rect x="30" y="70" width="840" height="190" rx="16" ry="16"
-        fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="8,4"/>
-  <text x="45" y="88"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="13"
-        font-weight="700"
-        fill="#475569">
+  <rect x="-147.55" y="66.338" width="865.827" height="190" rx="16" ry="16" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="8,4" style="stroke-width: 2.5;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)"/>
+  <text x="-132.55" y="84.338" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#475569" style="white-space: pre; stroke-width: 1; font-size: 13px;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)">
     Host System
   </text>
-  <text x="45" y="104"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="11"
-        fill="#64748b">
+  <text x="-132.55" y="100.338" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#64748b" style="white-space: pre; stroke-width: 1; font-size: 11px;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)">
     OS + Hardware
   </text>
-
-  <!-- Images section -->
-  <rect x="60" y="120" width="220" height="110" rx="14" ry="14"
-        fill="url(#imagesGradient)" 
-        stroke="#059669" 
-        stroke-width="2.5"
-        filter="url(#shadow)"/>
-  
-  <circle cx="80" cy="140" r="5" fill="#10b981" opacity="0.8"/>
-  
-  <text x="170" y="148" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="17"
-        font-weight="700"
-        fill="#065f46">
+  <rect x="-117.55" y="116.338" width="220" height="110" rx="14" ry="14" fill="url(#imagesGradient)" stroke="#059669" stroke-width="2.5" filter="url(#shadow)" style="stroke-width: 2.5;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)"/>
+  <circle cx="-97.553" cy="136.338" r="5" fill="#10b981" opacity="0.8" style="stroke-width: 1;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)"/>
+  <text x="-7.553" y="144.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#065f46" style="white-space: pre; stroke-width: 1; font-size: 17px;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)">
     Images
   </text>
-  <text x="170" y="167" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="12"
-        fill="#047857">
+  <text x="-7.553" y="163.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#047857" style="white-space: pre; stroke-width: 1; font-size: 12px;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)">
     Read-only templates
   </text>
-  
-  <!-- Smaller image blocks inside -->
-  <rect x="75" y="185" width="55" height="30" rx="6" ry="6"
-        fill="#ffffff" stroke="#10b981" stroke-width="2" opacity="0.9"/>
-  <text x="102.5" y="204" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="10"
-        font-weight="600"
-        fill="#065f46">
+  <rect x="-102.55" y="181.338" width="55" height="30" rx="6" ry="6" fill="#ffffff" stroke="#10b981" stroke-width="2" opacity="0.9" style="stroke-width: 2;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)"/>
+  <text x="-75.053" y="200.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="600" fill="#065f46" style="white-space: pre; stroke-width: 1; font-size: 10px;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)">
     IMG1
   </text>
-  
-  <rect x="140" y="185" width="55" height="30" rx="6" ry="6"
-        fill="#ffffff" stroke="#10b981" stroke-width="2" opacity="0.9"/>
-  <text x="167.5" y="204" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="10"
-        font-weight="600"
-        fill="#065f46">
+  <rect x="-37.553" y="181.338" width="55" height="30" rx="6" ry="6" fill="#ffffff" stroke="#10b981" stroke-width="2" opacity="0.9" style="stroke-width: 2;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)"/>
+  <text x="-10.053" y="200.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="600" fill="#065f46" style="white-space: pre; stroke-width: 1; font-size: 10px;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)">
     IMG2
   </text>
-  
-  <rect x="205" y="185" width="55" height="30" rx="6" ry="6"
-        fill="#ffffff" stroke="#10b981" stroke-width="2" opacity="0.9"/>
-  <text x="232.5" y="204" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="10"
-        font-weight="600"
-        fill="#065f46">
+  <rect x="27.447" y="181.338" width="55" height="30" rx="6" ry="6" fill="#ffffff" stroke="#10b981" stroke-width="2" opacity="0.9" style="stroke-width: 2;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)"/>
+  <text x="54.947" y="200.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="600" fill="#065f46" style="white-space: pre; stroke-width: 1; font-size: 10px;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)">
     IMG3
   </text>
-
-  <!-- Docker Daemon -->
-  <rect x="350" y="120" width="200" height="110" rx="14" ry="14"
-        fill="url(#daemonGradient)" 
-        stroke="#2563eb" 
-        stroke-width="2.5"
-        filter="url(#shadow)"/>
-  
-  <circle cx="370" cy="140" r="5" fill="#3b82f6" opacity="0.8"/>
-  
-  <text x="450" y="153" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="17"
-        font-weight="700"
-        fill="#1e40af">
+  <rect x="190.447" y="116.338" width="200" height="110" rx="14" ry="14" fill="url(#daemonGradient)" stroke="#2563eb" stroke-width="2.5" filter="url(#shadow)" style="stroke-width: 2.5;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)"/>
+  <circle cx="210.447" cy="136.338" r="5" fill="#3b82f6" opacity="0.8" style="stroke-width: 1;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)"/>
+  <text x="290.447" y="149.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#1e40af" style="white-space: pre; stroke-width: 1; font-size: 17px;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)">
     Docker Daemon
   </text>
-  <text x="450" y="172" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="12"
-        fill="#1e3a8a">
+  <text x="290.447" y="168.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#1e3a8a" style="white-space: pre; stroke-width: 1; font-size: 12px;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)">
     Manages images &amp; containers
   </text>
-  
-  <!-- Docker Engine icon representation -->
-  <rect x="410" y="190" width="80" height="28" rx="6" ry="6"
-        fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="450" y="208" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="11"
-        font-weight="600"
-        fill="#1e40af">
+  <rect x="250.447" y="186.338" width="80" height="28" rx="6" ry="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5" style="stroke-width: 1.5;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)"/>
+  <text x="290.447" y="204.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#1e40af" style="white-space: pre; stroke-width: 1; font-size: 11px;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)">
     Docker Engine
   </text>
-
-  <!-- Containers section -->
-  <rect x="620" y="120" width="230" height="110" rx="14" ry="14"
-        fill="url(#containersGradient)" 
-        stroke="#7c3aed" 
-        stroke-width="2.5"
-        filter="url(#shadow)"/>
-  
-  <circle cx="640" cy="140" r="5" fill="#a855f7" opacity="0.8"/>
-  
-  <text x="735" y="153" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="17"
-        font-weight="700"
-        fill="#6b21a8">
+  <rect x="474.447" y="116.338" width="230" height="110" rx="14" ry="14" fill="url(#containersGradient)" stroke="#7c3aed" stroke-width="2.5" filter="url(#shadow)" style="stroke-width: 2.5;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)"/>
+  <circle cx="484.447" cy="136.338" r="5" fill="#a855f7" opacity="0.8" style="stroke-width: 1;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)"/>
+  <text x="579.447" y="149.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#6b21a8" style="white-space: pre; stroke-width: 1; font-size: 17px;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)">
     Containers
   </text>
-  <text x="735" y="172" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="12"
-        fill="#7e22ce">
+  <text x="579.447" y="168.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#7e22ce" style="white-space: pre; stroke-width: 1; font-size: 12px;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)">
     Running isolated apps
   </text>
-
-  <!-- Individual containers -->
-  <rect x="640" y="188" width="60" height="32" rx="7" ry="7"
-        fill="#ffffff" stroke="#a855f7" stroke-width="2" opacity="0.9"/>
-  <text x="670" y="208" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="11"
-        font-weight="600"
-        fill="#6b21a8">
+  <rect x="488.447" y="184.338" width="60" height="32" rx="7" ry="7" fill="#ffffff" stroke="#a855f7" stroke-width="2" opacity="0.9" style="stroke-width: 2;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)"/>
+  <text x="516.447" y="204.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#6b21a8" style="white-space: pre; stroke-width: 1; font-size: 11px;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)">
     C1
   </text>
-
-  <rect x="710" y="188" width="60" height="32" rx="7" ry="7"
-        fill="#ffffff" stroke="#a855f7" stroke-width="2" opacity="0.9"/>
-  <text x="740" y="208" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="11"
-        font-weight="600"
-        fill="#6b21a8">
+  <rect x="559.447" y="184.338" width="60" height="32" rx="7" ry="7" fill="#ffffff" stroke="#a855f7" stroke-width="2" opacity="0.9" style="stroke-width: 2;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)"/>
+  <text x="587.447" y="204.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#6b21a8" style="white-space: pre; stroke-width: 1; font-size: 11px;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)">
     C2
   </text>
-
-  <rect x="780" y="188" width="60" height="32" rx="7" ry="7"
-        fill="#ffffff" stroke="#a855f7" stroke-width="2" opacity="0.9"/>
-  <text x="810" y="208" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="11"
-        font-weight="600"
-        fill="#6b21a8">
+  <rect x="631.447" y="184.338" width="60" height="32" rx="7" ry="7" fill="#ffffff" stroke="#a855f7" stroke-width="2" opacity="0.9" style="stroke-width: 2;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)"/>
+  <text x="658.447" y="204.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#6b21a8" style="white-space: pre; stroke-width: 1; font-size: 11px;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)">
     C3
   </text>
-
-  <!-- Arrow: Images -> Daemon -->
-  <line x1="290" y1="175" x2="340" y2="175" 
-        stroke="url(#arrowGradient1)" 
-        stroke-width="3" 
-        stroke-linecap="round"/>
-  <polygon points="342,175 330,169 330,181" fill="#10b981" filter="url(#glow)"/>
-  
-  <rect x="287" y="152" width="80" height="20" rx="10" fill="#f0fdf4" stroke="#059669" stroke-width="1.5"/>
-  <text x="327" y="166" text-anchor="middle"
-        font-family="'Consolas', monospace"
-        font-size="11"
-        font-weight="600"
-        fill="#047857">
+  <line x1="112.447" y1="171.338" x2="162.447" y2="171.338" stroke="url(#arrowGradient1)" stroke-width="3" stroke-linecap="round" style="stroke-width: 3;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)"/>
+  <polygon points="182.447 180.338 170.447 174.338 170.447 186.338" fill="#10b981" filter="url(#glow)" style="stroke-width: 1;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)"/>
+  <rect x="107.447" y="148.338" width="80" height="20" rx="10" fill="#f0fdf4" stroke="#059669" stroke-width="1.5" style="stroke-width: 1.5;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)"/>
+  <text x="141.447" y="162.338" text-anchor="middle" font-family="'Consolas', monospace" font-size="11" font-weight="600" fill="#047857" style="white-space: pre; stroke-width: 1; font-size: 11px;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)">
     docker pull
   </text>
-
-  <!-- Arrow: Daemon -> Containers -->
-  <line x1="560" y1="175" x2="610" y2="175" 
-        stroke="url(#arrowGradient2)" 
-        stroke-width="3" 
-        stroke-linecap="round"/>
-  <polygon points="612,175 600,169 600,181" fill="#a855f7" filter="url(#glow)"/>
-  
-  <rect x="555" y="152" width="75" height="20" rx="10" fill="#faf5ff" stroke="#7c3aed" stroke-width="1.5"/>
-  <text x="592.5" y="166" text-anchor="middle"
-        font-family="'Consolas', monospace"
-        font-size="11"
-        font-weight="600"
-        fill="#7e22ce">
+  <line x1="400.447" y1="171.338" x2="450.447" y2="171.338" stroke="url(#arrowGradient2)" stroke-width="3" stroke-linecap="round" style="stroke-width: 3;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)"/>
+  <polygon points="458.447 181.338 446.447 175.338 446.447 187.338" fill="#a855f7" filter="url(#glow)" style="stroke-width: 1;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)"/>
+  <rect x="395.447" y="148.338" width="75" height="20" rx="10" fill="#faf5ff" stroke="#7c3aed" stroke-width="1.5" style="stroke-width: 1.5;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)"/>
+  <text x="426.947" y="162.338" text-anchor="middle" font-family="'Consolas', monospace" font-size="11" font-weight="600" fill="#7e22ce" style="white-space: pre; stroke-width: 1; font-size: 11px;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)">
     docker run
   </text>
-
-  <!-- Docker CLI info box -->
-  <rect x="60" y="245" width="220" height="26" rx="8" fill="#f8fafc" opacity="0.8" stroke="#94a3b8" stroke-width="1.5"/>
-  <text x="170" y="262" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="11"
-        font-weight="600"
-        fill="#475569">
+  <rect x="-117.55" y="241.338" width="220" height="26" rx="8" fill="#f8fafc" opacity="0.8" stroke="#94a3b8" stroke-width="1.5" style="stroke-width: 1.5;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)"/>
+  <text x="-7.553" y="258.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#475569" style="white-space: pre; stroke-width: 1; font-size: 11px;" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)">
     💻 Docker CLI (commands you run)
   </text>
 </svg>
