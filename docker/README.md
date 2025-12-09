@@ -6,7 +6,7 @@
 
 ![Docker Architecture](arch.svg)
 
-The diagram above shows Docker's architecture with the Docker daemon, containers, images, and the host system.
+The diagram above shows `Docker`'s architecture with the `Docker` daemon, containers, images, and the host system.
 
 > [!TIP]
 > 
@@ -88,7 +88,7 @@ The diagram above shows Docker's architecture with the Docker daemon, containers
 
 ![Docker Layers](layers.svg)
 
-The diagram above shows how Docker images are built in layers, with each instruction creating a new layer.
+The diagram above shows how `Docker` images are built in layers, with each instruction creating a new layer.
 
 The `Dockerfile` is a text document that contains all the commands to assemble a customized image. This file contains a series of commands and arguments that are executed automatically in order to assemble an image. 
 
