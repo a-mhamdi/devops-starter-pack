@@ -47,77 +47,77 @@
   <g filter="url(#shadow)" transform="matrix(1, 0, 0, 1, -136.01220703125, 123.71206665039062)">
     <rect x="50" y="80" width="180" height="100" rx="14" ry="14" fill="url(#workingGrad)" stroke="#2563eb" stroke-width="2.5"/>
     <circle cx="70" cy="100" r="5" fill="#3b82f6" opacity="0.8"/>
-    <text x="140" y="118" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#1e40af" style="white-space: pre;">
+    <text x="140" y="118" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="16" font-weight="700" fill="#1e40af" style="white-space: pre;">
       Working Directory
     </text>
-    <text x="140" y="138" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#1e3a8a" style="white-space: pre;">
+    <text x="140" y="138" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="12" fill="#1e3a8a" style="white-space: pre;">
       📁 Your files on disk
     </text>
     <rect x="70" y="150" width="50" height="20" rx="4" fill="#ffffff" opacity="0.8" stroke="#3b82f6" stroke-width="1.5"/>
-    <text x="95" y="164" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#1e40af" font-weight="600" style="white-space: pre;">file.js</text>
+    <text x="95" y="164" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#1e40af" font-weight="600" style="white-space: pre;">file.js</text>
     <rect x="141" y="150" width="50" height="20" rx="4" fill="#ffffff" opacity="0.8" stroke="#3b82f6" stroke-width="1.5"/>
-    <text x="167" y="164" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#1e40af" font-weight="600" style="white-space: pre; font-size: 9px;">index.html</text>
+    <text x="167" y="164" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#1e40af" font-weight="600" style="white-space: pre; font-size: 9px;">index.html</text>
   </g>
   <line x1="98.988" y1="253.712" x2="128.988" y2="253.712" stroke="url(#arrowGrad1)" stroke-width="3" stroke-linecap="round" style="stroke-width: 3;"/>
   <polygon points="152.988 261.712 140.988 255.712 140.988 267.712" fill="#10b981" filter="url(#glow)" style="stroke-width: 1;"/>
   <rect x="96.988" y="230.712" width="70" height="20" rx="10" fill="#d1fae5" stroke="#059669" stroke-width="1.5" style="stroke-width: 1.5;"/>
-  <text x="124.988" y="244.712" text-anchor="middle" font-family="'Consolas', monospace" font-size="11" font-weight="600" fill="#047857" style="white-space: pre; stroke-width: 1; font-size: 11px;">
+  <text x="124.988" y="244.712" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="11" font-weight="600" fill="#047857" style="white-space: pre; stroke-width: 1; font-size: 11px;">
     git add
   </text>
   <g filter="url(#shadow)" transform="matrix(1, 0, 0, 1, -111.01220703125001, 123.71206665039062)">
     <rect x="280" y="80" width="180" height="100" rx="14" ry="14" fill="url(#stagingGrad)" stroke="#059669" stroke-width="2.5"/>
     <circle cx="300" cy="100" r="5" fill="#10b981" opacity="0.8"/>
-    <text x="370" y="118" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#065f46" style="white-space: pre;">
+    <text x="370" y="118" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="16" font-weight="700" fill="#065f46" style="white-space: pre;">
       Staging Area
     </text>
-    <text x="370" y="138" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#047857" style="white-space: pre;">
+    <text x="370" y="138" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="12" fill="#047857" style="white-space: pre;">
       ✓ Files to be committed
     </text>
     <rect x="325" y="150" width="90" height="20" rx="4" fill="#ffffff" opacity="0.8" stroke="#10b981" stroke-width="1.5"/>
-    <text x="370" y="164" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#065f46" font-weight="600" style="white-space: pre;">staged changes</text>
+    <text x="370" y="164" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#065f46" font-weight="600" style="white-space: pre;">staged changes</text>
   </g>
   <line x1="353.988" y1="253.712" x2="383.988" y2="253.712" stroke="url(#arrowGrad2)" stroke-width="3" stroke-linecap="round" style="stroke-width: 3;"/>
   <polygon points="414.988 259.712 402.988 253.712 402.988 265.712" fill="#f97316" filter="url(#glow)" style="stroke-width: 1;"/>
   <rect x="349.988" y="229.712" width="80" height="20" rx="10" fill="#fed7aa" stroke="#ea580c" stroke-width="1.5" style="stroke-width: 1.5;"/>
-  <text x="381.988" y="244.712" text-anchor="middle" font-family="'Consolas', monospace" font-size="11" font-weight="600" fill="#c2410c" style="white-space: pre; stroke-width: 1; font-size: 11px;">
+  <text x="381.988" y="244.712" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="11" font-weight="600" fill="#c2410c" style="white-space: pre; stroke-width: 1; font-size: 11px;">
     git commit
   </text>
   <g filter="url(#shadow)" transform="matrix(1, 0, 0, 1, -79.01220703125001, 123.71206665039062)">
     <rect x="510" y="80" width="180" height="100" rx="14" ry="14" fill="url(#localGrad)" stroke="#ea580c" stroke-width="2.5"/>
     <circle cx="530" cy="100" r="5" fill="#f97316" opacity="0.8"/>
-    <text x="600" y="118" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#9a3412" style="white-space: pre;">
+    <text x="600" y="118" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="16" font-weight="700" fill="#9a3412" style="white-space: pre;">
       Local Repository
     </text>
-    <text x="600" y="138" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#c2410c" style="white-space: pre;">
+    <text x="600" y="138" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="12" fill="#c2410c" style="white-space: pre;">
       💾 Commits on your machine
     </text>
     <rect x="530" y="150" width="35" height="20" rx="4" fill="#ffffff" opacity="0.8" stroke="#f97316" stroke-width="1.5"/>
-    <text x="547.5" y="164" text-anchor="middle" font-family="'Consolas', monospace" font-size="8" fill="#9a3412" font-weight="600" style="white-space: pre;">abc123</text>
+    <text x="547.5" y="164" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#9a3412" font-weight="600" style="white-space: pre;">abc123</text>
     <rect x="573" y="150" width="35" height="20" rx="4" fill="#ffffff" opacity="0.8" stroke="#f97316" stroke-width="1.5"/>
-    <text x="590.5" y="164" text-anchor="middle" font-family="'Consolas', monospace" font-size="8" fill="#9a3412" font-weight="600" style="white-space: pre;">def456</text>
+    <text x="590.5" y="164" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#9a3412" font-weight="600" style="white-space: pre;">def456</text>
   </g>
   <line x1="617.988" y1="253.712" x2="647.988" y2="253.712" stroke="url(#arrowGrad3)" stroke-width="3" stroke-linecap="round" style="stroke-width: 3;"/>
   <polygon points="674.988 258.712 662.988 252.712 662.988 264.712" fill="#a855f7" filter="url(#glow)" style="stroke-width: 1;"/>
   <rect x="612.988" y="230.712" width="73" height="20" rx="10" fill="#e9d5ff" stroke="#7c3aed" stroke-width="1.5" style="stroke-width: 1.5;"/>
-  <text x="640.488" y="244.712" text-anchor="middle" font-family="'Consolas', monospace" font-size="11" font-weight="600" fill="#7e22ce" style="white-space: pre; stroke-width: 1; font-size: 11px;">
+  <text x="640.488" y="244.712" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="11" font-weight="600" fill="#7e22ce" style="white-space: pre; stroke-width: 1; font-size: 11px;">
     git push
   </text>
   <g filter="url(#shadow)" transform="matrix(1, 0, 0, 1, -52.01220703125, 123.71206665039062)">
     <rect x="740" y="80" width="180" height="100" rx="14" ry="14" fill="url(#remoteGrad)" stroke="#7c3aed" stroke-width="2.5"/>
     <circle cx="760" cy="100" r="5" fill="#a855f7" opacity="0.8"/>
-    <text x="830" y="118" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#6b21a8" style="white-space: pre;">
+    <text x="830" y="118" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="16" font-weight="700" fill="#6b21a8" style="white-space: pre;">
       Remote Repository
     </text>
-    <text x="830" y="138" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#7e22ce" style="white-space: pre;">
+    <text x="830" y="138" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="12" fill="#7e22ce" style="white-space: pre;">
       ☁️ Shared (e.g. GitHub)
     </text>
     <rect x="770" y="150" width="120" height="20" rx="4" fill="#ffffff" opacity="0.8" stroke="#a855f7" stroke-width="1.5"/>
-    <text x="830" y="164" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#6b21a8" font-weight="600" style="white-space: pre;">origin/main</text>
+    <text x="830" y="164" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#6b21a8" font-weight="600" style="white-space: pre;">origin/main</text>
   </g>
   <line x1="647.988" y1="278.712" x2="617.988" y2="278.712" stroke="url(#pullArrowGrad)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4,3" style="stroke-width: 2.5;"/>
   <polygon points="615.988 274.712 627.988 268.712 627.988 280.712" fill="#3b82f6" opacity="0.8" style="stroke-width: 1;"/>
   <rect x="611.988" y="285.712" width="73" height="18" rx="9" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5" style="stroke-width: 1.5;"/>
-  <text x="643.488" y="298.712" text-anchor="middle" font-family="'Consolas', monospace" font-size="10" font-weight="600" fill="#1e40af" style="white-space: pre; stroke-width: 1; font-size: 10px;">
+  <text x="643.488" y="298.712" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" font-weight="600" fill="#1e40af" style="white-space: pre; stroke-width: 1; font-size: 10px;">
     git pull
   </text>
 </svg>
