@@ -33,78 +33,78 @@
     </linearGradient>
   </defs>
   <rect x="-137.75" y="66.338" width="856.029" height="211.057" rx="16" ry="16" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="8,4" style="stroke-width: 2.5;"/>
-  <text x="-132.55" y="84.338" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#475569" style="white-space: pre; stroke-width: 1; font-size: 13px;">
+  <text x="-132.55" y="84.338" font-family="'Consolas', 'Monaco', monospace" font-size="13" font-weight="700" fill="#475569" style="white-space: pre; stroke-width: 1; font-size: 13px;">
     Host System
   </text>
-  <text x="-132.55" y="100.338" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#64748b" style="white-space: pre; stroke-width: 1; font-size: 11px;">
+  <text x="-132.55" y="100.338" font-family="'Consolas', 'Monaco', monospace" font-size="11" fill="#64748b" style="white-space: pre; stroke-width: 1; font-size: 11px;">
     OS + Hardware
   </text>
   <rect x="-117.55" y="116.338" width="220" height="110" rx="14" ry="14" fill="url(#imagesGradient)" stroke="#059669" stroke-width="2.5" filter="url(#shadow)" style="stroke-width: 2.5;"/>
   <circle cx="-97.553" cy="136.338" r="5" fill="#10b981" opacity="0.8" style="stroke-width: 1;"/>
-  <text x="-7.553" y="144.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#065f46" style="white-space: pre; stroke-width: 1; font-size: 17px;">
+  <text x="-7.553" y="144.338" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="17" font-weight="700" fill="#065f46" style="white-space: pre; stroke-width: 1; font-size: 17px;">
     Images
   </text>
-  <text x="-7.553" y="163.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#047857" style="white-space: pre; stroke-width: 1; font-size: 12px;">
+  <text x="-7.553" y="163.338" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="12" fill="#047857" style="white-space: pre; stroke-width: 1; font-size: 12px;">
     Read-only templates
   </text>
   <rect x="-102.55" y="181.338" width="55" height="30" rx="6" ry="6" fill="#ffffff" stroke="#10b981" stroke-width="2" opacity="0.9" style="stroke-width: 2;"/>
-  <text x="-75.053" y="200.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="600" fill="#065f46" style="white-space: pre; stroke-width: 1; font-size: 10px;">
+  <text x="-75.053" y="200.338" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" font-weight="600" fill="#065f46" style="white-space: pre; stroke-width: 1; font-size: 10px;">
     IMG1
   </text>
   <rect x="-37.553" y="181.338" width="55" height="30" rx="6" ry="6" fill="#ffffff" stroke="#10b981" stroke-width="2" opacity="0.9" style="stroke-width: 2;"/>
-  <text x="-10.053" y="200.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="600" fill="#065f46" style="white-space: pre; stroke-width: 1; font-size: 10px;">
+  <text x="-10.053" y="200.338" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" font-weight="600" fill="#065f46" style="white-space: pre; stroke-width: 1; font-size: 10px;">
     IMG2
   </text>
   <rect x="27.447" y="181.338" width="55" height="30" rx="6" ry="6" fill="#ffffff" stroke="#10b981" stroke-width="2" opacity="0.9" style="stroke-width: 2;"/>
-  <text x="54.947" y="200.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="600" fill="#065f46" style="white-space: pre; stroke-width: 1; font-size: 10px;">
+  <text x="54.947" y="200.338" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" font-weight="600" fill="#065f46" style="white-space: pre; stroke-width: 1; font-size: 10px;">
     IMG3
   </text>
   <rect x="190.447" y="116.338" width="200" height="110" rx="14" ry="14" fill="url(#daemonGradient)" stroke="#2563eb" stroke-width="2.5" filter="url(#shadow)" style="stroke-width: 2.5;"/>
   <circle cx="210.447" cy="136.338" r="5" fill="#3b82f6" opacity="0.8" style="stroke-width: 1;"/>
-  <text x="290.447" y="149.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#1e40af" style="white-space: pre; stroke-width: 1; font-size: 17px;">
+  <text x="290.447" y="149.338" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="17" font-weight="700" fill="#1e40af" style="white-space: pre; stroke-width: 1; font-size: 17px;">
     Docker Daemon
   </text>
-  <text x="290.447" y="168.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#1e3a8a" style="white-space: pre; stroke-width: 1; font-size: 12px;">
+  <text x="290.447" y="168.338" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="12" fill="#1e3a8a" style="white-space: pre; stroke-width: 1; font-size: 12px;">
     Manages images &amp; containers
   </text>
   <rect x="250.447" y="186.338" width="80" height="28" rx="6" ry="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5" style="stroke-width: 1.5;"/>
-  <text x="290.447" y="204.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#1e40af" style="white-space: pre; stroke-width: 1; font-size: 11px;">
+  <text x="290.447" y="204.338" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="11" font-weight="600" fill="#1e40af" style="white-space: pre; stroke-width: 1; font-size: 11px;">
     Docker Engine
   </text>
   <rect x="474.447" y="116.338" width="230" height="110" rx="14" ry="14" fill="url(#containersGradient)" stroke="#7c3aed" stroke-width="2.5" filter="url(#shadow)" style="stroke-width: 2.5;"/>
   <circle cx="484.447" cy="136.338" r="5" fill="#a855f7" opacity="0.8" style="stroke-width: 1;"/>
-  <text x="579.447" y="149.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#6b21a8" style="white-space: pre; stroke-width: 1; font-size: 17px;">
+  <text x="579.447" y="149.338" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="17" font-weight="700" fill="#6b21a8" style="white-space: pre; stroke-width: 1; font-size: 17px;">
     Containers
   </text>
-  <text x="579.447" y="168.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#7e22ce" style="white-space: pre; stroke-width: 1; font-size: 12px;">
+  <text x="579.447" y="168.338" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="12" fill="#7e22ce" style="white-space: pre; stroke-width: 1; font-size: 12px;">
     Running isolated apps
   </text>
   <rect x="488.447" y="184.338" width="60" height="32" rx="7" ry="7" fill="#ffffff" stroke="#a855f7" stroke-width="2" opacity="0.9" style="stroke-width: 2;"/>
-  <text x="516.447" y="204.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#6b21a8" style="white-space: pre; stroke-width: 1; font-size: 11px;">
+  <text x="516.447" y="204.338" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="11" font-weight="600" fill="#6b21a8" style="white-space: pre; stroke-width: 1; font-size: 11px;">
     C1
   </text>
   <rect x="559.447" y="184.338" width="60" height="32" rx="7" ry="7" fill="#ffffff" stroke="#a855f7" stroke-width="2" opacity="0.9" style="stroke-width: 2;"/>
-  <text x="587.447" y="204.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#6b21a8" style="white-space: pre; stroke-width: 1; font-size: 11px;">
+  <text x="587.447" y="204.338" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="11" font-weight="600" fill="#6b21a8" style="white-space: pre; stroke-width: 1; font-size: 11px;">
     C2
   </text>
   <rect x="631.447" y="184.338" width="60" height="32" rx="7" ry="7" fill="#ffffff" stroke="#a855f7" stroke-width="2" opacity="0.9" style="stroke-width: 2;"/>
-  <text x="658.447" y="204.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#6b21a8" style="white-space: pre; stroke-width: 1; font-size: 11px;">
+  <text x="658.447" y="204.338" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="11" font-weight="600" fill="#6b21a8" style="white-space: pre; stroke-width: 1; font-size: 11px;">
     C3
   </text>
   <line x1="112.447" y1="171.338" x2="162.447" y2="171.338" stroke="url(#arrowGradient1)" stroke-width="3" stroke-linecap="round" style="stroke-width: 3;"/>
   <polygon points="182.447 180.338 170.447 174.338 170.447 186.338" fill="#10b981" filter="url(#glow)" style="stroke-width: 1;"/>
   <rect x="107.447" y="148.338" width="80" height="20" rx="10" fill="#f0fdf4" stroke="#059669" stroke-width="1.5" style="stroke-width: 1.5;"/>
-  <text x="141.447" y="162.338" text-anchor="middle" font-family="'Consolas', monospace" font-size="11" font-weight="600" fill="#047857" style="white-space: pre; stroke-width: 1; font-size: 11px;">
+  <text x="141.447" y="162.338" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="11" font-weight="600" fill="#047857" style="white-space: pre; stroke-width: 1; font-size: 11px;">
     docker pull
   </text>
   <line x1="400.447" y1="171.338" x2="450.447" y2="171.338" stroke="url(#arrowGradient2)" stroke-width="3" stroke-linecap="round" style="stroke-width: 3;"/>
   <polygon points="458.447 181.338 446.447 175.338 446.447 187.338" fill="#a855f7" filter="url(#glow)" style="stroke-width: 1;"/>
   <rect x="395.447" y="148.338" width="75" height="20" rx="10" fill="#faf5ff" stroke="#7c3aed" stroke-width="1.5" style="stroke-width: 1.5;"/>
-  <text x="426.947" y="162.338" text-anchor="middle" font-family="'Consolas', monospace" font-size="11" font-weight="600" fill="#7e22ce" style="white-space: pre; stroke-width: 1; font-size: 11px;">
+  <text x="426.947" y="162.338" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="11" font-weight="600" fill="#7e22ce" style="white-space: pre; stroke-width: 1; font-size: 11px;">
     docker run
   </text>
   <rect x="-117.55" y="239.338" width="220" height="26" rx="8" fill="#f8fafc" opacity="0.8" stroke="#94a3b8" stroke-width="1.5" style="stroke-width: 1.5;"/>
-  <text x="-7.553" y="256.338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#475569" style="white-space: pre; stroke-width: 1; font-size: 11px;">
+  <text x="-7.553" y="256.338" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="11" font-weight="600" fill="#475569" style="white-space: pre; stroke-width: 1; font-size: 11px;">
     💻 Docker CLI (commands you run)
   </text>
 </svg>
