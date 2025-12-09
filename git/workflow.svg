@@ -1,52 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260">
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-91.8872 203.7121 969.8984 100" width="969.898px" height="100px">
   <defs>
-    <!-- Gradients for each stage -->
-    <linearGradient id="workingGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:0.95" />
-      <stop offset="100%" style="stop-color:#bfdbfe;stop-opacity:0.95" />
-    </linearGradient>
-    
-    <linearGradient id="stagingGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#d1fae5;stop-opacity:0.95" />
-      <stop offset="100%" style="stop-color:#a7f3d0;stop-opacity:0.95" />
-    </linearGradient>
-    
-    <linearGradient id="localGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#fed7aa;stop-opacity:0.95" />
-      <stop offset="100%" style="stop-color:#fdba74;stop-opacity:0.95" />
-    </linearGradient>
-    
-    <linearGradient id="remoteGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#e9d5ff;stop-opacity:0.95" />
-      <stop offset="100%" style="stop-color:#d8b4fe;stop-opacity:0.95" />
-    </linearGradient>
-    
-    <linearGradient id="arrowGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.8" />
-      <stop offset="100%" style="stop-color:#34d399;stop-opacity:1" />
-    </linearGradient>
-    
-    <linearGradient id="arrowGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#f97316;stop-opacity:0.8" />
-      <stop offset="100%" style="stop-color:#fb923c;stop-opacity:1" />
-    </linearGradient>
-    
-    <linearGradient id="arrowGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.8" />
-      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
-    </linearGradient>
-    
-    <linearGradient id="pullArrowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.8" />
-      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:1" />
-    </linearGradient>
-    
-    <!-- Shadow effect -->
     <filter id="shadow">
       <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.2"/>
     </filter>
-    
-    <!-- Glow effect -->
+    <linearGradient id="workingGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0" style="stop-color:#dbeafe;stop-opacity:0.95"/>
+      <stop offset="1" style="stop-color:#bfdbfe;stop-opacity:0.95"/>
+    </linearGradient>
+    <linearGradient id="arrowGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" style="stop-color:#10b981;stop-opacity:0.8"/>
+      <stop offset="1" style="stop-color:#34d399;stop-opacity:1"/>
+    </linearGradient>
     <filter id="glow">
       <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
       <feMerge>
@@ -54,251 +19,105 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+    <linearGradient id="stagingGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0" style="stop-color:#d1fae5;stop-opacity:0.95"/>
+      <stop offset="1" style="stop-color:#a7f3d0;stop-opacity:0.95"/>
+    </linearGradient>
+    <linearGradient id="arrowGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" style="stop-color:#f97316;stop-opacity:0.8"/>
+      <stop offset="1" style="stop-color:#fb923c;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="localGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0" style="stop-color:#fed7aa;stop-opacity:0.95"/>
+      <stop offset="1" style="stop-color:#fdba74;stop-opacity:0.95"/>
+    </linearGradient>
+    <linearGradient id="arrowGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" style="stop-color:#8b5cf6;stop-opacity:0.8"/>
+      <stop offset="1" style="stop-color:#a855f7;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="remoteGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0" style="stop-color:#e9d5ff;stop-opacity:0.95"/>
+      <stop offset="1" style="stop-color:#d8b4fe;stop-opacity:0.95"/>
+    </linearGradient>
+    <linearGradient id="pullArrowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" style="stop-color:#3b82f6;stop-opacity:0.8"/>
+      <stop offset="1" style="stop-color:#60a5fa;stop-opacity:1"/>
+    </linearGradient>
   </defs>
-
-  <!-- Title -->
-  <g filter="url(#glow)">
-    <circle cx="420" cy="24" r="8" fill="#f97316" opacity="0.8"/>
-    <circle cx="420" cy="24" r="4" fill="#fb923c"/>
-  </g>
-  
-  <text x="450" y="30" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="24"
-        font-weight="700"
-        fill="#1e293b"
-        letter-spacing="0.5">
-    Basic Git Workflow
-  </text>
-  
-  <text x="450" y="50" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="13"
-        fill="#475569">
-    Working Directory → Staging Area → Local Repository → Remote Repository
-  </text>
-
-  <!-- Working Directory -->
-  <g filter="url(#shadow)">
-    <rect x="30" y="80" width="180" height="100" rx="14" ry="14"
-          fill="url(#workingGrad)" stroke="#2563eb" stroke-width="2.5"/>
-    
-    <circle cx="50" cy="100" r="5" fill="#3b82f6" opacity="0.8"/>
-    
-    <text x="120" y="118" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="16"
-          font-weight="700"
-          fill="#1e40af">
+  <g filter="url(#shadow)" transform="matrix(1, 0, 0, 1, -136.01220703125, 123.71206665039062)">
+    <rect x="50" y="80" width="180" height="100" rx="14" ry="14" fill="url(#workingGrad)" stroke="#2563eb" stroke-width="2.5"/>
+    <circle cx="70" cy="100" r="5" fill="#3b82f6" opacity="0.8"/>
+    <text x="140" y="118" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#1e40af" style="white-space: pre;">
       Working Directory
     </text>
-    <text x="120" y="138" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="12"
-          fill="#1e3a8a">
+    <text x="140" y="138" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#1e3a8a" style="white-space: pre;">
       📁 Your files on disk
     </text>
-    
-    <!-- File icons -->
-    <rect x="50" y="150" width="50" height="20" rx="4" fill="#ffffff" opacity="0.8" stroke="#3b82f6" stroke-width="1.5"/>
-    <text x="75" y="164" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#1e40af" font-weight="600">file.js</text>
-    
-    <rect x="110" y="150" width="50" height="20" rx="4" fill="#ffffff" opacity="0.8" stroke="#3b82f6" stroke-width="1.5"/>
-    <text x="135" y="164" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#1e40af" font-weight="600">index.html</text>
+    <rect x="70" y="150" width="50" height="20" rx="4" fill="#ffffff" opacity="0.8" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="95" y="164" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#1e40af" font-weight="600" style="white-space: pre;">file.js</text>
+    <rect x="141" y="150" width="50" height="20" rx="4" fill="#ffffff" opacity="0.8" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="167" y="164" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#1e40af" font-weight="600" style="white-space: pre; font-size: 9px;">index.html</text>
   </g>
-
-  <!-- Staging Area -->
-  <g filter="url(#shadow)">
-    <rect x="250" y="80" width="180" height="100" rx="14" ry="14"
-          fill="url(#stagingGrad)" stroke="#059669" stroke-width="2.5"/>
-    
-    <circle cx="270" cy="100" r="5" fill="#10b981" opacity="0.8"/>
-    
-    <text x="340" y="118" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="16"
-          font-weight="700"
-          fill="#065f46">
-      Staging Area
-    </text>
-    <text x="340" y="138" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="12"
-          fill="#047857">
-      ✓ Files to be committed
-    </text>
-    
-    <!-- Staged file icon -->
-    <rect x="295" y="150" width="90" height="20" rx="4" fill="#ffffff" opacity="0.8" stroke="#10b981" stroke-width="1.5"/>
-    <text x="340" y="164" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#065f46" font-weight="600">staged changes</text>
-  </g>
-
-  <!-- Local Repository -->
-  <g filter="url(#shadow)">
-    <rect x="470" y="80" width="180" height="100" rx="14" ry="14"
-          fill="url(#localGrad)" stroke="#ea580c" stroke-width="2.5"/>
-    
-    <circle cx="490" cy="100" r="5" fill="#f97316" opacity="0.8"/>
-    
-    <text x="560" y="118" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="16"
-          font-weight="700"
-          fill="#9a3412">
-      Local Repository
-    </text>
-    <text x="560" y="138" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="12"
-          fill="#c2410c">
-      💾 Commits on your machine
-    </text>
-    
-    <!-- Commit blocks -->
-    <rect x="490" y="150" width="35" height="20" rx="4" fill="#ffffff" opacity="0.8" stroke="#f97316" stroke-width="1.5"/>
-    <text x="507.5" y="164" text-anchor="middle" font-family="'Consolas', monospace" font-size="8" fill="#9a3412" font-weight="600">abc123</text>
-    
-    <rect x="533" y="150" width="35" height="20" rx="4" fill="#ffffff" opacity="0.8" stroke="#f97316" stroke-width="1.5"/>
-    <text x="550.5" y="164" text-anchor="middle" font-family="'Consolas', monospace" font-size="8" fill="#9a3412" font-weight="600">def456</text>
-  </g>
-
-  <!-- Remote Repository -->
-  <g filter="url(#shadow)">
-    <rect x="690" y="80" width="180" height="100" rx="14" ry="14"
-          fill="url(#remoteGrad)" stroke="#7c3aed" stroke-width="2.5"/>
-    
-    <circle cx="710" cy="100" r="5" fill="#a855f7" opacity="0.8"/>
-    
-    <text x="780" y="118" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="16"
-          font-weight="700"
-          fill="#6b21a8">
-      Remote Repository
-    </text>
-    <text x="780" y="138" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="12"
-          fill="#7e22ce">
-      ☁️ Shared (e.g. GitHub)
-    </text>
-    
-    <!-- Cloud sync icon -->
-    <rect x="720" y="150" width="120" height="20" rx="4" fill="#ffffff" opacity="0.8" stroke="#a855f7" stroke-width="1.5"/>
-    <text x="780" y="164" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#6b21a8" font-weight="600">origin/main</text>
-  </g>
-
-  <!-- Arrow: Working -> Staging -->
-  <line x1="215" y1="130" x2="243" y2="130" 
-        stroke="url(#arrowGrad1)" 
-        stroke-width="3" 
-        stroke-linecap="round"/>
-  <polygon points="245,130 233,124 233,136" fill="#10b981" filter="url(#glow)"/>
-  
-  <rect x="202" y="107" width="68" height="20" rx="10" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
-  <text x="236" y="121" text-anchor="middle"
-        font-family="'Consolas', monospace"
-        font-size="11"
-        font-weight="600"
-        fill="#047857">
+  <line x1="98.988" y1="253.712" x2="128.988" y2="253.712" stroke="url(#arrowGrad1)" stroke-width="3" stroke-linecap="round" style="stroke-width: 3;"/>
+  <polygon points="152.988 261.712 140.988 255.712 140.988 267.712" fill="#10b981" filter="url(#glow)" style="stroke-width: 1;"/>
+  <rect x="96.988" y="230.712" width="70" height="20" rx="10" fill="#d1fae5" stroke="#059669" stroke-width="1.5" style="stroke-width: 1.5;"/>
+  <text x="124.988" y="244.712" text-anchor="middle" font-family="'Consolas', monospace" font-size="11" font-weight="600" fill="#047857" style="white-space: pre; stroke-width: 1; font-size: 11px;">
     git add
   </text>
-
-  <!-- Arrow: Staging -> Local -->
-  <line x1="435" y1="130" x2="463" y2="130" 
-        stroke="url(#arrowGrad2)" 
-        stroke-width="3" 
-        stroke-linecap="round"/>
-  <polygon points="465,130 453,124 453,136" fill="#f97316" filter="url(#glow)"/>
-  
-  <rect x="413" y="107" width="80" height="20" rx="10" fill="#fed7aa" stroke="#ea580c" stroke-width="1.5"/>
-  <text x="453" y="121" text-anchor="middle"
-        font-family="'Consolas', monospace"
-        font-size="11"
-        font-weight="600"
-        fill="#c2410c">
+  <g filter="url(#shadow)" transform="matrix(1, 0, 0, 1, -111.01220703125001, 123.71206665039062)">
+    <rect x="280" y="80" width="180" height="100" rx="14" ry="14" fill="url(#stagingGrad)" stroke="#059669" stroke-width="2.5"/>
+    <circle cx="300" cy="100" r="5" fill="#10b981" opacity="0.8"/>
+    <text x="370" y="118" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#065f46" style="white-space: pre;">
+      Staging Area
+    </text>
+    <text x="370" y="138" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#047857" style="white-space: pre;">
+      ✓ Files to be committed
+    </text>
+    <rect x="325" y="150" width="90" height="20" rx="4" fill="#ffffff" opacity="0.8" stroke="#10b981" stroke-width="1.5"/>
+    <text x="370" y="164" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#065f46" font-weight="600" style="white-space: pre;">staged changes</text>
+  </g>
+  <line x1="353.988" y1="253.712" x2="383.988" y2="253.712" stroke="url(#arrowGrad2)" stroke-width="3" stroke-linecap="round" style="stroke-width: 3;"/>
+  <polygon points="414.988 259.712 402.988 253.712 402.988 265.712" fill="#f97316" filter="url(#glow)" style="stroke-width: 1;"/>
+  <rect x="349.988" y="229.712" width="80" height="20" rx="10" fill="#fed7aa" stroke="#ea580c" stroke-width="1.5" style="stroke-width: 1.5;"/>
+  <text x="381.988" y="244.712" text-anchor="middle" font-family="'Consolas', monospace" font-size="11" font-weight="600" fill="#c2410c" style="white-space: pre; stroke-width: 1; font-size: 11px;">
     git commit
   </text>
-
-  <!-- Arrow: Local -> Remote -->
-  <line x1="655" y1="130" x2="683" y2="130" 
-        stroke="url(#arrowGrad3)" 
-        stroke-width="3" 
-        stroke-linecap="round"/>
-  <polygon points="685,130 673,124 673,136" fill="#a855f7" filter="url(#glow)"/>
-  
-  <rect x="637" y="107" width="73" height="20" rx="10" fill="#e9d5ff" stroke="#7c3aed" stroke-width="1.5"/>
-  <text x="673.5" y="121" text-anchor="middle"
-        font-family="'Consolas', monospace"
-        font-size="11"
-        font-weight="600"
-        fill="#7e22ce">
+  <g filter="url(#shadow)" transform="matrix(1, 0, 0, 1, -79.01220703125001, 123.71206665039062)">
+    <rect x="510" y="80" width="180" height="100" rx="14" ry="14" fill="url(#localGrad)" stroke="#ea580c" stroke-width="2.5"/>
+    <circle cx="530" cy="100" r="5" fill="#f97316" opacity="0.8"/>
+    <text x="600" y="118" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#9a3412" style="white-space: pre;">
+      Local Repository
+    </text>
+    <text x="600" y="138" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#c2410c" style="white-space: pre;">
+      💾 Commits on your machine
+    </text>
+    <rect x="530" y="150" width="35" height="20" rx="4" fill="#ffffff" opacity="0.8" stroke="#f97316" stroke-width="1.5"/>
+    <text x="547.5" y="164" text-anchor="middle" font-family="'Consolas', monospace" font-size="8" fill="#9a3412" font-weight="600" style="white-space: pre;">abc123</text>
+    <rect x="573" y="150" width="35" height="20" rx="4" fill="#ffffff" opacity="0.8" stroke="#f97316" stroke-width="1.5"/>
+    <text x="590.5" y="164" text-anchor="middle" font-family="'Consolas', monospace" font-size="8" fill="#9a3412" font-weight="600" style="white-space: pre;">def456</text>
+  </g>
+  <line x1="617.988" y1="253.712" x2="647.988" y2="253.712" stroke="url(#arrowGrad3)" stroke-width="3" stroke-linecap="round" style="stroke-width: 3;"/>
+  <polygon points="674.988 258.712 662.988 252.712 662.988 264.712" fill="#a855f7" filter="url(#glow)" style="stroke-width: 1;"/>
+  <rect x="612.988" y="230.712" width="73" height="20" rx="10" fill="#e9d5ff" stroke="#7c3aed" stroke-width="1.5" style="stroke-width: 1.5;"/>
+  <text x="640.488" y="244.712" text-anchor="middle" font-family="'Consolas', monospace" font-size="11" font-weight="600" fill="#7e22ce" style="white-space: pre; stroke-width: 1; font-size: 11px;">
     git push
   </text>
-
-  <!-- Return arrow: Remote -> Local (git pull) -->
-  <line x1="683" y1="155" x2="655" y2="155" 
-        stroke="url(#pullArrowGrad)" 
-        stroke-width="2.5" 
-        stroke-linecap="round"
-        stroke-dasharray="4,3"/>
-  <polygon points="653,155 665,149 665,161" fill="#3b82f6" opacity="0.8"/>
-  
-  <rect x="637" y="165" width="73" height="18" rx="9" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="673.5" y="177" text-anchor="middle"
-        font-family="'Consolas', monospace"
-        font-size="10"
-        font-weight="600"
-        fill="#1e40af">
+  <g filter="url(#shadow)" transform="matrix(1, 0, 0, 1, -52.01220703125, 123.71206665039062)">
+    <rect x="740" y="80" width="180" height="100" rx="14" ry="14" fill="url(#remoteGrad)" stroke="#7c3aed" stroke-width="2.5"/>
+    <circle cx="760" cy="100" r="5" fill="#a855f7" opacity="0.8"/>
+    <text x="830" y="118" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#6b21a8" style="white-space: pre;">
+      Remote Repository
+    </text>
+    <text x="830" y="138" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#7e22ce" style="white-space: pre;">
+      ☁️ Shared (e.g. GitHub)
+    </text>
+    <rect x="770" y="150" width="120" height="20" rx="4" fill="#ffffff" opacity="0.8" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="830" y="164" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#6b21a8" font-weight="600" style="white-space: pre;">origin/main</text>
+  </g>
+  <line x1="647.988" y1="278.712" x2="617.988" y2="278.712" stroke="url(#pullArrowGrad)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4,3" style="stroke-width: 2.5;"/>
+  <polygon points="615.988 274.712 627.988 268.712 627.988 280.712" fill="#3b82f6" opacity="0.8" style="stroke-width: 1;"/>
+  <rect x="611.988" y="285.712" width="73" height="18" rx="9" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5" style="stroke-width: 1.5;"/>
+  <text x="643.488" y="298.712" text-anchor="middle" font-family="'Consolas', monospace" font-size="10" font-weight="600" fill="#1e40af" style="white-space: pre; stroke-width: 1; font-size: 10px;">
     git pull
-  </text>
-
-  <!-- Bottom info boxes -->
-  <rect x="30" y="200" width="280" height="50" rx="10" fill="#f8fafc" opacity="0.9" stroke="#94a3b8" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="170" y="218" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="11"
-        font-weight="700"
-        fill="#1e293b">
-    Common Commands:
-  </text>
-  <text x="45" y="234" font-family="'Consolas', monospace" font-size="10" fill="#475569" font-weight="600">
-    • git status
-  </text>
-  <text x="155" y="234" font-family="'Consolas', monospace" font-size="10" fill="#475569" font-weight="600">
-    • git log
-  </text>
-  <text x="240" y="234" font-family="'Consolas', monospace" font-size="10" fill="#475569" font-weight="600">
-    • git branch
-  </text>
-  <text x="45" y="246" font-family="'Consolas', monospace" font-size="10" fill="#475569" font-weight="600">
-    • git diff
-  </text>
-  <text x="155" y="246" font-family="'Consolas', monospace" font-size="10" fill="#475569" font-weight="600">
-    • git merge
-  </text>
-  <text x="240" y="246" font-family="'Consolas', monospace" font-size="10" fill="#475569" font-weight="600">
-    • git clone
-  </text>
-
-  <rect x="340" y="200" width="230" height="50" rx="10" fill="#fef3c7" opacity="0.9" stroke="#ca8a04" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="455" y="218" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="11"
-        font-weight="700"
-        fill="#854d0e">
-    💡 Pro Tip:
-  </text>
-  <text x="455" y="234" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="10"
-        fill="#92400e">
-    Use git add -p for interactive staging
-  </text>
-  <text x="455" y="246" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="10"
-        fill="#92400e">
-    and git commit -m "message" for quick commits
   </text>
 </svg>
