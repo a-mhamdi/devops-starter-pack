@@ -1,0 +1,430 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="controlPlaneGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#bfdbfe;stop-opacity:0.95" />
+    </linearGradient>
+    
+    <linearGradient id="workerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d1fae5;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#a7f3d0;stop-opacity:0.95" />
+    </linearGradient>
+    
+    <linearGradient id="podGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fed7aa;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#fdba74;stop-opacity:0.95" />
+    </linearGradient>
+    
+    <linearGradient id="etcdGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e9d5ff;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#d8b4fe;stop-opacity:0.95" />
+    </linearGradient>
+    
+    <linearGradient id="arrowGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="arrowGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#34d399;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Shadow effect -->
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.2"/>
+    </filter>
+    
+    <!-- Glow effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Arrow markers -->
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <polygon points="0 0, 12 6, 0 12" fill="#3b82f6" />
+    </marker>
+    
+    <marker id="arrowGreen" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <polygon points="0 0, 12 6, 0 12" fill="#10b981" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <g filter="url(#glow)">
+    <circle cx="420" cy="24" r="8" fill="#326ce5" opacity="0.8"/>
+    <circle cx="420" cy="24" r="4" fill="#4d8ff7"/>
+  </g>
+  
+  <text x="450" y="30" text-anchor="middle"
+        font-family="'Consolas', 'Monaco', monospace"
+        font-size="24"
+        font-weight="700"
+        fill="#1e293b"
+        letter-spacing="0.5">
+    Kubernetes Cluster Architecture
+  </text>
+  
+  <text x="450" y="50" text-anchor="middle"
+        font-family="'Consolas', 'Monaco', monospace"
+        font-size="13"
+        fill="#475569">
+    Control Plane manages the cluster, Worker Nodes run containerized applications
+  </text>
+
+  <!-- Cluster boundary -->
+  <rect x="20" y="75" width="860" height="595" rx="16" ry="16"
+        fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="8,4"/>
+  <text x="35" y="95"
+        font-family="'Consolas', 'Monaco', monospace"
+        font-size="13"
+        font-weight="700"
+        fill="#475569">
+    Kubernetes Cluster
+  </text>
+
+  <!-- Control Plane Container -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="115" width="800" height="200" rx="14" ry="14"
+          fill="url(#controlPlaneGrad)" stroke="#2563eb" stroke-width="3"/>
+    
+    <circle cx="70" cy="135" r="6" fill="#3b82f6" opacity="0.8"/>
+    
+    <text x="450" y="145" text-anchor="middle"
+          font-family="'Consolas', 'Monaco', monospace"
+          font-size="18"
+          font-weight="700"
+          fill="#1e40af">
+      Control Plane (Master Node)
+    </text>
+    <text x="450" y="163" text-anchor="middle"
+          font-family="'Consolas', 'Monaco', monospace"
+          font-size="11"
+          fill="#1e3a8a">
+      Manages the Kubernetes cluster state and scheduling
+    </text>
+
+    <!-- API Server -->
+    <rect x="70" y="180" width="150" height="110" rx="10" fill="#ffffff" opacity="0.9" stroke="#3b82f6" stroke-width="2"/>
+    <text x="145" y="202" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="14" font-weight="700" fill="#1e40af">
+      API Server
+    </text>
+    <text x="145" y="220" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" fill="#1e3a8a">
+      🔌 kube-apiserver
+    </text>
+    <text x="145" y="238" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#475569">
+      • Central management
+    </text>
+    <text x="145" y="252" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#475569">
+      • REST API endpoint
+    </text>
+    <text x="145" y="266" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#475569">
+      • Authentication
+    </text>
+    <text x="145" y="280" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#475569">
+      • Authorization
+    </text>
+
+    <!-- Scheduler -->
+    <rect x="240" y="180" width="150" height="110" rx="10" fill="#ffffff" opacity="0.9" stroke="#3b82f6" stroke-width="2"/>
+    <text x="315" y="202" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="14" font-weight="700" fill="#1e40af">
+      Scheduler
+    </text>
+    <text x="315" y="220" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" fill="#1e3a8a">
+      📅 kube-scheduler
+    </text>
+    <text x="315" y="238" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#475569">
+      • Assigns pods to nodes
+    </text>
+    <text x="315" y="252" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#475569">
+      • Resource optimization
+    </text>
+    <text x="315" y="266" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#475569">
+      • Constraint checking
+    </text>
+
+    <!-- Controller Manager -->
+    <rect x="410" y="180" width="150" height="110" rx="10" fill="#ffffff" opacity="0.9" stroke="#3b82f6" stroke-width="2"/>
+    <text x="485" y="202" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="14" font-weight="700" fill="#1e40af">
+      Controller Mgr
+    </text>
+    <text x="485" y="220" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" fill="#1e3a8a">
+      🎛️ kube-controller
+    </text>
+    <text x="485" y="238" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#475569">
+      • Node controller
+    </text>
+    <text x="485" y="252" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#475569">
+      • Replication controller
+    </text>
+    <text x="485" y="266" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#475569">
+      • Endpoint controller
+    </text>
+
+    <!-- etcd -->
+    <rect x="580" y="180" width="150" height="110" rx="10" fill="url(#etcdGrad)" opacity="0.95" stroke="#7c3aed" stroke-width="2"/>
+    <text x="655" y="202" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="14" font-weight="700" fill="#6b21a8">
+      etcd
+    </text>
+    <text x="655" y="220" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" fill="#7e22ce">
+      💾 Key-Value Store
+    </text>
+    <text x="655" y="238" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#6b21a8">
+      • Cluster state storage
+    </text>
+    <text x="655" y="252" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#6b21a8">
+      • Configuration data
+    </text>
+    <text x="655" y="266" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#6b21a8">
+      • Distributed consensus
+    </text>
+    <text x="655" y="280" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#6b21a8">
+      • Source of truth
+    </text>
+  </g>
+
+  <!-- Communication arrows from Control Plane to Workers -->
+  <g stroke="#3b82f6" stroke-width="3" fill="none" marker-end="url(#arrowBlue)" opacity="0.8">
+    <path d="M 200 315 Q 150 360, 150 405"/>
+    <path d="M 450 315 L 450 405"/>
+    <path d="M 700 315 Q 750 360, 750 405"/>
+  </g>
+
+  <rect x="130" y="345" width="110" height="18" rx="9" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="185" y="357" text-anchor="middle" font-family="'Consolas', monospace" font-size="10" font-weight="600" fill="#1e40af">
+    Commands
+  </text>
+
+  <rect x="395" y="345" width="110" height="18" rx="9" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="450" y="357" text-anchor="middle" font-family="'Consolas', monospace" font-size="10" font-weight="600" fill="#1e40af">
+    Scheduling
+  </text>
+
+  <rect x="680" y="345" width="110" height="18" rx="9" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="735" y="357" text-anchor="middle" font-family="'Consolas', monospace" font-size="10" font-weight="600" fill="#1e40af">
+    Monitoring
+  </text>
+
+  <!-- Worker Node 1 -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="415" width="240" height="235" rx="14" ry="14"
+          fill="url(#workerGrad)" stroke="#059669" stroke-width="2.5"/>
+    
+    <circle cx="70" cy="435" r="5" fill="#10b981" opacity="0.8"/>
+    
+    <text x="170" y="447" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="16" font-weight="700" fill="#065f46">
+      Worker Node 1
+    </text>
+
+    <!-- Kubelet -->
+    <rect x="70" y="460" width="90" height="65" rx="8" fill="#ffffff" opacity="0.9" stroke="#10b981" stroke-width="2"/>
+    <text x="115" y="478" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="12" font-weight="700" fill="#065f46">
+      Kubelet
+    </text>
+    <text x="115" y="493" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#047857">
+      🤖 Node agent
+    </text>
+    <text x="115" y="505" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#047857">
+      Manages pods
+    </text>
+    <text x="115" y="517" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#047857">
+      Reports status
+    </text>
+
+    <!-- Kube-proxy -->
+    <rect x="170" y="460" width="100" height="65" rx="8" fill="#ffffff" opacity="0.9" stroke="#10b981" stroke-width="2"/>
+    <text x="220" y="478" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="12" font-weight="700" fill="#065f46">
+      Kube-proxy
+    </text>
+    <text x="220" y="493" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#047857">
+      🌐 Network proxy
+    </text>
+    <text x="220" y="505" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#047857">
+      Load balancing
+    </text>
+    <text x="220" y="517" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#047857">
+      Service routing
+    </text>
+
+    <!-- Pods -->
+    <text x="170" y="545" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="11" font-weight="700" fill="#065f46">
+      Pods (Containers)
+    </text>
+    
+    <rect x="70" y="555" width="60" height="75" rx="6" fill="url(#podGrad)" opacity="0.95" stroke="#ea580c" stroke-width="2"/>
+    <text x="100" y="572" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" font-weight="700" fill="#9a3412">Pod 1</text>
+    <rect x="78" y="580" width="44" height="18" rx="4" fill="#ffffff" opacity="0.85" stroke="#f97316" stroke-width="1"/>
+    <text x="100" y="592" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#9a3412">nginx</text>
+    <rect x="78" y="603" width="44" height="18" rx="4" fill="#ffffff" opacity="0.85" stroke="#f97316" stroke-width="1"/>
+    <text x="100" y="615" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#9a3412">sidecar</text>
+
+    <rect x="140" y="555" width="60" height="75" rx="6" fill="url(#podGrad)" opacity="0.95" stroke="#ea580c" stroke-width="2"/>
+    <text x="170" y="572" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" font-weight="700" fill="#9a3412">Pod 2</text>
+    <rect x="148" y="580" width="44" height="18" rx="4" fill="#ffffff" opacity="0.85" stroke="#f97316" stroke-width="1"/>
+    <text x="170" y="592" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#9a3412">app</text>
+    <rect x="148" y="603" width="44" height="18" rx="4" fill="#ffffff" opacity="0.85" stroke="#f97316" stroke-width="1"/>
+    <text x="170" y="615" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#9a3412">redis</text>
+
+    <rect x="210" y="555" width="60" height="75" rx="6" fill="url(#podGrad)" opacity="0.95" stroke="#ea580c" stroke-width="2"/>
+    <text x="240" y="572" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" font-weight="700" fill="#9a3412">Pod 3</text>
+    <rect x="218" y="580" width="44" height="18" rx="4" fill="#ffffff" opacity="0.85" stroke="#f97316" stroke-width="1"/>
+    <text x="240" y="592" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#9a3412">api</text>
+  </g>
+
+  <!-- Worker Node 2 -->
+  <g filter="url(#shadow)">
+    <rect x="330" y="415" width="240" height="235" rx="14" ry="14"
+          fill="url(#workerGrad)" stroke="#059669" stroke-width="2.5"/>
+    
+    <circle cx="350" cy="435" r="5" fill="#10b981" opacity="0.8"/>
+    
+    <text x="450" y="447" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="16" font-weight="700" fill="#065f46">
+      Worker Node 2
+    </text>
+
+    <!-- Kubelet -->
+    <rect x="350" y="460" width="90" height="65" rx="8" fill="#ffffff" opacity="0.9" stroke="#10b981" stroke-width="2"/>
+    <text x="395" y="478" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="12" font-weight="700" fill="#065f46">
+      Kubelet
+    </text>
+    <text x="395" y="493" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#047857">
+      🤖 Node agent
+    </text>
+    <text x="395" y="505" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#047857">
+      Manages pods
+    </text>
+    <text x="395" y="517" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#047857">
+      Reports status
+    </text>
+
+    <!-- Kube-proxy -->
+    <rect x="450" y="460" width="100" height="65" rx="8" fill="#ffffff" opacity="0.9" stroke="#10b981" stroke-width="2"/>
+    <text x="500" y="478" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="12" font-weight="700" fill="#065f46">
+      Kube-proxy
+    </text>
+    <text x="500" y="493" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#047857">
+      🌐 Network proxy
+    </text>
+    <text x="500" y="505" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#047857">
+      Load balancing
+    </text>
+    <text x="500" y="517" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#047857">
+      Service routing
+    </text>
+
+    <!-- Pods -->
+    <text x="450" y="545" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="11" font-weight="700" fill="#065f46">
+      Pods (Containers)
+    </text>
+    
+    <rect x="350" y="555" width="60" height="75" rx="6" fill="url(#podGrad)" opacity="0.95" stroke="#ea580c" stroke-width="2"/>
+    <text x="380" y="572" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" font-weight="700" fill="#9a3412">Pod 4</text>
+    <rect x="358" y="580" width="44" height="18" rx="4" fill="#ffffff" opacity="0.85" stroke="#f97316" stroke-width="1"/>
+    <text x="380" y="592" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#9a3412">mysql</text>
+
+    <rect x="420" y="555" width="60" height="75" rx="6" fill="url(#podGrad)" opacity="0.95" stroke="#ea580c" stroke-width="2"/>
+    <text x="450" y="572" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" font-weight="700" fill="#9a3412">Pod 5</text>
+    <rect x="428" y="580" width="44" height="18" rx="4" fill="#ffffff" opacity="0.85" stroke="#f97316" stroke-width="1"/>
+    <text x="450" y="592" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#9a3412">worker</text>
+
+    <rect x="490" y="555" width="60" height="75" rx="6" fill="url(#podGrad)" opacity="0.95" stroke="#ea580c" stroke-width="2"/>
+    <text x="520" y="572" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" font-weight="700" fill="#9a3412">Pod 6</text>
+    <rect x="498" y="580" width="44" height="18" rx="4" fill="#ffffff" opacity="0.85" stroke="#f97316" stroke-width="1"/>
+    <text x="520" y="592" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#9a3412">cache</text>
+  </g>
+
+  <!-- Worker Node 3 -->
+  <g filter="url(#shadow)">
+    <rect x="610" y="415" width="240" height="235" rx="14" ry="14"
+          fill="url(#workerGrad)" stroke="#059669" stroke-width="2.5"/>
+    
+    <circle cx="630" cy="435" r="5" fill="#10b981" opacity="0.8"/>
+    
+    <text x="730" y="447" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="16" font-weight="700" fill="#065f46">
+      Worker Node 3
+    </text>
+
+    <!-- Kubelet -->
+    <rect x="630" y="460" width="90" height="65" rx="8" fill="#ffffff" opacity="0.9" stroke="#10b981" stroke-width="2"/>
+    <text x="675" y="478" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="12" font-weight="700" fill="#065f46">
+      Kubelet
+    </text>
+    <text x="675" y="493" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#047857">
+      🤖 Node agent
+    </text>
+    <text x="675" y="505" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#047857">
+      Manages pods
+    </text>
+    <text x="675" y="517" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#047857">
+      Reports status
+    </text>
+
+    <!-- Kube-proxy -->
+    <rect x="730" y="460" width="100" height="65" rx="8" fill="#ffffff" opacity="0.9" stroke="#10b981" stroke-width="2"/>
+    <text x="780" y="478" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="12" font-weight="700" fill="#065f46">
+      Kube-proxy
+    </text>
+    <text x="780" y="493" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#047857">
+      🌐 Network proxy
+    </text>
+    <text x="780" y="505" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#047857">
+      Load balancing
+    </text>
+    <text x="780" y="517" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#047857">
+      Service routing
+    </text>
+
+    <!-- Pods -->
+    <text x="730" y="545" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="11" font-weight="700" fill="#065f46">
+      Pods (Containers)
+    </text>
+    
+    <rect x="650" y="555" width="60" height="75" rx="6" fill="url(#podGrad)" opacity="0.95" stroke="#ea580c" stroke-width="2"/>
+    <text x="680" y="572" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" font-weight="700" fill="#9a3412">Pod 7</text>
+    <rect x="658" y="580" width="44" height="18" rx="4" fill="#ffffff" opacity="0.85" stroke="#f97316" stroke-width="1"/>
+    <text x="680" y="592" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#9a3412">kafka</text>
+
+    <rect x="720" y="555" width="60" height="75" rx="6" fill="url(#podGrad)" opacity="0.95" stroke="#ea580c" stroke-width="2"/>
+    <text x="750" y="572" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" font-weight="700" fill="#9a3412">Pod 8</text>
+    <rect x="728" y="580" width="44" height="18" rx="4" fill="#ffffff" opacity="0.85" stroke="#f97316" stroke-width="1"/>
+    <text x="750" y="592" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="8" fill="#9a3412">log</text>
+
+    <rect x="790" y="555" width="40" height="75" rx="6" fill="url(#podGrad)" opacity="0.95" stroke="#ea580c" stroke-width="2"/>
+    <text x="810" y="572" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" font-weight="700" fill="#9a3412">P9</text>
+    <rect x="795" y="580" width="30" height="18" rx="4" fill="#ffffff" opacity="0.85" stroke="#f97316" stroke-width="1"/>
+    <text x="810" y="592" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="7" fill="#9a3412">svc</text>
+  </g>
+
+  <!-- Bottom info boxes -->
+  <rect x="50" y="665" width="260" height="25" rx="8" fill="#dbeafe" opacity="0.9" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="180" y="682" text-anchor="middle"
+        font-family="'Consolas', 'Monaco', monospace"
+        font-size="11"
+        font-weight="600"
+        fill="#1e40af">
+    ⚙️ Control Plane manages cluster
+  </text>
+
+  <rect x="330" y="665" width="240" height="25" rx="8" fill="#d1fae5" opacity="0.9" stroke="#059669" stroke-width="1.5"/>
+  <text x="450" y="682" text-anchor="middle"
+        font-family="'Consolas', 'Monaco', monospace"
+        font-size="11"
+        font-weight="600"
+        fill="#065f46">
+    🚀 Workers run containerized apps
+  </text>
+
+  <rect x="590" y="665" width="260" height="25" rx="8" fill="#fed7aa" opacity="0.9" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="720" y="682" text-anchor="middle"
+        font-family="'Consolas', 'Monaco', monospace"
+        font-size="11"
+        font-weight="600"
+        fill="#9a3412">
+    📦 Pods = smallest deployable units
+  </text>
+</svg>
