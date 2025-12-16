@@ -2,7 +2,7 @@
 
 This is about getting started with DevOps tools and practices.
 
-[!DevOps](./devops.svg)
+![DevOps](./devops.svg)
 
 <table>
   <tr>
