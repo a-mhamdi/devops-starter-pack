@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1.1738 -358.6192 809.9848 705.0002" width="809.985px" height="705px">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.2"/>
+    </filter>
+    <linearGradient id="serviceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0" style="stop-color:#dbeafe;stop-opacity:0.95"/>
+      <stop offset="1" style="stop-color:#bfdbfe;stop-opacity:0.95"/>
+    </linearGradient>
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <polygon points="0 0, 12 6, 0 12" fill="#3b82f6"/>
+    </marker>
+    <linearGradient id="podGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0" style="stop-color:#fecaca;stop-opacity:0.95"/>
+      <stop offset="1" style="stop-color:#fca5a5;stop-opacity:0.95"/>
+    </linearGradient>
+    <linearGradient id="clusterIPGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0" style="stop-color:#d1fae5;stop-opacity:0.95"/>
+      <stop offset="1" style="stop-color:#a7f3d0;stop-opacity:0.95"/>
+    </linearGradient>
+    <linearGradient id="nodePortGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0" style="stop-color:#fed7aa;stop-opacity:0.95"/>
+      <stop offset="1" style="stop-color:#fdba74;stop-opacity:0.95"/>
+    </linearGradient>
+    <linearGradient id="loadBalancerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0" style="stop-color:#e9d5ff;stop-opacity:0.95"/>
+      <stop offset="1" style="stop-color:#d8b4fe;stop-opacity:0.95"/>
+    </linearGradient>
+  </defs>
+  <g filter="url(#shadow)" transform="matrix(1, 0, 0, 1, -41.18937683105469, -438.6192321777344)">
+    <rect x="50" y="80" width="800" height="120" rx="14" ry="14" fill="url(#serviceGrad)" stroke="#2563eb" stroke-width="3"/>
+    <circle cx="70" cy="100" r="6" fill="#3b82f6" opacity="0.8"/>
+    <text x="450" y="115" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="18" font-weight="700" fill="#1e40af" style="white-space: pre;">
+      Service (Abstract Layer)
+    </text>
+    <text x="450" y="133" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="11" fill="#1e3a8a" style="white-space: pre;">
+      Provides stable endpoint and load balancing across pods
+    </text>
+    <rect x="80" y="150" width="230" height="35" rx="8" fill="#ffffff" opacity="0.9" stroke="#3b82f6" stroke-width="2"/>
+    <text x="195" y="173" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="11" font-weight="700" fill="#1e40af" style="white-space: pre;">
+      🎯 Stable IP: 10.96.0.100
+    </text>
+    <rect x="335" y="150" width="230" height="35" rx="8" fill="#ffffff" opacity="0.9" stroke="#3b82f6" stroke-width="2"/>
+    <text x="450" y="173" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="11" font-weight="700" fill="#1e40af" style="white-space: pre;">
+      🔀 Load Balancer
+    </text>
+    <rect x="590" y="150" width="230" height="35" rx="8" fill="#ffffff" opacity="0.9" stroke="#3b82f6" stroke-width="2"/>
+    <text x="705" y="173" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="11" font-weight="700" fill="#1e40af" style="white-space: pre;">
+      🏷️ Selector: app=backend
+    </text>
+  </g>
+  <g stroke="#3b82f6" stroke-width="3" fill="none" marker-end="url(#arrowBlue)" opacity="0.8" transform="matrix(1, 0, 0, 1, -41.18937683105469, -438.6192321777344)">
+    <path d="M 200 200 Q 150 240, 150 270"/>
+    <path d="M 450 200 L 450 270"/>
+    <path d="M 700 200 Q 750 240, 750 270"/>
+  </g>
+  <rect x="123.811" y="-218.62" width="90" height="18" rx="9" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5" style="stroke-width: 1.5;"/>
+  <text x="168.811" y="-206.62" text-anchor="middle" font-family="'Consolas', monospace" font-size="10" font-weight="600" fill="#1e40af" style="white-space: pre; stroke-width: 1; font-size: 10px;">
+    Routes to
+  </text>
+  <rect x="363.811" y="-218.62" width="90" height="18" rx="9" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5" style="stroke-width: 1.5;"/>
+  <text x="408.811" y="-206.62" text-anchor="middle" font-family="'Consolas', monospace" font-size="10" font-weight="600" fill="#1e40af" style="white-space: pre; stroke-width: 1; font-size: 10px;">
+    Routes to
+  </text>
+  <rect x="638.811" y="-218.62" width="90" height="18" rx="9" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5" style="stroke-width: 1.5;"/>
+  <text x="683.811" y="-206.62" text-anchor="middle" font-family="'Consolas', monospace" font-size="10" font-weight="600" fill="#1e40af" style="white-space: pre; stroke-width: 1; font-size: 10px;">
+    Routes to
+  </text>
+  <rect x="38.811" y="-158.62" width="180" height="85" rx="10" fill="url(#podGrad)" opacity="0.95" stroke="#dc2626" stroke-width="2" style="stroke-width: 2;"/>
+  <text x="128.811" y="-136.62" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="12" font-weight="700" fill="#991b1b" style="white-space: pre; stroke-width: 1; font-size: 12px;">
+    Pod 1
+  </text>
+  <text x="128.811" y="-118.62" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" fill="#b91c1c" style="white-space: pre; stroke-width: 1; font-size: 10px;">
+    📦 app=backend
+  </text>
+  <text x="128.811" y="-101.62" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#b91c1c" style="white-space: pre; stroke-width: 1; font-size: 9px;">
+    IP: 192.168.1.10
+  </text>
+  <text x="128.811" y="-86.619" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#b91c1c" style="white-space: pre; stroke-width: 1; font-size: 9px;">
+    Port: 8080
+  </text>
+  <rect x="318.811" y="-158.62" width="180" height="85" rx="10" fill="url(#podGrad)" opacity="0.95" stroke="#dc2626" stroke-width="2" style="stroke-width: 2;"/>
+  <text x="408.811" y="-136.62" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="12" font-weight="700" fill="#991b1b" style="white-space: pre; stroke-width: 1; font-size: 12px;">
+    Pod 2
+  </text>
+  <text x="408.811" y="-118.62" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" fill="#b91c1c" style="white-space: pre; stroke-width: 1; font-size: 10px;">
+    📦 app=backend
+  </text>
+  <text x="408.811" y="-101.62" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#b91c1c" style="white-space: pre; stroke-width: 1; font-size: 9px;">
+    IP: 192.168.1.11
+  </text>
+  <text x="408.811" y="-86.619" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#b91c1c" style="white-space: pre; stroke-width: 1; font-size: 9px;">
+    Port: 8080
+  </text>
+  <rect x="598.811" y="-158.62" width="180" height="85" rx="10" fill="url(#podGrad)" opacity="0.95" stroke="#dc2626" stroke-width="2" style="stroke-width: 2;"/>
+  <text x="688.811" y="-136.62" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="12" font-weight="700" fill="#991b1b" style="white-space: pre; stroke-width: 1; font-size: 12px;">
+    Pod 3
+  </text>
+  <text x="688.811" y="-118.62" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" fill="#b91c1c" style="white-space: pre; stroke-width: 1; font-size: 10px;">
+    📦 app=backend
+  </text>
+  <text x="688.811" y="-101.62" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#b91c1c" style="white-space: pre; stroke-width: 1; font-size: 9px;">
+    IP: 192.168.1.12
+  </text>
+  <text x="688.811" y="-86.619" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#b91c1c" style="white-space: pre; stroke-width: 1; font-size: 9px;">
+    Port: 8080
+  </text>
+  <text x="408.811" y="-38.619" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="16" font-weight="700" fill="#1e293b" style="white-space: pre; stroke-width: 1; font-size: 16px;">
+    Service Types
+  </text>
+  <g filter="url(#shadow)" transform="matrix(1, 0, 0, 1, -41.18937683105469, -438.6192321777344)">
+    <rect x="50" y="420" width="260" height="150" rx="14" ry="14" fill="url(#clusterIPGrad)" stroke="#059669" stroke-width="2.5"/>
+    <circle cx="70" cy="440" r="5" fill="#10b981" opacity="0.8"/>
+    <text x="180" y="452" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="15" font-weight="700" fill="#065f46" style="white-space: pre;">
+      ClusterIP (Default)
+    </text>
+    <text x="180" y="469" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" fill="#047857" style="white-space: pre;">
+      🔒 Internal cluster access only
+    </text>
+    <rect x="70" y="485" width="220" height="70" rx="8" fill="#ffffff" opacity="0.85" stroke="#10b981" stroke-width="1.5"/>
+    <text x="180" y="503" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" font-weight="600" fill="#065f46" style="white-space: pre;">
+      Characteristics:
+    </text>
+    <text x="180" y="519" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#047857" style="white-space: pre;">
+      • Internal IP only
+    </text>
+    <text x="180" y="533" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#047857" style="white-space: pre;">
+      • Pod-to-Pod communication
+    </text>
+    <text x="180" y="547" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#047857" style="white-space: pre;">
+      • Default service type
+    </text>
+  </g>
+  <g filter="url(#shadow)" transform="matrix(1, 0, 0, 1, -41.18937683105469, -438.6192321777344)">
+    <rect x="320" y="420" width="260" height="150" rx="14" ry="14" fill="url(#nodePortGrad)" stroke="#ea580c" stroke-width="2.5"/>
+    <circle cx="340" cy="440" r="5" fill="#f97316" opacity="0.8"/>
+    <text x="450" y="452" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="15" font-weight="700" fill="#9a3412" style="white-space: pre;">
+      NodePort
+    </text>
+    <text x="450" y="469" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" fill="#c2410c" style="white-space: pre;">
+      🌐 External access via node IP
+    </text>
+    <rect x="340" y="485" width="220" height="70" rx="8" fill="#ffffff" opacity="0.85" stroke="#f97316" stroke-width="1.5"/>
+    <text x="450" y="503" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" font-weight="600" fill="#9a3412" style="white-space: pre;">
+      Characteristics:
+    </text>
+    <text x="450" y="519" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#c2410c" style="white-space: pre;">
+      • Exposes port on each node
+    </text>
+    <text x="450" y="533" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#c2410c" style="white-space: pre;">
+      • Range: 30000-32767
+    </text>
+    <text x="450" y="547" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#c2410c" style="white-space: pre;">
+      • Access: &lt;NodeIP&gt;:&lt;NodePort&gt;
+    </text>
+  </g>
+  <g filter="url(#shadow)" transform="matrix(1, 0, 0, 1, -41.18937683105469, -438.6192321777344)">
+    <rect x="590" y="420" width="260" height="150" rx="14" ry="14" fill="url(#loadBalancerGrad)" stroke="#7c3aed" stroke-width="2.5"/>
+    <circle cx="610" cy="440" r="5" fill="#a855f7" opacity="0.8"/>
+    <text x="720" y="452" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="15" font-weight="700" fill="#6b21a8" style="white-space: pre;">
+      LoadBalancer
+    </text>
+    <text x="720" y="469" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" fill="#7e22ce" style="white-space: pre;">
+      ☁️ Cloud provider load balancer
+    </text>
+    <rect x="610" y="485" width="220" height="70" rx="8" fill="#ffffff" opacity="0.85" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="720" y="503" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="10" font-weight="600" fill="#6b21a8" style="white-space: pre;">
+      Characteristics:
+    </text>
+    <text x="720" y="519" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#7e22ce" style="white-space: pre;">
+      • External IP from cloud
+    </text>
+    <text x="720" y="533" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#7e22ce" style="white-space: pre;">
+      • Production-ready
+    </text>
+    <text x="720" y="547" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="9" fill="#7e22ce" style="white-space: pre;">
+      • AWS ELB, GCP LB, Azure LB
+    </text>
+  </g>
+  <rect x="8.811" y="151.381" width="390" height="90" rx="12" fill="#dbeafe" opacity="0.9" stroke="#2563eb" stroke-width="2" filter="url(#shadow)" style="stroke-width: 2;"/>
+  <text x="203.811" y="174.381" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="14" font-weight="700" fill="#1e40af" style="white-space: pre; stroke-width: 1; font-size: 14px;">
+    🔍 Service Discovery
+  </text>
+  <text x="28.811" y="196.381" font-family="'Consolas', 'Monaco', monospace" font-size="10" fill="#1e3a8a" style="white-space: pre; stroke-width: 1;">
+    <tspan font-weight="700" style="font-size: 10px; word-spacing: 0px; stroke-width: 1;">DNS-based:</tspan> service-name.namespace.svc.cluster.local
+  </text>
+  <text x="28.811" y="213.381" font-family="'Consolas', 'Monaco', monospace" font-size="10" fill="#1e3a8a" style="white-space: pre; stroke-width: 1;">
+    <tspan font-weight="700" style="font-size: 10px; word-spacing: 0px; stroke-width: 1;">Environment variables:</tspan> BACKEND_SERVICE_HOST
+  </text>
+  <text x="28.811" y="230.381" font-family="'Consolas', 'Monaco', monospace" font-size="10" fill="#1e3a8a" style="white-space: pre; stroke-width: 1;">
+    <tspan font-weight="700" style="font-size: 10px; word-spacing: 0px; stroke-width: 1;">Endpoints:</tspan> Automatically updated pod IPs
+  </text>
+  <rect x="418.811" y="151.381" width="390" height="90" rx="12" fill="#d1fae5" opacity="0.9" stroke="#059669" stroke-width="2" filter="url(#shadow)" style="stroke-width: 2;"/>
+  <text x="613.811" y="174.381" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="14" font-weight="700" fill="#065f46" style="white-space: pre; stroke-width: 1; font-size: 14px;">
+    ⚡ Key Features
+  </text>
+  <text x="438.811" y="196.381" font-family="'Consolas', 'Monaco', monospace" font-size="10" fill="#047857" style="white-space: pre; stroke-width: 1; font-size: 10px;">
+    ✓ Stable IP address (doesn't change)
+  </text>
+  <text x="438.811" y="213.381" font-family="'Consolas', 'Monaco', monospace" font-size="10" fill="#047857" style="white-space: pre; stroke-width: 1; font-size: 10px;">
+    ✓ Load balancing across healthy pods
+  </text>
+  <text x="438.811" y="230.381" font-family="'Consolas', 'Monaco', monospace" font-size="10" fill="#047857" style="white-space: pre; stroke-width: 1; font-size: 10px;">
+    ✓ Automatic endpoint updates
+  </text>
+  <rect x="8.811" y="261.381" width="390" height="85" rx="12" fill="#f8fafc" opacity="0.9" stroke="#94a3b8" stroke-width="2" filter="url(#shadow)" style="stroke-width: 2;"/>
+  <text x="203.811" y="281.381" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="13" font-weight="700" fill="#1e293b" style="white-space: pre; stroke-width: 1; font-size: 13px;">
+    📄 Example Service YAML
+  </text>
+  <text x="28.811" y="301.381" font-family="'Consolas', monospace" font-size="9" fill="#475569" style="white-space: pre; stroke-width: 1;">
+    <tspan fill="#7c3aed" font-weight="700" style="font-size: 9px; word-spacing: 0px; stroke-width: 1;">apiVersion:</tspan> v1
+  </text>
+  <text x="28.811" y="314.381" font-family="'Consolas', monospace" font-size="9" fill="#475569" style="white-space: pre; stroke-width: 1;">
+    <tspan fill="#7c3aed" font-weight="700" style="font-size: 9px; word-spacing: 0px; stroke-width: 1;">kind:</tspan> Service
+  </text>
+  <text x="28.811" y="327.381" font-family="'Consolas', monospace" font-size="9" fill="#475569" style="white-space: pre; stroke-width: 1;">
+    <tspan fill="#7c3aed" font-weight="700" style="font-size: 9px; word-spacing: 0px; stroke-width: 1;">spec:</tspan>
+  </text>
+  <text x="198.811" y="301.381" font-family="'Consolas', monospace" font-size="9" fill="#475569" style="white-space: pre; stroke-width: 1;">
+    <tspan fill="#ea580c" font-weight="700" style="font-size: 9px; word-spacing: 0px; stroke-width: 1;">  selector:</tspan> app: backend
+  </text>
+  <text x="198.811" y="314.381" font-family="'Consolas', monospace" font-size="9" fill="#475569" style="white-space: pre; stroke-width: 1;">
+    <tspan fill="#ea580c" font-weight="700" style="font-size: 9px; word-spacing: 0px; stroke-width: 1;">  type:</tspan> ClusterIP
+  </text>
+  <text x="198.811" y="327.381" font-family="'Consolas', monospace" font-size="9" fill="#475569" style="white-space: pre; stroke-width: 1;">
+    <tspan fill="#ea580c" font-weight="700" style="font-size: 9px; word-spacing: 0px; stroke-width: 1;">  ports:</tspan> - port: 80
+  </text>
+  <rect x="418.811" y="261.381" width="390" height="85" rx="12" fill="#fef3c7" opacity="0.9" stroke="#ca8a04" stroke-width="2" filter="url(#shadow)" style="stroke-width: 2;"/>
+  <text x="613.811" y="281.381" text-anchor="middle" font-family="'Consolas', 'Monaco', monospace" font-size="13" font-weight="700" fill="#854d0e" style="white-space: pre; stroke-width: 1; font-size: 13px;">
+    💡 Common Use Cases
+  </text>
+  <text x="438.811" y="301.381" font-family="'Consolas', 'Monaco', monospace" font-size="10" fill="#92400e" style="white-space: pre; stroke-width: 1;">
+    🎯 <tspan font-weight="700" style="font-size: 10px; word-spacing: 0px; stroke-width: 1;">ClusterIP:</tspan> Internal microservices
+  </text>
+  <text x="438.811" y="316.381" font-family="'Consolas', 'Monaco', monospace" font-size="10" fill="#92400e" style="white-space: pre; stroke-width: 1;">
+    🌐 <tspan font-weight="700" style="font-size: 10px; word-spacing: 0px; stroke-width: 1;">NodePort:</tspan> Development/testing access
+  </text>
+  <text x="438.811" y="331.381" font-family="'Consolas', 'Monaco', monospace" font-size="10" fill="#92400e" style="white-space: pre; stroke-width: 1;">
+    ☁️ <tspan font-weight="700" style="font-size: 10px; word-spacing: 0px; stroke-width: 1;">LoadBalancer:</tspan> Production web apps
+  </text>
+</svg>
