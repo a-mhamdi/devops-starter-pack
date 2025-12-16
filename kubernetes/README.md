@@ -31,7 +31,7 @@ Below is a comprehensive guide to the essential Kubernetes (`kubectl`) commands 
 
 ## Pods
 
-![Pod Lifecycle](https://kubernetes.io/images/docs/pod-lifecycle.svg)
+![Pod Lifecycle](./pod-lifecycle.svg)
 
 Pods are the smallest deployable units in **Kubernetes**. A pod represents a single instance of a running process in your cluster.
 
@@ -85,7 +85,7 @@ Pods are the smallest deployable units in **Kubernetes**. A pod represents a sin
 
 ## Deployments
 
-![Deployment Rolling Update](https://kubernetes.io/images/docs/deployment-rolling-update.svg)
+![Deployment Rolling Update](./deployment-rolling-update.svg)
 
 Deployments manage `ReplicaSets` and provide declarative updates to applications. They enable rolling updates and rollbacks.
 
@@ -127,9 +127,9 @@ Deployments manage `ReplicaSets` and provide declarative updates to applications
 
 ## Services
 
-![Service Types](https://kubernetes.io/images/docs/services-types.svg)
+![Service Types](./services-types.svg)
 
-Services provide stable network access to a set of pods. They abstract the pod IP addresses and provide load balancing.
+Services provide stable network access to a set of pods. They abstract the pod `IP` addresses and provide load balancing.
 
 - **List services**
   ```bash
