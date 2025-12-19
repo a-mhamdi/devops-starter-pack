@@ -4,7 +4,7 @@ These commands cover the basics of version control with `Git` and interacting wi
 
 ## Git Workflow Overview
 
-![Git Workflow](workflow.svg)
+![Git Workflow](imgs/workflow.svg)
 
 The diagram above shows the basic Git workflow: **Working Directory** → **Staging Area** → **Local Repository** → **Remote Repository**.
 
