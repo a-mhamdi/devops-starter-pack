@@ -473,7 +473,7 @@ rate(http_requests_total{status=~"5.."}[5m]) / rate(http_requests_total[5m])
 histogram_quantile(0.95, rate(http_request_duration_seconds_bucket[5m]))
 ```
 
-> ![TIP]
+> [!TIP]
 >
 > - **Configuration**: **Prometheus** config is typically at `/etc/prometheus/prometheus.yml`
 > - **Data Directory**: **Prometheus** data is stored in `/var/lib/prometheus/` by default
