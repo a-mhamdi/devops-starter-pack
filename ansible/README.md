@@ -4,7 +4,7 @@
 
 ## Ansible Architecture Overview
 
-![Ansible Architecture](arch.svg) 
+![Ansible Architecture](imgs/arch.svg) 
 
 The diagram above shows Ansible's architecture with the control node managing multiple target hosts through SSH connections.
 
