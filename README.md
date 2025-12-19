@@ -1,8 +1,8 @@
-# DevOps Starter Pack
+# MLOps Starter Pack
 
-This is about getting started with DevOps tools and practices.
+This is about getting started with MLOps tools and practices.
 
-![DevOps](./devops.svg)
+![DevOps](./mlops.svg)
 
 <table>
   <tr>
