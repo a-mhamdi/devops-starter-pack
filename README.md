@@ -2,14 +2,14 @@
 
 This is about getting started with MLOps tools and practices.
 
-![DevOps](./mlops.svg)
+![MLOps](./mlops.svg)
 
 <table>
   <tr>
     <td> <strong>Git</strong> <br> <i>(code)</i> </td>
     <td> <strong>Docker</strong> <br> <i>(package)</i> </td>
     <td> <strong>Jenkins</strong> <br> <i>(automate)</i> </td>
-    <td> <strong>Terraform</strong> <br> <i>(create infra)</i> </td>
+    <td> <strong>Terraform</strong> <br> <i>(provision infra)</i> </td>
     <td> <strong>Ansible</strong> <br> <i>(configure infra)</i> </td>
     <td> <strong>Kubernetes</strong> <br> <i>(run apps)</i> </td>
     <td> <strong>Prometheus</strong> <br> <i>(observe)</i> </td>
