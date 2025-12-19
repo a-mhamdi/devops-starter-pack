@@ -4,7 +4,7 @@
 
 ## Docker Architecture Overview
 
-![Docker Architecture](arch.svg)
+![Docker Architecture](imgs/arch.svg)
 
 The diagram above shows `Docker`'s architecture with the `Docker` daemon, containers, images, and the host system.
 
@@ -86,7 +86,7 @@ The diagram above shows `Docker`'s architecture with the `Docker` daemon, contai
 
 ## Dockerfile
 
-![Docker Layers](layers.svg)
+![Docker Layers](imgs/layers.svg)
 
 The diagram above shows how `Docker` images are built in layers, with each instruction creating a new layer.
 
