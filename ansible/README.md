@@ -6,7 +6,7 @@
 
 ![Ansible Architecture](imgs/arch.svg) 
 
-The diagram above shows Ansible's architecture with the control node managing multiple target hosts through SSH connections.
+The diagram above shows **Ansible**'s architecture with the control node managing multiple target hosts through SSH connections.
 
 > [!IMPORTANT]
 > **Ansible** uses `SSH` to connect to managed hosts and doesn't require any agents to be installed on target systems.
@@ -17,7 +17,7 @@ The diagram above shows Ansible's architecture with the control node managing mu
     ```bash
     ansible --version
     ```
-    Displays the installed `Ansible` version.
+    Displays the installed **Ansible** version.
 
 - **Run an ad-hoc command**  
     ```bash

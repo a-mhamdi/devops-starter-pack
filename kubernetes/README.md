@@ -1,6 +1,6 @@
 # Basic Kubernetes Commands
 
-Below is a comprehensive guide to the essential Kubernetes (`kubectl`) commands for beginners. These commands cover the basics of managing Kubernetes clusters and resources using `kubectl`, the command-line tool for Kubernetes.
+Below is a comprehensive guide to the essential **Kubernetes** (`kubectl`) commands for beginners. These commands cover the basics of managing **Kubernetes** clusters and resources using `kubectl`, the command-line tool for **Kubernetes**.
 
 ## Kubernetes Architecture Overview
 

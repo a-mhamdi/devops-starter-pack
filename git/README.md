@@ -1,6 +1,6 @@
 # Basic Git and GitHub Commands
 
-These commands cover the basics of version control with `Git` and interacting with [`GitHub`](https://github.com/) repositories.
+These commands cover the basics of version control with **Git** and interacting with [**Github**](https://github.com/) repositories.
 
 ## Git Workflow Overview
 
@@ -18,13 +18,13 @@ The diagram above shows the basic Git workflow: **Working Directory** → **Stag
 
 ## Git Basics
 
-`Git` is a version control system for tracking changes in code.
+**Git** is a version control system for tracking changes in code.
 
 - **Initialize a Git repository**  
     ```bash
     git init
     ```
-    Creates a new `Git` repository in the current directory.
+    Creates a new **Git** repository in the current directory.
 
 - **Check repository status**  
     ```bash
@@ -124,31 +124,31 @@ The diagram above shows how Git merges work, creating a new merge commit that co
 
 ## GitHub Basics
 
-[`GitHub`](https://github.com/) is a platform for hosting and collaborating on `Git` repositories.
+[**Github**](https://github.com/) is a platform for hosting and collaborating on **Git** repositories.
 
 - **Clone a repository**  
     ```bash
     git clone <repository_url>
     ```
-    Downloads a repository from [`GitHub`](https://github.com/) to your local machine.
+    Downloads a repository from [**Github**](https://github.com/) to your local machine.
 
 - **Link local repository to GitHub**  
     ```bash
     git remote add origin <repository_url>
     ```
-    Connects your local repository to a remote [`GitHub`](https://github.com/) repository.
+    Connects your local repository to a remote [**Github**](https://github.com/) repository.
 
 - **Push changes to GitHub**  
     ```bash
     git push origin <branch_name>
     ```
-    Uploads local commits to the specified branch on [`GitHub`](https://github.com/).
+    Uploads local commits to the specified branch on [**Github**](https://github.com/).
 
 - **Pull changes from GitHub**  
     ```bash
     git pull origin <branch_name>
     ```
-    Downloads and merges changes from the specified branch on [`GitHub`](https://github.com/).
+    Downloads and merges changes from the specified branch on [**Github**](https://github.com/).
 
 > [!CAUTION] 
 > 
@@ -156,7 +156,7 @@ The diagram above shows how Git merges work, creating a new merge commit that co
 
 > [!NOTE]
 > 
-> To create a pull request on [`GitHub`](https://github.com/) 's website:
+> To create a pull request on [**Github**](https://github.com/) 's website:
 >
 >     1. Navigate to the repository.
 >     2. Click the "Fork" button.

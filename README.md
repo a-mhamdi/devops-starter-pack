@@ -1,8 +1,9 @@
 # DevOps Starter Pack
 
-This is about getting started with DevOps tools and practices.
+> [!IMPORTANT]
+> This is a starter pack for **DevOps** practices and tools. It provides basic commands and concepts to get you started with each tool. Each folder contains a `README.md` file with detailed instructions and examples. Feel free to explore and modify the content as needed. You can use the project [Minimal Working Example](https://github.com/a-mhamdi/devops-mwe) as a starting point for your DevOps journey.
 
-![DevOps](./devops.svg)
+![**DevOps**](./devops.svg)
 
 <table>
   <tr>

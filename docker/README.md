@@ -1,12 +1,12 @@
 # Basic Docker Commands
 
-`Docker` is a platform for developing, shipping, and running applications inside containers.
+**Docker** is a platform for developing, shipping, and running applications inside containers.
 
 ## Docker Architecture Overview
 
 ![Docker Architecture](imgs/arch.svg)
 
-The diagram above shows `Docker`'s architecture with the `Docker` daemon, containers, images, and the host system.
+The diagram above shows **Docker**'s architecture with the **Docker** daemon, containers, images, and the host system.
 
 > [!TIP]
 > 
@@ -16,7 +16,7 @@ The diagram above shows `Docker`'s architecture with the `Docker` daemon, contai
     ```bash
     docker --version
     ```
-    Displays the installed `Docker` version.
+    Displays the installed **Docker** version.
 
 - **Pull an image from Docker Hub**  
     ```bash
@@ -28,7 +28,7 @@ The diagram above shows `Docker`'s architecture with the `Docker` daemon, contai
     ```bash
     docker image ls
     ```
-    Shows all `Docker` images available on your system.
+    Shows all **Docker** images available on your system.
 
 - **Run a container**  
     ```bash
@@ -58,7 +58,7 @@ The diagram above shows `Docker`'s architecture with the `Docker` daemon, contai
     ```bash
     docker rmi <image_name>
     ```
-    Deletes a `Docker` image from your system.
+    Deletes a **Docker** image from your system.
 
 - **View container logs**  
     ```bash
@@ -76,7 +76,7 @@ The diagram above shows `Docker`'s architecture with the `Docker` daemon, contai
     ```bash
     docker network ls
     ```
-    Shows all `Docker` networks.
+    Shows all **Docker** networks.
 
 - **Create a network**  
     ```bash
@@ -88,7 +88,7 @@ The diagram above shows `Docker`'s architecture with the `Docker` daemon, contai
 
 ![Docker Layers](imgs/layers.svg)
 
-The diagram above shows how `Docker` images are built in layers, with each instruction creating a new layer.
+The diagram above shows how **Docker** images are built in layers, with each instruction creating a new layer.
 
 The `Dockerfile` is a text document that contains all the commands to assemble a customized image. This file contains a series of commands and arguments that are executed automatically in order to assemble an image. 
 
@@ -119,7 +119,7 @@ The main components of a `Dockerfile` include:
     ```bash
     docker build -t <image_name>:<tag> .
     ```
-    Builds a `Docker` image from a `Dockerfile` in the current directory.
+    Builds a **Docker** image from a `Dockerfile` in the current directory.
 
 - **Build with no cache**  
     ```bash
@@ -143,7 +143,7 @@ The main components of a `Dockerfile` include:
 > Use `docker login` to authenticate with [`Dockerhub`](https://hub.docker.com/) for pushing images.
 
 ## Docker Compose
-`Docker Compose` is a tool for defining and running multi-container `Docker` applications.
+`Docker Compose` is a tool for defining and running multi-container **Docker** applications.
 
 - **Start services defined in a `docker-compose.yml` file**  
     ```bash
