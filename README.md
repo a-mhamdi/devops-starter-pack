@@ -5,7 +5,7 @@ This is a starter pack for **DevOps** practices and tools. It provides basic com
 > [!IMPORTANT]
 > You can use the project [Minimal Working Example](https://github.com/a-mhamdi/devops-mwe) as a starting point for your **DevOps** journey.
 
-![**DevOps**](./devops.svg)
+![**DevOps**](./devops-lifecyle.png)
 
 <table>
   <tr>
