@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="61.8233 -162.0842 400 550" width="400px" height="550px">
+  <defs>
+    <marker id="arrow-gray" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#7f8c8d"/>
+    </marker>
+  </defs>
+  <rect x="250" y="80" width="400" height="550" rx="15" fill="#fff" stroke="#d33833" stroke-width="4" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)"/>
+  <rect x="250" y="80" width="400" height="60" rx="15" fill="#d33833" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)"/>
+  <text x="450" y="120" font-family="'Consolas', 'Monaco', monospace" font-size="22" font-weight="bold" text-anchor="middle" fill="#fff" style="white-space: pre;" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)">
+      Jenkins
+    </text>
+  <text x="450" y="170" font-family="'Consolas', 'Monaco', monospace" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50" style="white-space: pre;" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)">
+      Pipeline Suite of Plugins
+    </text>
+  <rect x="280" y="190" width="160" height="70" rx="8" fill="#e8f4f8" stroke="#3498db" stroke-width="2" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)"/>
+  <text x="360" y="215" font-family="'Consolas', 'Monaco', monospace" font-size="14" font-weight="bold" text-anchor="middle" fill="#2980b9" style="white-space: pre;" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)">
+      Pipeline
+    </text>
+  <text x="360" y="235" font-family="'Consolas', 'Monaco', monospace" font-size="11" text-anchor="middle" fill="#34495e" style="white-space: pre;" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)">
+      Core pipeline
+    </text>
+  <text x="360" y="250" font-family="'Consolas', 'Monaco', monospace" font-size="11" text-anchor="middle" fill="#34495e" style="white-space: pre;" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)">
+      functionality
+    </text>
+  <rect x="460" y="190" width="160" height="70" rx="8" fill="#e8f4f8" stroke="#3498db" stroke-width="2" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)"/>
+  <text x="540" y="215" font-family="'Consolas', 'Monaco', monospace" font-size="14" font-weight="bold" text-anchor="middle" fill="#2980b9" style="white-space: pre;" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)">
+      Stage View
+    </text>
+  <text x="540" y="235" font-family="'Consolas', 'Monaco', monospace" font-size="11" text-anchor="middle" fill="#34495e" style="white-space: pre;" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)">
+      Visual pipeline
+    </text>
+  <text x="540" y="250" font-family="'Consolas', 'Monaco', monospace" font-size="11" text-anchor="middle" fill="#34495e" style="white-space: pre;" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)">
+      progress
+    </text>
+  <rect x="280" y="275" width="160" height="70" rx="8" fill="#e8f4f8" stroke="#3498db" stroke-width="2" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)"/>
+  <text x="360" y="300" font-family="'Consolas', 'Monaco', monospace" font-size="14" font-weight="bold" text-anchor="middle" fill="#2980b9" style="white-space: pre;" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)">
+      SCM Integration
+    </text>
+  <text x="360" y="320" font-family="'Consolas', 'Monaco', monospace" font-size="11" text-anchor="middle" fill="#34495e" style="white-space: pre;" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)">
+      Source control
+    </text>
+  <text x="360" y="335" font-family="'Consolas', 'Monaco', monospace" font-size="11" text-anchor="middle" fill="#34495e" style="white-space: pre;" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)">
+      integration
+    </text>
+  <rect x="460" y="275" width="160" height="70" rx="8" fill="#e8f4f8" stroke="#3498db" stroke-width="2" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)"/>
+  <text x="540" y="300" font-family="'Consolas', 'Monaco', monospace" font-size="14" font-weight="bold" text-anchor="middle" fill="#2980b9" style="white-space: pre;" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)">
+      Shared Libraries
+    </text>
+  <text x="540" y="320" font-family="'Consolas', 'Monaco', monospace" font-size="11" text-anchor="middle" fill="#34495e" style="white-space: pre;" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)">
+      Reusable pipeline
+    </text>
+  <text x="540" y="335" font-family="'Consolas', 'Monaco', monospace" font-size="11" text-anchor="middle" fill="#34495e" style="white-space: pre;" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)">
+      code
+    </text>
+  <text x="450" y="380" font-family="'Consolas', 'Monaco', monospace" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50" style="white-space: pre;" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)">
+      Continuous Delivery Pipeline
+    </text>
+  <g id="pipeline-stages" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)">
+    <rect x="280" y="400" width="90" height="70" rx="5" fill="#d4edda" stroke="#28a745" stroke-width="2"/>
+    <text x="325" y="425" font-family="'Consolas', 'Monaco', monospace" font-size="13" font-weight="bold" text-anchor="middle" fill="#155724" style="white-space: pre;">
+        Build
+      </text>
+    <circle cx="325" cy="445" r="15" fill="#28a745"/>
+    <path d="M 318 445 L 323 450 L 332 438" stroke="#fff" stroke-width="2" fill="none"/>
+    <path d="M 370 435 L 400 435" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrow-gray)"/>
+    <rect x="400" y="400" width="90" height="70" rx="5" fill="#fff3cd" stroke="#ffc107" stroke-width="2"/>
+    <text x="445" y="425" font-family="'Consolas', 'Monaco', monospace" font-size="13" font-weight="bold" text-anchor="middle" fill="#856404" style="white-space: pre;">
+        Test
+      </text>
+    <circle cx="445" cy="445" r="15" fill="#ffc107"/>
+    <path d="M 438 445 L 443 450 L 452 438" stroke="#fff" stroke-width="2" fill="none"/>
+    <path d="M 490 435 L 520 435" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrow-gray)"/>
+    <rect x="520" y="400" width="90" height="70" rx="5" fill="#cfe2ff" stroke="#0d6efd" stroke-width="2"/>
+    <text x="565" y="425" font-family="'Consolas', 'Monaco', monospace" font-size="13" font-weight="bold" text-anchor="middle" fill="#084298" style="white-space: pre;">
+        Deploy
+      </text>
+    <circle cx="565" cy="445" r="15" fill="#0d6efd"/>
+    <path d="M 558 445 L 563 450 L 572 438" stroke="#fff" stroke-width="2" fill="none"/>
+  </g>
+  <rect x="290" y="500" width="320" height="110" rx="8" fill="#263238" stroke="#607d8b" stroke-width="2" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)"/>
+  <text x="450" y="525" font-family="'Consolas', 'Monaco', monospace" font-size="14" font-weight="bold" text-anchor="middle" fill="#fff" style="white-space: pre;" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)">
+      Jenkinsfile (Pipeline as Code)
+    </text>
+  <text x="310" y="550" font-family="'Consolas', 'Monaco', monospace" font-size="12" fill="#c3e88d" style="white-space: pre;" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)">pipeline {</text>
+  <text x="330" y="570" font-family="'Consolas', 'Monaco', monospace" font-size="12" fill="#82aaff" style="white-space: pre;" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)">agent</text>
+  <text x="380" y="570" font-family="'Consolas', 'Monaco', monospace" font-size="12" fill="#f07178" style="white-space: pre;" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)">any</text>
+  <text x="330" y="590" font-family="'Consolas', 'Monaco', monospace" font-size="12" fill="#82aaff" style="white-space: pre;" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)">stages { ... }</text>
+  <text x="310" y="605" font-family="'Consolas', 'Monaco', monospace" font-size="12" fill="#c3e88d" style="white-space: pre;" transform="matrix(1, 0, 0, 1, -188.17672729492188, -242.08421325683594)">}</text>
+</svg>
