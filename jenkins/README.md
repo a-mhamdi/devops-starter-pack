@@ -4,7 +4,7 @@
 
 ## Jenkins Architecture Overview
 
-![Jenkins Architecture](imgs/arch.svg)
+![Jenkins Architecture](./imgs/arch.svg)
 
 The diagram above shows Jenkins' architecture with the **Jenkins** controller managing multiple agents for distributed builds and deployments.
 
@@ -49,7 +49,7 @@ Continue the **Jenkins** setup by following the web interface instructions.
 
 ## Jenkins Pipeline
 
-![Jenkins Pipeline](imgs/pipeline-flow.svg)
+![Jenkins Pipeline](./imgs/pipeline-flow.svg)
 
 **Jenkins** Pipeline is a suite of plugins that supports implementing and integrating continuous delivery pipelines into **Jenkins**.
 
@@ -96,7 +96,7 @@ Continue the **Jenkins** setup by following the web interface instructions.
 
 ## Jenkinsfile Structure
 
-![Jenkinsfile Structure](imgs/jenkinsfile-structure.svg)
+![Jenkinsfile Structure](./imgs/jenkinsfile-structure.svg)
 
 A **Jenkinsfile** is a text file that contains the definition of a **Jenkins** Pipeline and is checked into source control.
 
