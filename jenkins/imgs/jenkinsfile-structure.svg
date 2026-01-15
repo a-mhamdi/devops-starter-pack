@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="176.0521 -129.8597 720 413" width="720px" height="413px">
+  <g id="repository" transform="matrix(1, 0, 0, 1, 126.05208587646487, -229.85972595214844)">
+    <rect x="50" y="100" width="300" height="400" rx="10" fill="#e8f4f8" stroke="#3498db" stroke-width="3"/>
+    <text x="200" y="135" font-family="'Consolas', 'Monaco', monospace" font-size="18" font-weight="bold" text-anchor="middle" fill="#2980b9" style="white-space: pre;">
+      Git Repository
+    </text>
+    <g id="files">
+      <rect x="80" y="160" width="240" height="40" rx="5" fill="#fff" stroke="#bdc3c7" stroke-width="2"/>
+      <text x="95" y="185" font-family="'Consolas', 'Monaco', monospace" font-size="14" fill="#34495e" style="white-space: pre;">📁 src/</text>
+      <rect x="80" y="210" width="240" height="40" rx="5" fill="#fff" stroke="#bdc3c7" stroke-width="2"/>
+      <text x="95" y="235" font-family="'Consolas', 'Monaco', monospace" font-size="14" fill="#34495e" style="white-space: pre;">📁 tests/</text>
+      <rect x="80" y="260" width="240" height="40" rx="5" fill="#fff" stroke="#bdc3c7" stroke-width="2"/>
+      <text x="95" y="285" font-family="'Consolas', 'Monaco', monospace" font-size="14" fill="#34495e" style="white-space: pre;">📄 README.md</text>
+      <rect x="80" y="310" width="240" height="40" rx="5" fill="#d4edda" stroke="#28a745" stroke-width="3"/>
+      <text x="95" y="335" font-family="'Consolas', 'Monaco', monospace" font-size="14" font-weight="bold" fill="#155724" style="white-space: pre;">📄 Jenkinsfile</text>
+      <rect x="80" y="360" width="240" height="40" rx="5" fill="#fff" stroke="#bdc3c7" stroke-width="2"/>
+      <text x="95" y="385" font-family="'Consolas', 'Monaco', monospace" font-size="14" fill="#34495e" style="white-space: pre;">📄 package.json</text>
+    </g>
+  </g>
+  <g id="arrow" transform="matrix(1, 0, 0, 1, 136.0520935058594, -229.85972595214844)">
+    <line x1="350" y1="330" x2="430" y2="330" stroke="#e74c3c" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+        <polygon points="0 0, 10 3, 0 6" fill="#e74c3c"/>
+      </marker>
+    </defs>
+  </g>
+  <g id="jenkinsfile-content" transform="matrix(1, 0, 0, 1, 126.05208587646487, -229.85972595214844)">
+    <rect x="450" y="100" width="320" height="400" rx="10" fill="#263238" stroke="#607d8b" stroke-width="3"/>
+    <text x="610" y="135" font-family="'Consolas', 'Monaco', monospace" font-size="18" font-weight="bold" text-anchor="middle" fill="#fff" style="white-space: pre;">
+      Jenkinsfile Content
+    </text>
+    <text x="470" y="170" font-family="'Consolas', 'Monaco', monospace" font-size="13" fill="#c3e88d" style="white-space: pre;">pipeline {</text>
+    <text x="490" y="195" font-family="'Consolas', 'Monaco', monospace" font-size="13" fill="#82aaff" style="white-space: pre;">agent</text>
+    <text x="540" y="195" font-family="'Consolas', 'Monaco', monospace" font-size="13" fill="#f07178" style="white-space: pre;">any</text>
+    <text x="490" y="220" font-family="'Consolas', 'Monaco', monospace" font-size="13" fill="#82aaff" style="white-space: pre;">stages {</text>
+    <text x="510" y="245" font-family="'Consolas', 'Monaco', monospace" font-size="13" fill="#82aaff" style="white-space: pre;">stage</text>
+    <text x="560" y="245" font-family="'Consolas', 'Monaco', monospace" font-size="13" fill="#c3e88d" style="white-space: pre;">(</text>
+    <text x="570" y="245" font-family="'Consolas', 'Monaco', monospace" font-size="13" fill="#c3e88d" style="white-space: pre;">'Build'</text>
+    <text x="630" y="245" font-family="'Consolas', 'Monaco', monospace" font-size="13" fill="#c3e88d" style="white-space: pre;">) {</text>
+    <text x="530" y="270" font-family="'Consolas', 'Monaco', monospace" font-size="13" fill="#82aaff" style="white-space: pre;">steps {</text>
+    <text x="550" y="295" font-family="'Consolas', 'Monaco', monospace" font-size="13" fill="#ffcb6b" style="white-space: pre;">sh</text>
+    <text x="575" y="295" font-family="'Consolas', 'Monaco', monospace" font-size="13" fill="#c3e88d" style="white-space: pre;">'make'</text>
+    <text x="530" y="320" font-family="'Consolas', 'Monaco', monospace" font-size="13" fill="#c3e88d" style="white-space: pre;">}</text>
+    <text x="510" y="345" font-family="'Consolas', 'Monaco', monospace" font-size="13" fill="#c3e88d" style="white-space: pre;">}</text>
+    <text x="510" y="370" font-family="'Consolas', 'Monaco', monospace" font-size="13" fill="#82aaff" style="white-space: pre;">stage</text>
+    <text x="560" y="370" font-family="'Consolas', 'Monaco', monospace" font-size="13" fill="#c3e88d" style="white-space: pre;">(</text>
+    <text x="570" y="370" font-family="'Consolas', 'Monaco', monospace" font-size="13" fill="#c3e88d" style="white-space: pre;">'Test'</text>
+    <text x="625" y="370" font-family="'Consolas', 'Monaco', monospace" font-size="13" fill="#c3e88d" style="white-space: pre;">) {</text>
+    <text x="530" y="395" font-family="'Consolas', 'Monaco', monospace" font-size="13" fill="#82aaff" style="white-space: pre;">steps {</text>
+    <text x="550" y="420" font-family="'Consolas', 'Monaco', monospace" font-size="13" fill="#ffcb6b" style="white-space: pre;">sh</text>
+    <text x="575" y="420" font-family="'Consolas', 'Monaco', monospace" font-size="13" fill="#c3e88d" style="white-space: pre;">'make test'</text>
+    <text x="530" y="445" font-family="'Consolas', 'Monaco', monospace" font-size="13" fill="#c3e88d" style="white-space: pre;">}</text>
+    <text x="510" y="470" font-family="'Consolas', 'Monaco', monospace" font-size="13" fill="#c3e88d" style="white-space: pre;">}</text>
+    <text x="490" y="490" font-family="'Consolas', 'Monaco', monospace" font-size="13" fill="#c3e88d" style="white-space: pre;">}</text>
+    <text x="470" y="510" font-family="'Consolas', 'Monaco', monospace" font-size="13" fill="#c3e88d" style="white-space: pre;">}</text>
+  </g>
+</svg>
