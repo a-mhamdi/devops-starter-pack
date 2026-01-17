@@ -1,0 +1,145 @@
+<svg viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define styles -->
+  <defs>
+    <style>
+      .box { fill: #fff; stroke: #333; stroke-width: 2; }
+      .exporter { fill: #7cb342; }
+      .system { fill: #607d8b; }
+      .prometheus { fill: #e6522c; }
+      .metric { fill: #4a90e2; }
+      .text { fill: #333; font-family: Arial, sans-serif; font-size: 14px; text-anchor: middle; }
+      .title { font-size: 16px; font-weight: bold; }
+      .arrow { fill: none; stroke: #666; stroke-width: 2; marker-end: url(#arrowhead); }
+      .label { font-size: 11px; fill: #666; }
+      .code { font-family: 'Courier New', monospace; font-size: 11px; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="500" y="35" class="text title" style="font-size: 26px; fill: #7cb342;">Prometheus Exporters</text>
+  <text x="500" y="60" class="text" style="font-size: 15px;">Applications that expose metrics in Prometheus format</text>
+  
+  <!-- Prometheus Server -->
+  <rect x="400" y="300" width="200" height="80" class="box prometheus" rx="8"/>
+  <text x="500" y="330" class="text title" fill="#fff" style="font-size: 18px;">Prometheus Server</text>
+  <text x="500" y="355" class="text" fill="#fff" style="font-size: 12px;">Scrapes /metrics endpoint</text>
+  <text x="500" y="370" class="text" fill="#fff" style="font-size: 12px;">every 15-60 seconds</text>
+  
+  <!-- Left Column - Systems/Services -->
+  <g id="systems">
+    <text x="150" y="120" class="text title" style="font-size: 14px;">Systems & Services</text>
+    
+    <!-- Operating System -->
+    <rect x="50" y="145" width="200" height="60" class="box system" rx="5"/>
+    <text x="150" y="170" class="text title" fill="#fff">Operating System</text>
+    <text x="150" y="190" class="text" fill="#fff" style="font-size: 12px;">CPU, Memory, Disk, Network</text>
+    
+    <!-- Database -->
+    <rect x="50" y="225" width="200" height="60" class="box system" rx="5"/>
+    <text x="150" y="250" class="text title" fill="#fff">Database</text>
+    <text x="150" y="270" class="text" fill="#fff" style="font-size: 12px;">MySQL, PostgreSQL, MongoDB</text>
+    
+    <!-- Web Server -->
+    <rect x="50" y="305" width="200" height="60" class="box system" rx="5"/>
+    <text x="150" y="330" class="text title" fill="#fff">Web Server</text>
+    <text x="150" y="350" class="text" fill="#fff" style="font-size: 12px;">Nginx, Apache, HAProxy</text>
+    
+    <!-- Message Queue -->
+    <rect x="50" y="385" width="200" height="60" class="box system" rx="5"/>
+    <text x="150" y="410" class="text title" fill="#fff">Message Queue</text>
+    <text x="150" y="430" class="text" fill="#fff" style="font-size: 12px;">RabbitMQ, Kafka, Redis</text>
+    
+    <!-- Cloud Services -->
+    <rect x="50" y="465" width="200" height="60" class="box system" rx="5"/>
+    <text x="150" y="490" class="text title" fill="#fff">Cloud Services</text>
+    <text x="150" y="510" class="text" fill="#fff" style="font-size: 12px;">AWS, GCP, Azure</text>
+  </g>
+  
+  <!-- Middle Column - Exporters -->
+  <g id="exporters">
+    <text x="360" y="120" class="text title" style="font-size: 14px;">Exporters</text>
+    
+    <!-- Node Exporter -->
+    <rect x="290" y="145" width="140" height="60" class="box exporter" rx="5"/>
+    <text x="360" y="168" class="text title" fill="#fff">Node Exporter</text>
+    <text x="360" y="188" class="text code" fill="#fff">:9100/metrics</text>
+    
+    <!-- MySQL Exporter -->
+    <rect x="290" y="225" width="140" height="60" class="box exporter" rx="5"/>
+    <text x="360" y="248" class="text title" fill="#fff">MySQL Exporter</text>
+    <text x="360" y="268" class="text code" fill="#fff">:9104/metrics</text>
+    
+    <!-- Nginx Exporter -->
+    <rect x="290" y="305" width="140" height="60" class="box exporter" rx="5"/>
+    <text x="360" y="328" class="text title" fill="#fff">Nginx Exporter</text>
+    <text x="360" y="348" class="text code" fill="#fff">:9113/metrics</text>
+    
+    <!-- RabbitMQ Exporter -->
+    <rect x="290" y="385" width="140" height="60" class="box exporter" rx="5"/>
+    <text x="360" y="408" class="text title" fill="#fff">RabbitMQ Exporter</text>
+    <text x="360" y="428" class="text code" fill="#fff">:9419/metrics</text>
+    
+    <!-- CloudWatch Exporter -->
+    <rect x="290" y="465" width="140" height="60" class="box exporter" rx="5"/>
+    <text x="360" y="488" class="text title" fill="#fff">CloudWatch Exporter</text>
+    <text x="360" y="508" class="text code" fill="#fff">:9106/metrics</text>
+  </g>
+  
+  <!-- Right Column - Metric Format Example -->
+  <g id="metrics">
+    <text x="750" y="120" class="text title" style="font-size: 14px;">Prometheus Format</text>
+    
+    <rect x="640" y="140" width="280" height="200" class="box metric" rx="5"/>
+    <text x="660" y="165" class="code" style="text-anchor: start; fill: #fff; font-size: 10px;"># HELP node_cpu_seconds_total</text>
+    <text x="660" y="185" class="code" style="text-anchor: start; fill: #fff; font-size: 10px;"># TYPE node_cpu_seconds_total counter</text>
+    <text x="660" y="205" class="code" style="text-anchor: start; fill: #fff; font-size: 10px;">node_cpu_seconds_total{</text>
+    <text x="680" y="225" class="code" style="text-anchor: start; fill: #fff; font-size: 10px;">cpu="0",</text>
+    <text x="680" y="245" class="code" style="text-anchor: start; fill: #fff; font-size: 10px;">mode="idle"</text>
+    <text x="660" y="265" class="code" style="text-anchor: start; fill: #fff; font-size: 10px;">} 123456.78</text>
+    <text x="660" y="295" class="code" style="text-anchor: start; fill: #fff; font-size: 10px;">node_cpu_seconds_total{</text>
+    <text x="680" y="315" class="code" style="text-anchor: start; fill: #fff; font-size: 10px;">cpu="0",</text>
+    <text x="680" y="330" class="code" style="text-anchor: start; fill: #fff; font-size: 10px;">mode="system"</text>
+    <text x="660" y="330" class="code" style="text-anchor: start; fill: #fff; font-size: 10px;">} 4567.89</text>
+    
+    <!-- Format Info -->
+    <rect x="640" y="360" width="280" height="80" class="box" fill="#f0f0f0" rx="5"/>
+    <text x="780" y="385" class="text" style="font-size: 13px; font-weight: bold;">Metric Components</text>
+    <text x="780" y="405" class="text" style="font-size: 11px;">• Name: node_cpu_seconds_total</text>
+    <text x="780" y="425" class="text" style="font-size: 11px;">• Labels: {cpu, mode}</text>
+    <text x="780" y="435" class="text" style="font-size: 11px;">• Value: timestamp value</text>
+  </g>
+  
+  <!-- Flow Description -->
+  <rect x="640" y="480" width="280" height="120" class="box" fill="#fff3e0" rx="5"/>
+  <text x="780" y="505" class="text title" style="font-size: 14px;">How It Works</text>
+  <text x="780" y="530" class="text" style="font-size: 11px;">1. Exporter connects to system</text>
+  <text x="780" y="550" class="text" style="font-size: 11px;">2. Collects & formats metrics</text>
+  <text x="780" y="570" class="text" style="font-size: 11px;">3. Exposes HTTP /metrics endpoint</text>
+  <text x="780" y="590" class="text" style="font-size: 11px;">4. Prometheus scrapes periodically</text>
+  
+  <!-- Arrows from Systems to Exporters -->
+  <path d="M 250 175 Q 260 175 270 175 T 290 175" class="arrow"/>
+  <path d="M 250 255 Q 260 255 270 255 T 290 255" class="arrow"/>
+  <path d="M 250 335 Q 260 335 270 335 T 290 335" class="arrow"/>
+  <path d="M 250 415 Q 260 415 270 415 T 290 415" class="arrow"/>
+  <path d="M 250 495 Q 260 495 270 495 T 290 495" class="arrow"/>
+  
+  <text x="265" y="173" class="label">monitors</text>
+  
+  <!-- Arrows from Exporters to Prometheus -->
+  <path d="M 430 175 Q 445 210 460 250 T 480 300" class="arrow"/>
+  <path d="M 430 255 Q 445 270 460 285 T 480 305" class="arrow"/>
+  <path d="M 430 335 Q 445 340 460 340 T 480 335" class="arrow"/>
+  <path d="M 430 415 Q 445 395 460 375 T 480 355" class="arrow"/>
+  <path d="M 430 495 Q 445 455 460 415 T 480 370" class="arrow"/>
+  
+  <text x="435" y="235" class="label" style="font-size: 10px;">HTTP GET</text>
+  <text x="435" y="248" class="label" style="font-size: 10px;">/metrics</text>
+  
+  <!-- Arrow from Prometheus to Metrics Format -->
+  <path d="M 600 340 Q 610 340 620 340 T 640 340" class="arrow"/>
+  <text x="620" y="335" class="label">returns</text>
+</svg>
