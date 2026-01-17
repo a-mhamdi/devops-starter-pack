@@ -200,7 +200,7 @@ Exporters are applications that expose metrics in **Prometheus** format for vari
 
 ![Alerting Flow](./imgs/alerting_flow.svg)
 
-**Prometheus** handles alerting through Alertmanager, which manages alerts sent by client applications.
+**Prometheus** handles alerting through `Alertmanager`, which manages alerts sent by client applications.
 
 ### Alert Rules
 

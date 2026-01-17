@@ -1,145 +1,88 @@
-<svg viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg">
-  <!-- Define styles -->
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="76.6683 -323.6544 944 493.0004" width="944px" height="493px">
   <defs>
-    <style>
-      .box { fill: #fff; stroke: #333; stroke-width: 2; }
-      .exporter { fill: #7cb342; }
-      .system { fill: #607d8b; }
-      .prometheus { fill: #e6522c; }
-      .metric { fill: #4a90e2; }
-      .text { fill: #333; font-family: Arial, sans-serif; font-size: 14px; text-anchor: middle; }
-      .title { font-size: 16px; font-weight: bold; }
-      .arrow { fill: none; stroke: #666; stroke-width: 2; marker-end: url(#arrowhead); }
-      .label { font-size: 11px; fill: #666; }
-      .code { font-family: 'Courier New', monospace; font-size: 11px; }
-    </style>
     <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill="#666" />
+      <polygon points="0 0, 10 3, 0 6" fill="#666"/>
     </marker>
   </defs>
-  
-  <!-- Title -->
-  <text x="500" y="35" class="text title" style="font-size: 26px; fill: #7cb342;">Prometheus Exporters</text>
-  <text x="500" y="60" class="text" style="font-size: 15px;">Applications that expose metrics in Prometheus format</text>
-  
-  <!-- Prometheus Server -->
-  <rect x="400" y="300" width="200" height="80" class="box prometheus" rx="8"/>
-  <text x="500" y="330" class="text title" fill="#fff" style="font-size: 18px;">Prometheus Server</text>
-  <text x="500" y="355" class="text" fill="#fff" style="font-size: 12px;">Scrapes /metrics endpoint</text>
-  <text x="500" y="370" class="text" fill="#fff" style="font-size: 12px;">every 15-60 seconds</text>
-  
-  <!-- Left Column - Systems/Services -->
-  <g id="systems">
-    <text x="150" y="120" class="text title" style="font-size: 14px;">Systems & Services</text>
-    
-    <!-- Operating System -->
-    <rect x="50" y="145" width="200" height="60" class="box system" rx="5"/>
-    <text x="150" y="170" class="text title" fill="#fff">Operating System</text>
-    <text x="150" y="190" class="text" fill="#fff" style="font-size: 12px;">CPU, Memory, Disk, Network</text>
-    
-    <!-- Database -->
-    <rect x="50" y="225" width="200" height="60" class="box system" rx="5"/>
-    <text x="150" y="250" class="text title" fill="#fff">Database</text>
-    <text x="150" y="270" class="text" fill="#fff" style="font-size: 12px;">MySQL, PostgreSQL, MongoDB</text>
-    
-    <!-- Web Server -->
-    <rect x="50" y="305" width="200" height="60" class="box system" rx="5"/>
-    <text x="150" y="330" class="text title" fill="#fff">Web Server</text>
-    <text x="150" y="350" class="text" fill="#fff" style="font-size: 12px;">Nginx, Apache, HAProxy</text>
-    
-    <!-- Message Queue -->
-    <rect x="50" y="385" width="200" height="60" class="box system" rx="5"/>
-    <text x="150" y="410" class="text title" fill="#fff">Message Queue</text>
-    <text x="150" y="430" class="text" fill="#fff" style="font-size: 12px;">RabbitMQ, Kafka, Redis</text>
-    
-    <!-- Cloud Services -->
-    <rect x="50" y="465" width="200" height="60" class="box system" rx="5"/>
-    <text x="150" y="490" class="text title" fill="#fff">Cloud Services</text>
-    <text x="150" y="510" class="text" fill="#fff" style="font-size: 12px;">AWS, GCP, Azure</text>
+  <rect x="494.668" y="-130.65" width="200" height="80" class="box prometheus" rx="8" style="fill: rgb(230, 82, 44); stroke: rgb(51, 51, 51); stroke-width: 2;"/>
+  <text x="585.668" y="-100.65" class="text title" fill="#fff" style="font-size: 18px; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-weight: 700; text-anchor: middle; stroke-width: 1;">Prometheus Server</text>
+  <text x="582.668" y="-75.654" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; text-anchor: middle; stroke-width: 1;">Scrapes /metrics endpoint</text>
+  <text x="581.668" y="-60.654" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; text-anchor: middle; stroke-width: 1;">every 15-60 seconds</text>
+  <g id="systems" transform="matrix(1, 0, 0, 1, 26.668304443359375, -430.65435791015625)">
+    <text x="150" y="120" class="text title" style="font-size: 14px; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-weight: 700; text-anchor: middle;">Systems &amp; Services</text>
+    <rect x="50" y="145" width="200" height="60" class="box system" rx="5" style="fill: rgb(96, 125, 139); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
+    <text x="150" y="170" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-weight: 700; text-anchor: middle;">Operating System</text>
+    <text x="150" y="190" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; text-anchor: middle;">CPU, Memory, Disk, Network</text>
+    <rect x="50" y="225" width="200" height="60" class="box system" rx="5" style="fill: rgb(96, 125, 139); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
+    <text x="150" y="250" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-weight: 700; text-anchor: middle;">Database</text>
+    <text x="150" y="270" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; text-anchor: middle;">MySQL, PostgreSQL, MongoDB</text>
+    <rect x="50" y="305" width="200" height="60" class="box system" rx="5" style="fill: rgb(96, 125, 139); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
+    <text x="150" y="330" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-weight: 700; text-anchor: middle;">Web Server</text>
+    <text x="150" y="350" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; text-anchor: middle;">Nginx, Apache, HAProxy</text>
+    <rect x="50" y="385" width="200" height="60" class="box system" rx="5" style="fill: rgb(96, 125, 139); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
+    <text x="150" y="410" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-weight: 700; text-anchor: middle;">Message Queue</text>
+    <text x="150" y="430" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; text-anchor: middle;">RabbitMQ, Kafka, Redis</text>
+    <rect x="50" y="465" width="200" height="60" class="box system" rx="5" style="fill: rgb(96, 125, 139); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
+    <text x="150" y="490" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-weight: 700; text-anchor: middle;">Cloud Services</text>
+    <text x="150" y="510" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; text-anchor: middle;">AWS, GCP, Azure</text>
   </g>
-  
-  <!-- Middle Column - Exporters -->
-  <g id="exporters">
-    <text x="360" y="120" class="text title" style="font-size: 14px;">Exporters</text>
-    
-    <!-- Node Exporter -->
-    <rect x="290" y="145" width="140" height="60" class="box exporter" rx="5"/>
-    <text x="360" y="168" class="text title" fill="#fff">Node Exporter</text>
-    <text x="360" y="188" class="text code" fill="#fff">:9100/metrics</text>
-    
-    <!-- MySQL Exporter -->
-    <rect x="290" y="225" width="140" height="60" class="box exporter" rx="5"/>
-    <text x="360" y="248" class="text title" fill="#fff">MySQL Exporter</text>
-    <text x="360" y="268" class="text code" fill="#fff">:9104/metrics</text>
-    
-    <!-- Nginx Exporter -->
-    <rect x="290" y="305" width="140" height="60" class="box exporter" rx="5"/>
-    <text x="360" y="328" class="text title" fill="#fff">Nginx Exporter</text>
-    <text x="360" y="348" class="text code" fill="#fff">:9113/metrics</text>
-    
-    <!-- RabbitMQ Exporter -->
-    <rect x="290" y="385" width="140" height="60" class="box exporter" rx="5"/>
-    <text x="360" y="408" class="text title" fill="#fff">RabbitMQ Exporter</text>
-    <text x="360" y="428" class="text code" fill="#fff">:9419/metrics</text>
-    
-    <!-- CloudWatch Exporter -->
-    <rect x="290" y="465" width="140" height="60" class="box exporter" rx="5"/>
-    <text x="360" y="488" class="text title" fill="#fff">CloudWatch Exporter</text>
-    <text x="360" y="508" class="text code" fill="#fff">:9106/metrics</text>
+  <g id="exporters" transform="matrix(1, 0, 0, 1, 30.11859893798828, -429.5042724609375)">
+    <text x="360" y="120" class="text title" style="font-size: 14px; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-weight: 700; text-anchor: middle;">Exporters</text>
+    <rect x="290" y="145" width="140" height="60" class="box exporter" rx="5" style="fill: rgb(124, 179, 66); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
+    <text x="360" y="168" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-weight: 700; text-anchor: middle;">Node Exporter</text>
+    <text x="360" y="188" class="text code" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: &quot;Courier New&quot;, monospace; font-size: 11px; line-height: 17.6px; text-anchor: middle;">:9100/metrics</text>
+    <rect x="290" y="225" width="140" height="60" class="box exporter" rx="5" style="fill: rgb(124, 179, 66); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
+    <text x="360" y="248" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-weight: 700; text-anchor: middle;">MySQL Exporter</text>
+    <text x="360" y="268" class="text code" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: &quot;Courier New&quot;, monospace; font-size: 11px; line-height: 17.6px; text-anchor: middle;">:9104/metrics</text>
+    <rect x="290" y="305" width="140" height="60" class="box exporter" rx="5" style="fill: rgb(124, 179, 66); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
+    <text x="360" y="328" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-weight: 700; text-anchor: middle;">Nginx Exporter</text>
+    <text x="360" y="348" class="text code" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: &quot;Courier New&quot;, monospace; font-size: 11px; line-height: 17.6px; text-anchor: middle;">:9113/metrics</text>
+    <rect x="290" y="385" width="140" height="60" class="box exporter" rx="5" style="fill: rgb(124, 179, 66); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
+    <text x="360" y="408" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-weight: 700; text-anchor: middle;">RabbitMQ Exporter</text>
+    <text x="360" y="428" class="text code" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: &quot;Courier New&quot;, monospace; font-size: 11px; line-height: 17.6px; text-anchor: middle;">:9419/metrics</text>
+    <rect x="290" y="465" width="140" height="60" class="box exporter" rx="5" style="fill: rgb(124, 179, 66); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
+    <text x="360" y="488" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-weight: 700; text-anchor: middle;">CloudWatch Exporter</text>
+    <text x="360" y="508" class="text code" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: &quot;Courier New&quot;, monospace; font-size: 11px; line-height: 17.6px; text-anchor: middle;">:9106/metrics</text>
   </g>
-  
-  <!-- Right Column - Metric Format Example -->
-  <g id="metrics">
-    <text x="750" y="120" class="text title" style="font-size: 14px;">Prometheus Format</text>
-    
-    <rect x="640" y="140" width="280" height="200" class="box metric" rx="5"/>
-    <text x="660" y="165" class="code" style="text-anchor: start; fill: #fff; font-size: 10px;"># HELP node_cpu_seconds_total</text>
-    <text x="660" y="185" class="code" style="text-anchor: start; fill: #fff; font-size: 10px;"># TYPE node_cpu_seconds_total counter</text>
-    <text x="660" y="205" class="code" style="text-anchor: start; fill: #fff; font-size: 10px;">node_cpu_seconds_total{</text>
-    <text x="680" y="225" class="code" style="text-anchor: start; fill: #fff; font-size: 10px;">cpu="0",</text>
-    <text x="680" y="245" class="code" style="text-anchor: start; fill: #fff; font-size: 10px;">mode="idle"</text>
-    <text x="660" y="265" class="code" style="text-anchor: start; fill: #fff; font-size: 10px;">} 123456.78</text>
-    <text x="660" y="295" class="code" style="text-anchor: start; fill: #fff; font-size: 10px;">node_cpu_seconds_total{</text>
-    <text x="680" y="315" class="code" style="text-anchor: start; fill: #fff; font-size: 10px;">cpu="0",</text>
-    <text x="680" y="330" class="code" style="text-anchor: start; fill: #fff; font-size: 10px;">mode="system"</text>
-    <text x="660" y="330" class="code" style="text-anchor: start; fill: #fff; font-size: 10px;">} 4567.89</text>
-    
-    <!-- Format Info -->
-    <rect x="640" y="360" width="280" height="80" class="box" fill="#f0f0f0" rx="5"/>
-    <text x="780" y="385" class="text" style="font-size: 13px; font-weight: bold;">Metric Components</text>
-    <text x="780" y="405" class="text" style="font-size: 11px;">• Name: node_cpu_seconds_total</text>
-    <text x="780" y="425" class="text" style="font-size: 11px;">• Labels: {cpu, mode}</text>
-    <text x="780" y="435" class="text" style="font-size: 11px;">• Value: timestamp value</text>
+  <g id="metrics" transform="matrix(1, 0, 0, 1, 100.66830444335938, -430.65435791015625)">
+    <text x="750" y="120" class="text title" style="font-size: 14px; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-weight: 700; text-anchor: middle;">Prometheus Format</text>
+    <rect x="640" y="140" width="280" height="200" class="box metric" rx="5" style="fill: rgb(74, 144, 226); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
+    <text x="660" y="165" class="code" style="text-anchor: start; fill: rgb(255, 255, 255); font-size: 10px; white-space: pre; font-family: &quot;Courier New&quot;, monospace;"># HELP node_cpu_seconds_total</text>
+    <text x="660" y="185" class="code" style="text-anchor: start; fill: rgb(255, 255, 255); font-size: 10px; white-space: pre; font-family: &quot;Courier New&quot;, monospace;"># TYPE node_cpu_seconds_total counter</text>
+    <text x="660" y="205" class="code" style="text-anchor: start; fill: rgb(255, 255, 255); font-size: 10px; white-space: pre; font-family: &quot;Courier New&quot;, monospace;">node_cpu_seconds_total{</text>
+    <text x="680" y="225" class="code" style="text-anchor: start; fill: rgb(255, 255, 255); font-size: 10px; white-space: pre; font-family: &quot;Courier New&quot;, monospace;">cpu="0",</text>
+    <text x="680" y="245" class="code" style="text-anchor: start; fill: rgb(255, 255, 255); font-size: 10px; white-space: pre; font-family: &quot;Courier New&quot;, monospace;">mode="idle"</text>
+    <text x="660" y="265" class="code" style="text-anchor: start; fill: rgb(255, 255, 255); font-size: 10px; white-space: pre; font-family: &quot;Courier New&quot;, monospace;">} 123456.78</text>
+    <text x="660" y="295" class="code" style="text-anchor: start; fill: rgb(255, 255, 255); font-size: 10px; white-space: pre; font-family: &quot;Courier New&quot;, monospace;">node_cpu_seconds_total{</text>
+    <text x="680" y="315" class="code" style="text-anchor: start; fill: rgb(255, 255, 255); font-size: 10px; white-space: pre; font-family: &quot;Courier New&quot;, monospace;">cpu="0",</text>
+    <text x="680" y="330" class="code" style="text-anchor: start; fill: rgb(255, 255, 255); font-size: 10px; white-space: pre; font-family: &quot;Courier New&quot;, monospace;">mode="system"</text>
+    <text x="660" y="330" class="code" style="text-anchor: start; fill: rgb(255, 255, 255); font-size: 10px; white-space: pre; font-family: &quot;Courier New&quot;, monospace;">} 4567.89</text>
+    <rect x="640" y="360" width="280" height="80" class="box" fill="#f0f0f0" rx="5" style="fill: rgb(255, 255, 255); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
+    <text x="780" y="385" class="text" style="font-size: 13px; font-weight: bold; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; text-anchor: middle;">Metric Components</text>
+    <text x="780" y="405" class="text" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; text-anchor: middle;">• Name: node_cpu_seconds_total</text>
+    <text x="780" y="425" class="text" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; text-anchor: middle;">• Labels: {cpu, mode}</text>
+    <text x="780" y="435" class="text" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; text-anchor: middle;">• Value: timestamp value</text>
   </g>
-  
-  <!-- Flow Description -->
-  <rect x="640" y="480" width="280" height="120" class="box" fill="#fff3e0" rx="5"/>
-  <text x="780" y="505" class="text title" style="font-size: 14px;">How It Works</text>
-  <text x="780" y="530" class="text" style="font-size: 11px;">1. Exporter connects to system</text>
-  <text x="780" y="550" class="text" style="font-size: 11px;">2. Collects & formats metrics</text>
-  <text x="780" y="570" class="text" style="font-size: 11px;">3. Exposes HTTP /metrics endpoint</text>
-  <text x="780" y="590" class="text" style="font-size: 11px;">4. Prometheus scrapes periodically</text>
-  
-  <!-- Arrows from Systems to Exporters -->
-  <path d="M 250 175 Q 260 175 270 175 T 290 175" class="arrow"/>
-  <path d="M 250 255 Q 260 255 270 255 T 290 255" class="arrow"/>
-  <path d="M 250 335 Q 260 335 270 335 T 290 335" class="arrow"/>
-  <path d="M 250 415 Q 260 415 270 415 T 290 415" class="arrow"/>
-  <path d="M 250 495 Q 260 495 270 495 T 290 495" class="arrow"/>
-  
-  <text x="265" y="173" class="label">monitors</text>
-  
-  <!-- Arrows from Exporters to Prometheus -->
-  <path d="M 430 175 Q 445 210 460 250 T 480 300" class="arrow"/>
-  <path d="M 430 255 Q 445 270 460 285 T 480 305" class="arrow"/>
-  <path d="M 430 335 Q 445 340 460 340 T 480 335" class="arrow"/>
-  <path d="M 430 415 Q 445 395 460 375 T 480 355" class="arrow"/>
-  <path d="M 430 495 Q 445 455 460 415 T 480 370" class="arrow"/>
-  
-  <text x="435" y="235" class="label" style="font-size: 10px;">HTTP GET</text>
-  <text x="435" y="248" class="label" style="font-size: 10px;">/metrics</text>
-  
-  <!-- Arrow from Prometheus to Metrics Format -->
-  <path d="M 600 340 Q 610 340 620 340 T 640 340" class="arrow"/>
-  <text x="620" y="335" class="label">returns</text>
+  <rect x="740.668" y="49.346" width="280" height="120" class="box" fill="#fff3e0" rx="5" style="fill: rgb(255, 255, 255); stroke: rgb(51, 51, 51); stroke-width: 2;"/>
+  <text x="880.668" y="74.346" class="text title" style="font-size: 14px; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-weight: 700; text-anchor: middle; stroke-width: 1;">How It Works</text>
+  <text x="880.668" y="99.346" class="text" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; text-anchor: middle; stroke-width: 1;">1. Exporter connects to system</text>
+  <text x="880.668" y="119.346" class="text" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; text-anchor: middle; stroke-width: 1;">2. Collects &amp; formats metrics</text>
+  <text x="880.668" y="139.346" class="text" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; text-anchor: middle; stroke-width: 1;">3. Exposes HTTP /metrics endpoint</text>
+  <text x="880.668" y="159.346" class="text" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; text-anchor: middle; stroke-width: 1;">4. Prometheus scrapes periodically</text>
+  <path d="M 276.668 -255.65 C 283.335 -255.65 290.002 -255.65 296.668 -255.65 C 303.335 -255.65 310.002 -255.65 316.668 -255.65" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
+  <path d="M 276.668 -175.65 C 283.335 -175.65 290.002 -175.65 296.668 -175.65 C 303.335 -175.65 310.002 -175.65 316.668 -175.65" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
+  <path d="M 276.668 -95.654 C 283.335 -95.654 290.002 -95.654 296.668 -95.654 C 303.335 -95.654 310.002 -95.654 316.668 -95.654" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
+  <path d="M 276.668 -15.654 C 283.335 -15.654 290.002 -15.654 296.668 -15.654 C 303.335 -15.654 310.002 -15.654 316.668 -15.654" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
+  <path d="M 276.668 64.346 C 283.335 64.346 290.002 64.346 296.668 64.346 C 303.335 64.346 310.002 64.346 316.668 64.346" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
+  <text x="275.567" y="-211.65" class="label" style="white-space: pre; fill: rgb(102, 102, 102); font-size: 11px; line-height: 17.6px; stroke-width: 1;">monitors</text>
+  <path d="M 456.668 -255.65 C 466.668 -232.32 476.668 -207.32 486.668 -180.65 C 496.668 -153.99 503.335 -137.32 506.668 -130.65" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
+  <path d="M 456.668 -175.65 C 466.668 -165.65 476.668 -155.65 486.668 -145.65 C 496.668 -135.65 503.335 -128.99 506.668 -125.65" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
+  <path d="M 456.668 -95.654 C 466.668 -92.321 476.668 -90.654 486.668 -90.654 C 496.668 -90.654 503.335 -92.321 506.668 -95.654" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
+  <path d="M 456.668 -15.654 C 464.828 -27.966 472.988 -40.276 481.148 -52.587 C 489.307 -64.899 494.748 -71.054 497.467 -71.054" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
+  <path d="M 462.418 70.096 C 472.418 43.429 482.418 16.762 492.418 -9.904 C 502.418 -36.571 509.085 -51.571 512.418 -54.904" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
+  <text x="490.42" y="-204.85" class="label" style="font-size: 10px; white-space: pre; fill: rgb(102, 102, 102); stroke-width: 1;">HTTP GET</text>
+  <text x="495.021" y="-179.2" class="label" style="font-size: 10px; white-space: pre; fill: rgb(102, 102, 102); stroke-width: 1;">/metrics</text>
+  <path d="M 700.668 -90.654 C 707.335 -90.654 714.002 -90.654 720.668 -90.654 C 727.335 -90.654 734.002 -90.654 740.668 -90.654" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
+  <text x="701.116" y="-104.86" class="label" style="white-space: pre; fill: rgb(102, 102, 102); font-size: 11px; line-height: 17.6px; stroke-width: 1;">returns</text>
 </svg>

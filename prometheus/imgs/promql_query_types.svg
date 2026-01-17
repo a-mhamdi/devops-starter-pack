@@ -1,80 +1,43 @@
-<svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
-  <!-- Define styles -->
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="144.5728 -691.42 869.9979 485" width="869.998px" height="485px">
   <defs>
-    <style>
-      .box { fill: #fff; stroke: #333; stroke-width: 2; }
-      .promql { fill: #e6522c; }
-      .function { fill: #4a90e2; }
-      .data { fill: #7cb342; }
-      .result { fill: #f4a742; }
-      .text { fill: #333; font-family: Arial, sans-serif; font-size: 14px; text-anchor: middle; }
-      .title { font-size: 16px; font-weight: bold; }
-      .arrow { fill: none; stroke: #666; stroke-width: 2; marker-end: url(#arrowhead); }
-      .label { font-size: 12px; fill: #666; }
-      .code { font-family: 'Courier New', monospace; font-size: 13px; fill: #333; }
-    </style>
     <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill="#666" />
+      <polygon points="0 0, 10 3, 0 6" fill="#666"/>
     </marker>
   </defs>
-  
-  <!-- Title -->
-  <text x="500" y="35" class="text title" style="font-size: 26px; fill: #e6522c;">PromQL</text>
-  <text x="500" y="60" class="text" style="font-size: 15px;">Functional Query Language for Time Series Data</text>
-  
-  <!-- Main PromQL Box -->
-  <rect x="200" y="100" width="600" height="80" class="box promql" rx="8"/>
-  <text x="500" y="130" class="text title" fill="#fff" style="font-size: 18px;">Select & Aggregate Time Series Data</text>
-  <text x="500" y="155" class="text" fill="#fff" style="font-size: 14px;">Real-time querying with functional expressions</text>
-  
-  <!-- Three Main Capabilities -->
-  <g id="capabilities">
-    <!-- Select -->
-    <rect x="80" y="230" width="240" height="100" class="box function" rx="5"/>
-    <text x="200" y="260" class="text title" fill="#fff">SELECT</text>
-    <text x="200" y="285" class="text code" fill="#fff">http_requests_total</text>
-    <text x="200" y="310" class="text" fill="#fff" style="font-size: 12px;">Filter by labels & metrics</text>
-    
-    <!-- Filter -->
-    <rect x="380" y="230" width="240" height="100" class="box function" rx="5"/>
-    <text x="500" y="260" class="text title" fill="#fff">FILTER</text>
-    <text x="500" y="285" class="text code" fill="#fff">{job="api", code="200"}</text>
-    <text x="500" y="310" class="text" fill="#fff" style="font-size: 12px;">Label matchers & ranges</text>
-    
-    <!-- Aggregate -->
-    <rect x="680" y="230" width="240" height="100" class="box function" rx="5"/>
-    <text x="800" y="260" class="text title" fill="#fff">AGGREGATE</text>
-    <text x="800" y="285" class="text code" fill="#fff">sum by (instance)</text>
-    <text x="800" y="310" class="text" fill="#fff" style="font-size: 12px;">Combine & calculate</text>
+  <rect x="264.573" y="-691.42" width="600" height="80" class="box promql" rx="8" style="fill: rgb(230, 82, 44); stroke: rgb(51, 51, 51); stroke-width: 2;"/>
+  <text x="564.573" y="-661.42" class="text title" fill="#fff" style="font-size: 18px; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-weight: 700; text-anchor: middle; stroke-width: 1;">Select &amp; Aggregate Time Series Data</text>
+  <text x="564.573" y="-636.42" class="text" fill="#fff" style="font-size: 14px; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; text-anchor: middle; stroke-width: 1;">Real-time querying with functional expressions</text>
+  <g id="capabilities" transform="matrix(1, 0, 0, 1, 64.57282257080078, -791.41552734375)">
+    <rect x="80" y="230" width="240" height="100" class="box function" rx="5" style="fill: rgb(74, 144, 226); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
+    <text x="200" y="260" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-weight: 700; text-anchor: middle;">SELECT</text>
+    <text x="200" y="285" class="text code" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: &quot;Courier New&quot;, monospace; font-size: 13px; line-height: 20.8px; text-anchor: middle;">http_requests_total</text>
+    <text x="200" y="310" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; text-anchor: middle;">Filter by labels &amp; metrics</text>
+    <rect x="380" y="230" width="240" height="100" class="box function" rx="5" style="fill: rgb(74, 144, 226); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
+    <text x="500" y="260" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-weight: 700; text-anchor: middle;">FILTER</text>
+    <text x="500" y="285" class="text code" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: &quot;Courier New&quot;, monospace; font-size: 13px; line-height: 20.8px; text-anchor: middle;">{job="api", code="200"}</text>
+    <text x="500" y="310" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; text-anchor: middle;">Label matchers &amp; ranges</text>
+    <rect x="680" y="230" width="240" height="100" class="box function" rx="5" style="fill: rgb(74, 144, 226); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
+    <text x="800" y="260" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-weight: 700; text-anchor: middle;">AGGREGATE</text>
+    <text x="800" y="285" class="text code" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: &quot;Courier New&quot;, monospace; font-size: 13px; line-height: 20.8px; text-anchor: middle;">sum by (instance)</text>
+    <text x="800" y="310" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; text-anchor: middle;">Combine &amp; calculate</text>
   </g>
-  
-  <!-- Query Examples -->
-  <g id="examples">
-    <text x="100" y="380" class="text" style="font-size: 15px; font-weight: bold; text-anchor: start;">Query Examples:</text>
-    
-    <!-- Example 1 -->
-    <rect x="100" y="395" width="800" height="50" class="box data" rx="5"/>
-    <text x="120" y="415" class="code" style="text-anchor: start; fill: #fff; font-size: 12px;">rate(http_requests_total{job="api"}[5m])</text>
-    <text x="120" y="435" class="text" style="text-anchor: start; fill: #fff; font-size: 11px;">→ Requests per second over last 5 minutes</text>
-    
-    <!-- Example 2 -->
-    <rect x="100" y="465" width="800" height="50" class="box data" rx="5"/>
-    <text x="120" y="485" class="code" style="text-anchor: start; fill: #fff; font-size: 12px;">sum(rate(http_requests_total[5m])) by (status)</text>
-    <text x="120" y="505" class="text" style="text-anchor: start; fill: #fff; font-size: 11px;">→ Total request rate grouped by HTTP status code</text>
+  <g id="examples" transform="matrix(1, 0, 0, 1, 64.57282257080078, -791.41552734375)">
+    <text x="100" y="380" class="text" style="font-size: 15px; font-weight: bold; text-anchor: start; white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif;">Query Examples:</text>
+    <rect x="100" y="395" width="800" height="50" class="box data" rx="5" style="fill: rgb(124, 179, 66); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
+    <text x="120" y="415" class="code" style="text-anchor: start; fill: rgb(255, 255, 255); font-size: 12px; white-space: pre; font-family: &quot;Courier New&quot;, monospace;">rate(http_requests_total{job="api"}[5m])</text>
+    <text x="120" y="435" class="text" style="text-anchor: start; fill: rgb(255, 255, 255); font-size: 11px; white-space: pre; font-family: Arial, sans-serif;">→ Requests per second over last 5 minutes</text>
+    <rect x="100" y="465" width="800" height="50" class="box data" rx="5" style="fill: rgb(124, 179, 66); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
+    <text x="120" y="485" class="code" style="text-anchor: start; fill: rgb(255, 255, 255); font-size: 12px; white-space: pre; font-family: &quot;Courier New&quot;, monospace;">sum(rate(http_requests_total[5m])) by (status)</text>
+    <text x="120" y="505" class="text" style="text-anchor: start; fill: rgb(255, 255, 255); font-size: 11px; white-space: pre; font-family: Arial, sans-serif;">→ Total request rate grouped by HTTP status code</text>
   </g>
-  
-  <!-- Result -->
-  <rect x="300" y="545" width="400" height="40" class="box result" rx="5"/>
-  <text x="500" y="570" class="text title" fill="#fff">Real-Time Results</text>
-  
-  <!-- Arrows -->
-  <path d="M 500 180 Q 500 200 200 210 T 200 230" class="arrow"/>
-  <path d="M 500 180 Q 500 200 500 210 T 500 230" class="arrow"/>
-  <path d="M 500 180 Q 500 200 800 210 T 800 230" class="arrow"/>
-  
-  <path d="M 200 330 Q 250 360 350 370 T 500 395" class="arrow"/>
-  <path d="M 500 330 Q 500 350 500 370 T 500 395" class="arrow"/>
-  <path d="M 800 330 Q 750 360 650 370 T 500 395" class="arrow"/>
-  
-  <path d="M 500 515 Q 500 525 500 535 T 500 545" class="arrow"/>
+  <rect x="364.573" y="-246.42" width="400" height="40" class="box result" rx="5" style="fill: rgb(244, 167, 66); stroke: rgb(51, 51, 51); stroke-width: 2;"/>
+  <text x="564.573" y="-221.42" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-weight: 700; text-anchor: middle; stroke-width: 1; font-size: 16px;">Real-Time Results</text>
+  <path d="M 564.573 -609.17 C 564.573 -595.83 481.186 -586.32 314.411 -580.63 C 147.636 -574.94 147.636 -568.27 314.411 -560.63" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
+  <path d="M 564.573 -611.42 C 564.573 -598.08 564.573 -588.08 564.573 -581.42 C 564.573 -574.75 564.573 -568.08 564.573 -561.42" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
+  <path d="M 564.573 -611.42 C 564.573 -598.08 664.573 -588.08 864.573 -581.42 C 1064.57 -574.75 1064.57 -568.08 864.573 -561.42" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
+  <path d="M 264.573 -461.42 C 297.906 -441.42 347.906 -428.08 414.573 -421.42 C 481.239 -414.75 531.239 -406.42 564.573 -396.42" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
+  <path d="M 564.573 -461.42 C 564.573 -448.08 564.573 -434.75 564.573 -421.42 C 564.573 -408.08 564.573 -399.75 564.573 -396.42" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
+  <path d="M 864.573 -461.42 C 831.239 -441.42 781.239 -428.08 714.573 -421.42 C 647.906 -414.75 597.906 -406.42 564.573 -396.42" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
+  <path d="M 564.573 -276.42 C 564.573 -269.75 564.573 -263.08 564.573 -256.42 C 564.573 -249.75 564.573 -246.42 564.573 -246.42" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
 </svg>
