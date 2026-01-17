@@ -4,7 +4,7 @@ Below is a comprehensive guide to the essential **Kubernetes** (`kubectl`) comma
 
 ## Kubernetes Architecture Overview
 
-![Kubernetes Architecture](imgs/arch.svg)
+![Kubernetes Architecture](./imgs/arch.svg)
 
 **Kubernetes** (**K8s**) is an open-source platform for orchestrating containerized applications. The diagram above shows the main components of a **Kubernetes** cluster including the control plane and worker nodes.
 
@@ -31,7 +31,7 @@ Below is a comprehensive guide to the essential **Kubernetes** (`kubectl`) comma
 
 ## Pods
 
-![Pod Lifecycle](imgs/pod-lifecycle.svg)
+![Pod Lifecycle](./imgs/pod-lifecycle.svg)
 
 Pods are the smallest deployable units in **Kubernetes**. A pod represents a single instance of a running process in your cluster.
 
@@ -85,7 +85,7 @@ Pods are the smallest deployable units in **Kubernetes**. A pod represents a sin
 
 ## Deployments
 
-![Deployment Rolling Update](imgs/deployment-rolling-update.svg)
+![Deployment Rolling Update](./imgs/deployment-rolling-update.svg)
 
 Deployments manage `ReplicaSets` and provide declarative updates to applications. They enable rolling updates and rollbacks.
 
@@ -127,7 +127,7 @@ Deployments manage `ReplicaSets` and provide declarative updates to applications
 
 ## Services
 
-![Service Types](imgs/services-types.svg)
+![Service Types](./imgs/services-types.svg)
 
 Services provide stable network access to a set of pods. They abstract the pod `IP` addresses and provide load balancing.
 

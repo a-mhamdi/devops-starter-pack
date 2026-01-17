@@ -4,7 +4,7 @@
 
 ## Prometheus Architecture Overview
 
-![Prometheus Architecture](imgs/arch.svg)
+![Prometheus Architecture](./imgs/arch.svg)
 
 The diagram above shows **Prometheus**' architecture with the main server, service discovery, and various exporters collecting metrics from different sources.
 
@@ -81,7 +81,7 @@ scrape_configs:
 
 ## Prometheus Query Language (PromQL)
 
-![PromQL Query Types](imgs/promql_query_types.svg)
+![PromQL Query Types](./imgs/promql_query_types.svg)
 
 **PromQL** is a functional query language that lets you select and aggregate time series data in real time.
 
@@ -139,7 +139,7 @@ scrape_configs:
 
 ## Prometheus Exporters
 
-![Exporters Overview](imgs/exporters.svg)
+![Exporters Overview](./imgs/exporters.svg)
 
 Exporters are applications that expose metrics in **Prometheus** format for various systems and services.
 
@@ -198,7 +198,7 @@ Exporters are applications that expose metrics in **Prometheus** format for vari
 
 ## Prometheus Alerting
 
-![Alerting Flow](imgs/alerting_flow.svg)
+![Alerting Flow](./imgs/alerting_flow.svg)
 
 **Prometheus** handles alerting through Alertmanager, which manages alerts sent by client applications.
 
@@ -407,7 +407,7 @@ scrape_configs:
 
 ## Grafana Integration
 
-![Grafana Dashboard](imgs/dashboard_overview.png)
+![Grafana Dashboard](./imgs/dashboard_overview.png)
 
 Grafana is commonly used with **Prometheus** for visualization and dashboards.
 
