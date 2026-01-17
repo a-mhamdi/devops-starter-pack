@@ -6,33 +6,33 @@
     </marker>
   </defs>
   <rect x="264.573" y="-691.42" width="600" height="80" class="box promql" rx="8" style="fill: rgb(230, 82, 44); stroke: rgb(51, 51, 51); stroke-width: 2;"/>
-  <text x="564.573" y="-661.42" class="text title" fill="#fff" style="font-size: 18px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; font-weight: 700; text-anchor: middle; stroke-width: 1;">Select &amp; Aggregate Time Series Data</text>
-  <text x="564.573" y="-636.42" class="text" fill="#fff" style="font-size: 14px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">Real-time querying with functional expressions</text>
+  <text x="564.573" y="-661.42" class="text title" fill="#fff" style="font-size: 18px; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; font-weight: 700; text-anchor: middle; stroke-width: 1;">Select &amp; Aggregate Time Series Data</text>
+  <text x="564.573" y="-636.42" class="text" fill="#fff" style="font-size: 14px; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; text-anchor: middle; stroke-width: 1;">Real-time querying with functional expressions</text>
   <g id="capabilities" transform="matrix(1, 0, 0, 1, 64.57282257080078, -791.41552734375)">
     <rect x="80" y="230" width="240" height="100" class="box function" rx="5" style="fill: rgb(74, 144, 226); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
-    <text x="200" y="260" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; font-weight: 700; text-anchor: middle;">SELECT</text>
+    <text x="200" y="260" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; font-weight: 700; text-anchor: middle;">SELECT</text>
     <text x="200" y="285" class="text code" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: &quot;Courier New&quot;, monospace; font-size: 13px; line-height: 20.8px; text-anchor: middle;">http_requests_total</text>
-    <text x="200" y="310" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle;">Filter by labels &amp; metrics</text>
+    <text x="200" y="310" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; text-anchor: middle;">Filter by labels &amp; metrics</text>
     <rect x="380" y="230" width="240" height="100" class="box function" rx="5" style="fill: rgb(74, 144, 226); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
-    <text x="500" y="260" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; font-weight: 700; text-anchor: middle;">FILTER</text>
+    <text x="500" y="260" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; font-weight: 700; text-anchor: middle;">FILTER</text>
     <text x="500" y="285" class="text code" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: &quot;Courier New&quot;, monospace; font-size: 13px; line-height: 20.8px; text-anchor: middle;">{job="api", code="200"}</text>
-    <text x="500" y="310" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle;">Label matchers &amp; ranges</text>
+    <text x="500" y="310" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; text-anchor: middle;">Label matchers &amp; ranges</text>
     <rect x="680" y="230" width="240" height="100" class="box function" rx="5" style="fill: rgb(74, 144, 226); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
-    <text x="800" y="260" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; font-weight: 700; text-anchor: middle;">AGGREGATE</text>
+    <text x="800" y="260" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; font-weight: 700; text-anchor: middle;">AGGREGATE</text>
     <text x="800" y="285" class="text code" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: &quot;Courier New&quot;, monospace; font-size: 13px; line-height: 20.8px; text-anchor: middle;">sum by (instance)</text>
-    <text x="800" y="310" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle;">Combine &amp; calculate</text>
+    <text x="800" y="310" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; text-anchor: middle;">Combine &amp; calculate</text>
   </g>
   <g id="examples" transform="matrix(1, 0, 0, 1, 64.57282257080078, -791.41552734375)">
-    <text x="100" y="380" class="text" style="font-size: 15px; font-weight: bold; text-anchor: start; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace";">Query Examples:</text>
+    <text x="100" y="380" class="text" style="font-size: 15px; font-weight: bold; text-anchor: start; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace;">Query Examples:</text>
     <rect x="100" y="395" width="800" height="50" class="box data" rx="5" style="fill: rgb(124, 179, 66); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
     <text x="120" y="415" class="code" style="text-anchor: start; fill: rgb(255, 255, 255); font-size: 12px; white-space: pre; font-family: &quot;Courier New&quot;, monospace;">rate(http_requests_total{job="api"}[5m])</text>
-    <text x="120" y="435" class="text" style="text-anchor: start; fill: rgb(255, 255, 255); font-size: 11px; white-space: pre; font-family="'Consolas', 'Monaco', monospace";">→ Requests per second over last 5 minutes</text>
+    <text x="120" y="435" class="text" style="text-anchor: start; fill: rgb(255, 255, 255); font-size: 11px; white-space: pre; font-family: Consolas, Monaco, monospace;">→ Requests per second over last 5 minutes</text>
     <rect x="100" y="465" width="800" height="50" class="box data" rx="5" style="fill: rgb(124, 179, 66); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
     <text x="120" y="485" class="code" style="text-anchor: start; fill: rgb(255, 255, 255); font-size: 12px; white-space: pre; font-family: &quot;Courier New&quot;, monospace;">sum(rate(http_requests_total[5m])) by (status)</text>
-    <text x="120" y="505" class="text" style="text-anchor: start; fill: rgb(255, 255, 255); font-size: 11px; white-space: pre; font-family="'Consolas', 'Monaco', monospace";">→ Total request rate grouped by HTTP status code</text>
+    <text x="120" y="505" class="text" style="text-anchor: start; fill: rgb(255, 255, 255); font-size: 11px; white-space: pre; font-family: Consolas, Monaco, monospace;">→ Total request rate grouped by HTTP status code</text>
   </g>
   <rect x="364.573" y="-246.42" width="400" height="40" class="box result" rx="5" style="fill: rgb(244, 167, 66); stroke: rgb(51, 51, 51); stroke-width: 2;"/>
-  <text x="564.573" y="-221.42" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; font-weight: 700; text-anchor: middle; stroke-width: 1; font-size: 16px;">Real-Time Results</text>
+  <text x="564.573" y="-221.42" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; font-weight: 700; text-anchor: middle; stroke-width: 1; font-size: 16px;">Real-Time Results</text>
   <path d="M 564.573 -609.17 C 564.573 -595.83 481.186 -586.32 314.411 -580.63 C 147.636 -574.94 147.636 -568.27 314.411 -560.63" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
   <path d="M 564.573 -611.42 C 564.573 -598.08 564.573 -588.08 564.573 -581.42 C 564.573 -574.75 564.573 -568.08 564.573 -561.42" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
   <path d="M 564.573 -611.42 C 564.573 -598.08 664.573 -588.08 864.573 -581.42 C 1064.57 -574.75 1064.57 -568.08 864.573 -561.42" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>

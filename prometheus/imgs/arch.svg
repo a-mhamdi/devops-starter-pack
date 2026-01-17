@@ -6,50 +6,50 @@
     </marker>
   </defs>
   <rect x="356.052" y="-11.348" width="300" height="180" class="box prometheus" rx="5" style="fill: rgb(230, 82, 44); stroke: rgb(51, 51, 51); stroke-width: 2;"/>
-  <text x="506.052" y="13.652" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; font-weight: 700; text-anchor: middle; stroke-width: 1; font-size: 16px;">Prometheus Server</text>
+  <text x="506.052" y="13.652" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; font-weight: 700; text-anchor: middle; stroke-width: 1; font-size: 16px;">Prometheus Server</text>
   <rect x="376.052" y="28.652" width="120" height="50" class="box" fill="#fff" rx="3" style="stroke: rgb(51, 51, 51); stroke-width: 2;"/>
-  <text x="436.052" y="48.652" class="text" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">Retrieval</text>
-  <text x="436.052" y="63.652" class="text" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">(Pull Metrics)</text>
+  <text x="436.052" y="48.652" class="text" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; text-anchor: middle; stroke-width: 1;">Retrieval</text>
+  <text x="436.052" y="63.652" class="text" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; text-anchor: middle; stroke-width: 1;">(Pull Metrics)</text>
   <rect x="516.052" y="28.652" width="120" height="50" class="box storage" rx="3" style="fill: rgb(244, 167, 66); stroke: rgb(51, 51, 51); stroke-width: 2;"/>
-  <text x="576.052" y="48.652" class="text" style="white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; font-size: 14px; line-height: 22.4px; text-anchor: middle; stroke-width: 1;">TSDB</text>
-  <text x="576.052" y="63.652" class="text" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">Time Series DB</text>
+  <text x="576.052" y="48.652" class="text" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; font-size: 14px; line-height: 22.4px; text-anchor: middle; stroke-width: 1;">TSDB</text>
+  <text x="576.052" y="63.652" class="text" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; text-anchor: middle; stroke-width: 1;">Time Series DB</text>
   <rect x="376.052" y="98.652" width="120" height="50" class="box" fill="#fff" rx="3" style="stroke: rgb(51, 51, 51); stroke-width: 2;"/>
-  <text x="436.052" y="118.652" class="text" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">HTTP Server</text>
-  <text x="436.052" y="133.652" class="text" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">PromQL API</text>
+  <text x="436.052" y="118.652" class="text" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; text-anchor: middle; stroke-width: 1;">HTTP Server</text>
+  <text x="436.052" y="133.652" class="text" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; text-anchor: middle; stroke-width: 1;">PromQL API</text>
   <rect x="516.052" y="98.652" width="120" height="50" class="box" fill="#fff" rx="3" style="stroke: rgb(51, 51, 51); stroke-width: 2;"/>
-  <text x="576.052" y="118.652" class="text" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">Alerting</text>
-  <text x="576.052" y="133.652" class="text" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">Rules Engine</text>
+  <text x="576.052" y="118.652" class="text" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; text-anchor: middle; stroke-width: 1;">Alerting</text>
+  <text x="576.052" y="133.652" class="text" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; text-anchor: middle; stroke-width: 1;">Rules Engine</text>
   <rect x="106.052" y="-181.35" width="200" height="80" class="box service" rx="5" style="fill: rgb(74, 144, 226); stroke: rgb(51, 51, 51); stroke-width: 2;"/>
-  <text x="206.052" y="-156.35" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; font-weight: 700; text-anchor: middle; stroke-width: 1; font-size: 16px;">Service Discovery</text>
-  <text x="206.052" y="-131.35" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">Kubernetes • Consul</text>
-  <text x="206.052" y="-116.35" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">DNS • Static Config</text>
+  <text x="206.052" y="-156.35" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; font-weight: 700; text-anchor: middle; stroke-width: 1; font-size: 16px;">Service Discovery</text>
+  <text x="206.052" y="-131.35" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; text-anchor: middle; stroke-width: 1;">Kubernetes • Consul</text>
+  <text x="206.052" y="-116.35" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; text-anchor: middle; stroke-width: 1;">DNS • Static Config</text>
   <g id="exporters" transform="matrix(1, 0, 0, 1, 6.052091121673584, -261.3476867675781)">
     <rect x="100" y="250" width="140" height="60" class="box exporter" rx="5" style="fill: rgb(124, 179, 66); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
-    <text x="170" y="273" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; font-weight: 700; text-anchor: middle;">Node Exporter</text>
-    <text x="170" y="293" class="text" fill="#fff" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle;">CPU, Memory, Disk</text>
+    <text x="170" y="273" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; font-weight: 700; text-anchor: middle;">Node Exporter</text>
+    <text x="170" y="293" class="text" fill="#fff" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; text-anchor: middle;">CPU, Memory, Disk</text>
     <rect x="100" y="340" width="140" height="60" class="box exporter" rx="5" style="fill: rgb(124, 179, 66); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
-    <text x="170" y="363" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; font-weight: 700; text-anchor: middle;">Application</text>
-    <text x="170" y="383" class="text" fill="#fff" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle;">Custom Metrics</text>
+    <text x="170" y="363" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; font-weight: 700; text-anchor: middle;">Application</text>
+    <text x="170" y="383" class="text" fill="#fff" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; text-anchor: middle;">Custom Metrics</text>
     <rect x="100" y="430" width="140" height="60" class="box exporter" rx="5" style="fill: rgb(124, 179, 66); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
-    <text x="170" y="453" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; font-weight: 700; text-anchor: middle;">DB Exporter</text>
-    <text x="170" y="473" class="text" fill="#fff" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle;">MySQL, PostgreSQL</text>
+    <text x="170" y="453" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; font-weight: 700; text-anchor: middle;">DB Exporter</text>
+    <text x="170" y="473" class="text" fill="#fff" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; text-anchor: middle;">MySQL, PostgreSQL</text>
   </g>
   <rect x="735.403" y="51.379" width="180" height="100" class="box" fill="#ff5722" rx="5" style="fill: rgb(255, 255, 255); stroke: rgb(51, 51, 51); stroke-width: 2;"/>
-  <text x="816.052" y="43.652" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; font-weight: 700; text-anchor: middle; stroke-width: 1; font-size: 16px;">Alertmanager</text>
-  <text x="816.052" y="68.652" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">Email • Slack</text>
-  <text x="816.052" y="88.652" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">PagerDuty</text>
-  <text x="816.052" y="108.652" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">Webhook</text>
+  <text x="816.052" y="43.652" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; font-weight: 700; text-anchor: middle; stroke-width: 1; font-size: 16px;">Alertmanager</text>
+  <text x="816.052" y="68.652" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; text-anchor: middle; stroke-width: 1;">Email • Slack</text>
+  <text x="816.052" y="88.652" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; text-anchor: middle; stroke-width: 1;">PagerDuty</text>
+  <text x="816.052" y="108.652" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; text-anchor: middle; stroke-width: 1;">Webhook</text>
   <g id="clients" transform="matrix(1, 0, 0, 1, -70.62249755859374, -206.17938232421875)">
     <rect x="720" y="480" width="100" height="60" class="box client" rx="5" style="fill: rgb(156, 39, 176); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
-    <text x="770" y="505" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; font-weight: 700; text-anchor: middle;">Grafana</text>
-    <text x="770" y="525" class="text" fill="#fff" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle;">Dashboards</text>
+    <text x="770" y="505" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; font-weight: 700; text-anchor: middle;">Grafana</text>
+    <text x="770" y="525" class="text" fill="#fff" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; text-anchor: middle;">Dashboards</text>
     <rect x="840" y="480" width="100" height="60" class="box client" rx="5" style="fill: rgb(156, 39, 176); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
-    <text x="890" y="505" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; font-weight: 700; text-anchor: middle;">Web UI</text>
-    <text x="890" y="525" class="text" fill="#fff" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle;">Built-in</text>
+    <text x="890" y="505" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; font-weight: 700; text-anchor: middle;">Web UI</text>
+    <text x="890" y="525" class="text" fill="#fff" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; text-anchor: middle;">Built-in</text>
   </g>
   <rect x="106.052" y="288.652" width="140" height="60" class="box" fill="#607d8b" rx="5" style="fill: rgb(255, 255, 255); stroke: rgb(51, 51, 51); stroke-width: 2;"/>
-  <text x="176.052" y="311.652" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; font-weight: 700; text-anchor: middle; stroke-width: 1; font-size: 16px;">Pushgateway</text>
-  <text x="176.052" y="331.652" class="text" fill="#fff" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">Batch Jobs</text>
+  <text x="176.052" y="311.652" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; font-weight: 700; text-anchor: middle; stroke-width: 1; font-size: 16px;">Pushgateway</text>
+  <text x="176.052" y="331.652" class="text" fill="#fff" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace; text-anchor: middle; stroke-width: 1;">Batch Jobs</text>
   <path d="M 306.052 -141.35 C 322.719 -141.35 331.052 -131.35 331.052 -111.35 C 331.052 -91.348 339.385 -48.014 356.052 18.652" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
   <text x="323.046" y="-152.36" class="label" style="white-space: pre; fill: rgb(102, 102, 102); font-size: 12px; line-height: 19.2px; stroke-width: 1;">Targets</text>
   <path d="M 246.052 18.652 C 272.719 21.986 299.385 25.319 326.052 28.652 C 352.719 31.986 369.385 35.319 376.052 38.652" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
@@ -66,13 +66,13 @@
   <text x="730.442" y="195.769" class="label" style="white-space: pre; fill: rgb(102, 102, 102); font-size: 12px; line-height: 19.2px; stroke-width: 1;">PromQL</text>
   <path d="M 496.052 53.652 C 499.385 53.652 502.719 53.652 506.052 53.652 C 509.385 53.652 512.719 53.652 516.052 53.652" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
   <g id="legend" transform="matrix(1, 0, 0, 1, 106.05209350585938, 378.6523132324219)">
-    <text x="0" y="0" class="text" style="font-size: 12px; text-anchor: start; font-weight: bold; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace";">Key:</text>
+    <text x="0" y="0" class="text" style="font-size: 12px; text-anchor: start; font-weight: bold; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace;">Key:</text>
     <rect x="50" y="-10" width="15" height="15" class="prometheus" style="fill: rgb(230, 82, 44);"/>
-    <text x="70" y="0" class="text" style="font-size: 11px; text-anchor: start; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace";">Core Server</text>
+    <text x="70" y="0" class="text" style="font-size: 11px; text-anchor: start; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace;">Core Server</text>
     <rect x="150" y="-10" width="15" height="15" class="exporter" style="fill: rgb(124, 179, 66);"/>
-    <text x="170" y="0" class="text" style="font-size: 11px; text-anchor: start; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace";">Metric Sources</text>
+    <text x="170" y="0" class="text" style="font-size: 11px; text-anchor: start; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace;">Metric Sources</text>
     <rect x="270" y="-10" width="15" height="15" class="client" style="fill: rgb(156, 39, 176);"/>
-    <text x="290" y="0" class="text" style="font-size: 11px; text-anchor: start; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace";">Visualization</text>
+    <text x="290" y="0" class="text" style="font-size: 11px; text-anchor: start; white-space: pre; fill: rgb(51, 51, 51); font-family: Consolas, Monaco, monospace;">Visualization</text>
   </g>
 </svg>
 
