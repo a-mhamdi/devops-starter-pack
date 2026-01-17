@@ -1,468 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="750" viewBox="0 0 900 750">
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="106.052 -181.35 809.351 565.0023" width="809.351px" height="565.002px">
   <defs>
-    <!-- Gradients -->
-    <linearGradient id="prometheusGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#fecaca;stop-opacity:0.95" />
-      <stop offset="100%" style="stop-color:#fca5a5;stop-opacity:0.95" />
-    </linearGradient>
-    
-    <linearGradient id="targetGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:0.95" />
-      <stop offset="100%" style="stop-color:#bfdbfe;stop-opacity:0.95" />
-    </linearGradient>
-    
-    <linearGradient id="storageGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#fed7aa;stop-opacity:0.95" />
-      <stop offset="100%" style="stop-color:#fdba74;stop-opacity:0.95" />
-    </linearGradient>
-    
-    <linearGradient id="alertGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:0.95" />
-      <stop offset="100%" style="stop-color:#fde68a;stop-opacity:0.95" />
-    </linearGradient>
-    
-    <linearGradient id="visualGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#d1fae5;stop-opacity:0.95" />
-      <stop offset="100%" style="stop-color:#a7f3d0;stop-opacity:0.95" />
-    </linearGradient>
-    
-    <linearGradient id="exporterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#e9d5ff;stop-opacity:0.95" />
-      <stop offset="100%" style="stop-color:#d8b4fe;stop-opacity:0.95" />
-    </linearGradient>
-    
-    <!-- Shadow effect -->
-    <filter id="shadow">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.2"/>
-    </filter>
-    
-    <!-- Glow effect -->
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    
-    <!-- Arrow markers -->
-    <marker id="arrowRed" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
-      <polygon points="0 0, 12 6, 0 12" fill="#dc2626" />
-    </marker>
-    
-    <marker id="arrowGreen" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
-      <polygon points="0 0, 12 6, 0 12" fill="#10b981" />
-    </marker>
-    
-    <marker id="arrowYellow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
-      <polygon points="0 0, 12 6, 0 12" fill="#ca8a04" />
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666"/>
     </marker>
   </defs>
-
-  <!-- Title -->
-  <g filter="url(#glow)">
-    <circle cx="420" cy="24" r="8" fill="#e6522c" opacity="0.8"/>
-    <circle cx="420" cy="24" r="4" fill="#ef4444"/>
+  <rect x="356.052" y="-11.348" width="300" height="180" class="box prometheus" rx="5" style="fill: rgb(230, 82, 44); stroke: rgb(51, 51, 51); stroke-width: 2;"/>
+  <text x="506.052" y="13.652" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; font-weight: 700; text-anchor: middle; stroke-width: 1; font-size: 16px;">Prometheus Server</text>
+  <rect x="376.052" y="28.652" width="120" height="50" class="box" fill="#fff" rx="3" style="stroke: rgb(51, 51, 51); stroke-width: 2;"/>
+  <text x="436.052" y="48.652" class="text" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">Retrieval</text>
+  <text x="436.052" y="63.652" class="text" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">(Pull Metrics)</text>
+  <rect x="516.052" y="28.652" width="120" height="50" class="box storage" rx="3" style="fill: rgb(244, 167, 66); stroke: rgb(51, 51, 51); stroke-width: 2;"/>
+  <text x="576.052" y="48.652" class="text" style="white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; font-size: 14px; line-height: 22.4px; text-anchor: middle; stroke-width: 1;">TSDB</text>
+  <text x="576.052" y="63.652" class="text" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">Time Series DB</text>
+  <rect x="376.052" y="98.652" width="120" height="50" class="box" fill="#fff" rx="3" style="stroke: rgb(51, 51, 51); stroke-width: 2;"/>
+  <text x="436.052" y="118.652" class="text" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">HTTP Server</text>
+  <text x="436.052" y="133.652" class="text" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">PromQL API</text>
+  <rect x="516.052" y="98.652" width="120" height="50" class="box" fill="#fff" rx="3" style="stroke: rgb(51, 51, 51); stroke-width: 2;"/>
+  <text x="576.052" y="118.652" class="text" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">Alerting</text>
+  <text x="576.052" y="133.652" class="text" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">Rules Engine</text>
+  <rect x="106.052" y="-181.35" width="200" height="80" class="box service" rx="5" style="fill: rgb(74, 144, 226); stroke: rgb(51, 51, 51); stroke-width: 2;"/>
+  <text x="206.052" y="-156.35" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; font-weight: 700; text-anchor: middle; stroke-width: 1; font-size: 16px;">Service Discovery</text>
+  <text x="206.052" y="-131.35" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">Kubernetes • Consul</text>
+  <text x="206.052" y="-116.35" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">DNS • Static Config</text>
+  <g id="exporters" transform="matrix(1, 0, 0, 1, 6.052091121673584, -261.3476867675781)">
+    <rect x="100" y="250" width="140" height="60" class="box exporter" rx="5" style="fill: rgb(124, 179, 66); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
+    <text x="170" y="273" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; font-weight: 700; text-anchor: middle;">Node Exporter</text>
+    <text x="170" y="293" class="text" fill="#fff" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle;">CPU, Memory, Disk</text>
+    <rect x="100" y="340" width="140" height="60" class="box exporter" rx="5" style="fill: rgb(124, 179, 66); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
+    <text x="170" y="363" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; font-weight: 700; text-anchor: middle;">Application</text>
+    <text x="170" y="383" class="text" fill="#fff" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle;">Custom Metrics</text>
+    <rect x="100" y="430" width="140" height="60" class="box exporter" rx="5" style="fill: rgb(124, 179, 66); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
+    <text x="170" y="453" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; font-weight: 700; text-anchor: middle;">DB Exporter</text>
+    <text x="170" y="473" class="text" fill="#fff" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle;">MySQL, PostgreSQL</text>
   </g>
-  
-  <text x="450" y="30" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="24"
-        font-weight="700"
-        fill="#1e293b"
-        letter-spacing="0.5">
-    Prometheus Monitoring Architecture
-  </text>
-  
-  <text x="450" y="50" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="13"
-        fill="#475569">
-    Pull-based monitoring and time-series database system
-  </text>
-
-  <!-- Prometheus Server (Center) -->
-  <g filter="url(#shadow)">
-    <rect x="280" y="80" width="340" height="200" rx="14" ry="14"
-          fill="url(#prometheusGrad)" stroke="#dc2626" stroke-width="3"/>
-    
-    <circle cx="300" cy="100" r="6" fill="#ef4444" opacity="0.8"/>
-    
-    <text x="450" y="115" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="18"
-          font-weight="700"
-          fill="#991b1b">
-      Prometheus Server
-    </text>
-    <text x="450" y="133" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="11"
-          fill="#b91c1c">
-      Core monitoring engine
-    </text>
-
-    <!-- Retrieval Component -->
-    <rect x="300" y="150" width="140" height="110" rx="10" fill="#ffffff" opacity="0.9" stroke="#dc2626" stroke-width="2"/>
-    <text x="370" y="170" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#991b1b">
-      Retrieval
-    </text>
-    <text x="370" y="187" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#b91c1c">
-      🔄 Pull metrics
-    </text>
-    <text x="370" y="205" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#7f1d1d">
-      • Scrapes targets
-    </text>
-    <text x="370" y="219" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#7f1d1d">
-      • Service discovery
-    </text>
-    <text x="370" y="233" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#7f1d1d">
-      • HTTP endpoints
-    </text>
-    <text x="370" y="247" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#7f1d1d">
-      • Default: /metrics
-    </text>
-
-    <!-- TSDB Component -->
-    <rect x="460" y="150" width="140" height="110" rx="10" fill="#ffffff" opacity="0.9" stroke="#dc2626" stroke-width="2"/>
-    <text x="530" y="170" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#991b1b">
-      TSDB
-    </text>
-    <text x="530" y="187" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#b91c1c">
-      💾 Time-Series DB
-    </text>
-    <text x="530" y="205" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#7f1d1d">
-      • Stores metrics
-    </text>
-    <text x="530" y="219" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#7f1d1d">
-      • Local disk storage
-    </text>
-    <text x="530" y="233" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#7f1d1d">
-      • Compression
-    </text>
-    <text x="530" y="247" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#7f1d1d">
-      • Retention policies
-    </text>
+  <rect x="735.403" y="51.379" width="180" height="100" class="box" fill="#ff5722" rx="5" style="fill: rgb(255, 255, 255); stroke: rgb(51, 51, 51); stroke-width: 2;"/>
+  <text x="816.052" y="43.652" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; font-weight: 700; text-anchor: middle; stroke-width: 1; font-size: 16px;">Alertmanager</text>
+  <text x="816.052" y="68.652" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">Email • Slack</text>
+  <text x="816.052" y="88.652" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">PagerDuty</text>
+  <text x="816.052" y="108.652" class="text" fill="#fff" style="font-size: 12px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">Webhook</text>
+  <g id="clients" transform="matrix(1, 0, 0, 1, -70.62249755859374, -206.17938232421875)">
+    <rect x="720" y="480" width="100" height="60" class="box client" rx="5" style="fill: rgb(156, 39, 176); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
+    <text x="770" y="505" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; font-weight: 700; text-anchor: middle;">Grafana</text>
+    <text x="770" y="525" class="text" fill="#fff" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle;">Dashboards</text>
+    <rect x="840" y="480" width="100" height="60" class="box client" rx="5" style="fill: rgb(156, 39, 176); stroke: rgb(51, 51, 51); stroke-width: 2px;"/>
+    <text x="890" y="505" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; font-weight: 700; text-anchor: middle;">Web UI</text>
+    <text x="890" y="525" class="text" fill="#fff" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle;">Built-in</text>
   </g>
-
-  <!-- Targets/Exporters (Left) -->
-  <text x="120" y="325" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="14"
-        font-weight="700"
-        fill="#1e293b">
-    Monitored Targets
-  </text>
-
-  <!-- Application -->
-  <g filter="url(#shadow)">
-    <rect x="30" y="340" width="180" height="90" rx="12" ry="12"
-          fill="url(#targetGrad)" stroke="#2563eb" stroke-width="2.5"/>
-    
-    <circle cx="50" cy="360" r="5" fill="#3b82f6" opacity="0.8"/>
-    
-    <text x="120" y="372" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="13"
-          font-weight="700"
-          fill="#1e40af">
-      Application
-    </text>
-    <text x="120" y="390" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="10"
-          fill="#1e3a8a">
-      🚀 Your app
-    </text>
-    <text x="120" y="407" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="9"
-          fill="#1e3a8a">
-      /metrics endpoint
-    </text>
-    <text x="120" y="420" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="9"
-          fill="#1e3a8a">
-      Port: 8080
-    </text>
+  <rect x="106.052" y="288.652" width="140" height="60" class="box" fill="#607d8b" rx="5" style="fill: rgb(255, 255, 255); stroke: rgb(51, 51, 51); stroke-width: 2;"/>
+  <text x="176.052" y="311.652" class="text title" fill="#fff" style="white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; font-weight: 700; text-anchor: middle; stroke-width: 1; font-size: 16px;">Pushgateway</text>
+  <text x="176.052" y="331.652" class="text" fill="#fff" style="font-size: 11px; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace"; text-anchor: middle; stroke-width: 1;">Batch Jobs</text>
+  <path d="M 306.052 -141.35 C 322.719 -141.35 331.052 -131.35 331.052 -111.35 C 331.052 -91.348 339.385 -48.014 356.052 18.652" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
+  <text x="323.046" y="-152.36" class="label" style="white-space: pre; fill: rgb(102, 102, 102); font-size: 12px; line-height: 19.2px; stroke-width: 1;">Targets</text>
+  <path d="M 246.052 18.652 C 272.719 21.986 299.385 25.319 326.052 28.652 C 352.719 31.986 369.385 35.319 376.052 38.652" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
+  <path d="M 246.052 108.652 C 272.719 101.986 299.385 95.319 326.052 88.652 C 352.719 81.986 369.385 78.652 376.052 78.652" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
+  <path d="M 246.052 198.652 C 266.052 178.652 286.052 158.652 306.052 138.652 C 326.052 118.652 342.719 105.319 356.052 98.652" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
+  <text x="269.018" y="47.68" class="label" style="white-space: pre; fill: rgb(102, 102, 102); font-size: 12px; line-height: 19.2px; stroke-width: 1;">Pull /metrics</text>
+  <path d="M 246.052 318.652 C 266.052 291.986 286.052 265.319 306.052 238.652 C 326.052 211.986 342.719 178.652 356.052 138.652" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
+  <text x="276.052" y="238.652" class="label" style="white-space: pre; fill: rgb(102, 102, 102); font-size: 12px; line-height: 19.2px; stroke-width: 1;">Pull</text>
+  <path d="M 656.072 127.222 C 671.54 122.183 687.007 117.144 702.473 112.106 C 717.938 107.067 729.539 102.869 737.273 99.509" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
+  <text x="676.052" y="88.652" class="label" style="white-space: pre; fill: rgb(102, 102, 102); font-size: 12px; line-height: 19.2px; stroke-width: 1;">Alerts</text>
+  <path d="M 571.134 168.179 C 594.764 188.263 618.396 208.347 642.026 228.429 C 665.656 248.513 683.379 264.293 695.195 275.769" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
+  <text x="586.287" y="235.404" class="label" style="white-space: pre; fill: rgb(102, 102, 102); font-size: 12px; line-height: 19.2px; stroke-width: 1;">PromQL</text>
+  <path d="M 655.94 143.905 C 683.126 161.801 710.219 185.969 737.22 216.405 C 764.219 246.84 788.66 264.829 810.537 270.369" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2; transform-origin: 747.339px 196.819px;"/>
+  <text x="730.442" y="195.769" class="label" style="white-space: pre; fill: rgb(102, 102, 102); font-size: 12px; line-height: 19.2px; stroke-width: 1;">PromQL</text>
+  <path d="M 496.052 53.652 C 499.385 53.652 502.719 53.652 506.052 53.652 C 509.385 53.652 512.719 53.652 516.052 53.652" class="arrow" style="fill: none; marker-end: url(&quot;#arrowhead&quot;); stroke: rgb(102, 102, 102); stroke-width: 2;"/>
+  <g id="legend" transform="matrix(1, 0, 0, 1, 106.05209350585938, 378.6523132324219)">
+    <text x="0" y="0" class="text" style="font-size: 12px; text-anchor: start; font-weight: bold; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace";">Key:</text>
+    <rect x="50" y="-10" width="15" height="15" class="prometheus" style="fill: rgb(230, 82, 44);"/>
+    <text x="70" y="0" class="text" style="font-size: 11px; text-anchor: start; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace";">Core Server</text>
+    <rect x="150" y="-10" width="15" height="15" class="exporter" style="fill: rgb(124, 179, 66);"/>
+    <text x="170" y="0" class="text" style="font-size: 11px; text-anchor: start; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace";">Metric Sources</text>
+    <rect x="270" y="-10" width="15" height="15" class="client" style="fill: rgb(156, 39, 176);"/>
+    <text x="290" y="0" class="text" style="font-size: 11px; text-anchor: start; white-space: pre; fill: rgb(51, 51, 51); font-family="'Consolas', 'Monaco', monospace";">Visualization</text>
   </g>
-
-  <!-- Exporters -->
-  <g filter="url(#shadow)">
-    <rect x="30" y="445" width="180" height="110" rx="12" ry="12"
-          fill="url(#exporterGrad)" stroke="#7c3aed" stroke-width="2.5"/>
-    
-    <circle cx="50" cy="465" r="5" fill="#a855f7" opacity="0.8"/>
-    
-    <text x="120" y="477" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="13"
-          font-weight="700"
-          fill="#6b21a8">
-      Exporters
-    </text>
-    <text x="120" y="494" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="10"
-          fill="#7e22ce">
-      📊 Metric exporters
-    </text>
-    <text x="120" y="512" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="9"
-          fill="#6b21a8">
-      • Node Exporter
-    </text>
-    <text x="120" y="526" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="9"
-          fill="#6b21a8">
-      • MySQL Exporter
-    </text>
-    <text x="120" y="540" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-      font-size="9"
-          fill="#6b21a8">
-      • Custom exporters
-    </text>
-  </g>
-
-  <!-- Arrows from Prometheus to Targets (Scraping) -->
-  <path d="M 280 180 Q 240 260, 210 340" stroke="#dc2626" stroke-width="3" fill="none" marker-end="url(#arrowRed)"/>
-  <rect x="215" y="240" width="80" height="18" rx="9" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="255" y="252" text-anchor="middle" font-family="'Consolas', monospace" font-size="10" font-weight="600" fill="#991b1b">
-    Pull/Scrape
-  </text>
-
-  <path d="M 280 220 Q 240 320, 210 445" stroke="#dc2626" stroke-width="3" fill="none" marker-end="url(#arrowRed)"/>
-  <rect x="215" y="315" width="80" height="18" rx="9" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="255" y="327" text-anchor="middle" font-family="'Consolas', monospace" font-size="10" font-weight="600" fill="#991b1b">
-    Pull/Scrape
-  </text>
-
-  <!-- Alertmanager (Top Right) -->
-  <g filter="url(#shadow)">
-    <rect x="690" y="80" width="180" height="130" rx="12" ry="12"
-          fill="url(#alertGrad)" stroke="#ca8a04" stroke-width="2.5"/>
-    
-    <circle cx="710" cy="100" r="5" fill="#eab308" opacity="0.8"/>
-    
-    <text x="780" y="112" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="14"
-          font-weight="700"
-          fill="#854d0e">
-      Alertmanager
-    </text>
-    <text x="780" y="130" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="10"
-          fill="#92400e">
-      🔔 Alert routing
-    </text>
-    <text x="780" y="150" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="9"
-          fill="#854d0e">
-      • Deduplication
-    </text>
-    <text x="780" y="164" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="9"
-          fill="#854d0e">
-      • Grouping
-    </text>
-    <text x="780" y="178" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="9"
-          fill="#854d0e">
-      • Silencing
-    </text>
-    <text x="780" y="192" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="9"
-          fill="#854d0e">
-      • Route to channels
-    </text>
-  </g>
-
-  <!-- Arrow from Prometheus to Alertmanager -->
-  <line x1="620" y1="145" x2="688" y2="145" stroke="#ca8a04" stroke-width="3" marker-end="url(#arrowYellow)"/>
-  <rect x="628" y="130" width="60" height="18" rx="9" fill="#fef3c7" stroke="#ca8a04" stroke-width="1.5"/>
-  <text x="658" y="142" text-anchor="middle" font-family="'Consolas', monospace" font-size="10" font-weight="600" fill="#854d0e">
-    Alerts
-  </text>
-
-  <!-- Notification Channels -->
-  <text x="780" y="230" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="11"
-        font-weight="700"
-        fill="#854d0e">
-    Notifications to:
-  </text>
-  
-  <rect x="710" y="240" width="140" height="50" rx="8" fill="#ffffff" opacity="0.85" stroke="#eab308" stroke-width="1.5"/>
-  <text x="780" y="257" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#92400e">
-    📧 Email • 💬 Slack
-  </text>
-  <text x="780" y="271" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#92400e">
-    📟 PagerDuty • 📱 SMS
-  </text>
-  <text x="780" y="285" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#92400e">
-    🔗 Webhooks
-  </text>
-
-  <!-- Visualization Layer (Bottom Right) -->
-  <g filter="url(#shadow)">
-    <rect x="690" y="320" width="180" height="120" rx="12" ry="12"
-          fill="url(#visualGrad)" stroke="#059669" stroke-width="2.5"/>
-    
-    <circle cx="710" cy="340" r="5" fill="#10b981" opacity="0.8"/>
-    
-    <text x="780" y="352" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="14"
-          font-weight="700"
-          fill="#065f46">
-      Grafana
-    </text>
-    <text x="780" y="370" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="10"
-          fill="#047857">
-      📊 Visualization
-    </text>
-    <text x="780" y="390" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="9"
-          fill="#065f46">
-      • Dashboards
-    </text>
-    <text x="780" y="404" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="9"
-          fill="#065f46">
-      • Charts & graphs
-    </text>
-    <text x="780" y="418" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="9"
-          fill="#065f46">
-      • PromQL queries
-    </text>
-    <text x="780" y="432" text-anchor="middle"
-          font-family="'Segoe UI', Arial, sans-serif"
-          font-size="9"
-          fill="#065f46">
-      • User-friendly UI
-    </text>
-  </g>
-
-  <!-- Arrow from Prometheus to Grafana -->
-  <line x1="620" y1="240" x2="688" y2="340" stroke="#10b981" stroke-width="3" marker-end="url(#arrowGreen)"/>
-  <rect x="630" y="275" width="70" height="18" rx="9" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
-  <text x="665" y="287" text-anchor="middle" font-family="'Consolas', monospace" font-size="10" font-weight="600" fill="#065f46">
-    Query
-  </text>
-
-  <!-- Metric Types -->
-  <rect x="280" y="300" width="340" height="120" rx="12" fill="#f8fafc" opacity="0.9" stroke="#94a3b8" stroke-width="2" filter="url(#shadow)"/>
-  
-  <text x="450" y="323" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="14"
-        font-weight="700"
-        fill="#1e293b">
-    📈 Prometheus Metric Types
-  </text>
-
-  <rect x="295" y="335" width="145" height="70" rx="8" fill="#dbeafe" opacity="0.9" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="367.5" y="352" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#1e40af">
-    Counter
-  </text>
-  <text x="367.5" y="368" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#1e3a8a">
-    Only increases
-  </text>
-  <text x="367.5" y="382" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="#475569">
-    e.g., requests_total
-  </text>
-  <text x="367.5" y="395" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="#475569">
-    errors_total
-  </text>
-
-  <rect x="455" y="335" width="145" height="70" rx="8" fill="#d1fae5" opacity="0.9" stroke="#059669" stroke-width="1.5"/>
-  <text x="527.5" y="352" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#065f46">
-    Gauge
-  </text>
-  <text x="527.5" y="368" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#047857">
-    Up or down
-  </text>
-  <text x="527.5" y="382" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="#475569">
-    e.g., memory_usage
-  </text>
-  <text x="527.5" y="395" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="#475569">
-    cpu_temperature
-  </text>
-
-  <!-- Additional info boxes -->
-  <rect x="30" y="580" width="390" height="90" rx="12" fill="#fef3c7" opacity="0.9" stroke="#ca8a04" stroke-width="2" filter="url(#shadow)"/>
-  
-  <text x="225" y="603" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="14"
-        font-weight="700"
-        fill="#854d0e">
-    🔍 PromQL Query Language
-  </text>
-
-  <text x="50" y="625" font-family="'Consolas', monospace" font-size="10" fill="#92400e">
-    rate(http_requests_total[5m])
-  </text>
-  <text x="50" y="642" font-family="'Consolas', monospace" font-size="10" fill="#92400e">
-    sum by (status) (requests_total)
-  </text>
-  <text x="50" y="659" font-family="'Consolas', monospace" font-size="10" fill="#92400e">
-    avg_over_time(cpu_usage[1h])
-  </text>
-
-  <rect x="440" y="580" width="430" height="90" rx="12" fill="#d1fae5" opacity="0.9" stroke="#059669" stroke-width="2" filter="url(#shadow)"/>
-  
-  <text x="655" y="603" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="14"
-        font-weight="700"
-        fill="#065f46">
-    ✨ Key Features
-  </text>
-
-  <text x="460" y="625" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#047857">
-    ✓ Pull-based architecture
-  </text>
-  <text x="460" y="642" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#047857">
-    ✓ Multi-dimensional data model
-  </text>
-  <text x="460" y="659" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#047857">
-    ✓ Powerful query language (PromQL)
-  </text>
-
-  <text x="680" y="625" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#047857">
-    ✓ Service discovery
-  </text>
-  <text x="680" y="642" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#047857">
-    ✓ No external dependencies
-  </text>
-  <text x="680" y="659" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#047857">
-    ✓ Built-in alerting
-  </text>
-
-  <!-- Data Flow Label -->
-  <rect x="30" y="690" width="840" height="40" rx="10" fill="#dbeafe" opacity="0.9" stroke="#2563eb" stroke-width="2" filter="url(#shadow)"/>
-  <text x="450" y="715" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="12"
-        fill="#1e40af">
-    <tspan font-weight="700">Data Flow:</tspan> Targets expose metrics → Prometheus scrapes data → Stores in TSDB → Grafana visualizes → Alertmanager sends alerts
-  </text>
 </svg>
