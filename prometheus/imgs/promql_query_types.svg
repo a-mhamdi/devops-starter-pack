@@ -1,0 +1,80 @@
+<svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define styles -->
+  <defs>
+    <style>
+      .box { fill: #fff; stroke: #333; stroke-width: 2; }
+      .promql { fill: #e6522c; }
+      .function { fill: #4a90e2; }
+      .data { fill: #7cb342; }
+      .result { fill: #f4a742; }
+      .text { fill: #333; font-family: Arial, sans-serif; font-size: 14px; text-anchor: middle; }
+      .title { font-size: 16px; font-weight: bold; }
+      .arrow { fill: none; stroke: #666; stroke-width: 2; marker-end: url(#arrowhead); }
+      .label { font-size: 12px; fill: #666; }
+      .code { font-family: 'Courier New', monospace; font-size: 13px; fill: #333; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="500" y="35" class="text title" style="font-size: 26px; fill: #e6522c;">PromQL</text>
+  <text x="500" y="60" class="text" style="font-size: 15px;">Functional Query Language for Time Series Data</text>
+  
+  <!-- Main PromQL Box -->
+  <rect x="200" y="100" width="600" height="80" class="box promql" rx="8"/>
+  <text x="500" y="130" class="text title" fill="#fff" style="font-size: 18px;">Select & Aggregate Time Series Data</text>
+  <text x="500" y="155" class="text" fill="#fff" style="font-size: 14px;">Real-time querying with functional expressions</text>
+  
+  <!-- Three Main Capabilities -->
+  <g id="capabilities">
+    <!-- Select -->
+    <rect x="80" y="230" width="240" height="100" class="box function" rx="5"/>
+    <text x="200" y="260" class="text title" fill="#fff">SELECT</text>
+    <text x="200" y="285" class="text code" fill="#fff">http_requests_total</text>
+    <text x="200" y="310" class="text" fill="#fff" style="font-size: 12px;">Filter by labels & metrics</text>
+    
+    <!-- Filter -->
+    <rect x="380" y="230" width="240" height="100" class="box function" rx="5"/>
+    <text x="500" y="260" class="text title" fill="#fff">FILTER</text>
+    <text x="500" y="285" class="text code" fill="#fff">{job="api", code="200"}</text>
+    <text x="500" y="310" class="text" fill="#fff" style="font-size: 12px;">Label matchers & ranges</text>
+    
+    <!-- Aggregate -->
+    <rect x="680" y="230" width="240" height="100" class="box function" rx="5"/>
+    <text x="800" y="260" class="text title" fill="#fff">AGGREGATE</text>
+    <text x="800" y="285" class="text code" fill="#fff">sum by (instance)</text>
+    <text x="800" y="310" class="text" fill="#fff" style="font-size: 12px;">Combine & calculate</text>
+  </g>
+  
+  <!-- Query Examples -->
+  <g id="examples">
+    <text x="100" y="380" class="text" style="font-size: 15px; font-weight: bold; text-anchor: start;">Query Examples:</text>
+    
+    <!-- Example 1 -->
+    <rect x="100" y="395" width="800" height="50" class="box data" rx="5"/>
+    <text x="120" y="415" class="code" style="text-anchor: start; fill: #fff; font-size: 12px;">rate(http_requests_total{job="api"}[5m])</text>
+    <text x="120" y="435" class="text" style="text-anchor: start; fill: #fff; font-size: 11px;">→ Requests per second over last 5 minutes</text>
+    
+    <!-- Example 2 -->
+    <rect x="100" y="465" width="800" height="50" class="box data" rx="5"/>
+    <text x="120" y="485" class="code" style="text-anchor: start; fill: #fff; font-size: 12px;">sum(rate(http_requests_total[5m])) by (status)</text>
+    <text x="120" y="505" class="text" style="text-anchor: start; fill: #fff; font-size: 11px;">→ Total request rate grouped by HTTP status code</text>
+  </g>
+  
+  <!-- Result -->
+  <rect x="300" y="545" width="400" height="40" class="box result" rx="5"/>
+  <text x="500" y="570" class="text title" fill="#fff">Real-Time Results</text>
+  
+  <!-- Arrows -->
+  <path d="M 500 180 Q 500 200 200 210 T 200 230" class="arrow"/>
+  <path d="M 500 180 Q 500 200 500 210 T 500 230" class="arrow"/>
+  <path d="M 500 180 Q 500 200 800 210 T 800 230" class="arrow"/>
+  
+  <path d="M 200 330 Q 250 360 350 370 T 500 395" class="arrow"/>
+  <path d="M 500 330 Q 500 350 500 370 T 500 395" class="arrow"/>
+  <path d="M 800 330 Q 750 360 650 370 T 500 395" class="arrow"/>
+  
+  <path d="M 500 515 Q 500 525 500 535 T 500 545" class="arrow"/>
+</svg>
